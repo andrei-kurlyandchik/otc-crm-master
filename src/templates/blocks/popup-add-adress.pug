@@ -1,0 +1,96 @@
+.popup.popup--new-task#addNewAddress
+    .popup__top
+        h2.title-h2 Manage Addresses
+        a.popup__close.b-close(href='#')
+    .popup__header-btn
+        button.btn-dd.btn-c--blue(type='button') + Add Address
+        .toggle-box
+            span Show deleted addresses
+            .toggle-check.active-check
+    .popup__bottom
+        form.form
+            .address-list
+                .address-box
+                    .address-box__header
+                        .address-status-list
+                            .address-status.del Deleted Address
+                        .address-edit
+                            .address-edit__btn Undelete
+                    .address-box__content
+                        ul
+                            li Marian Frazier
+                            li 8285C Center Ave.
+                            li Latrobe, Pensylvania
+                            li 15680
+                            li United States
+                            li 215-345-4678
+                .address-box
+                    .address-box__header
+                        .address-status-list
+                            .address-status.invalid.show-tooltip Invalid Address
+                                svg.icon.icon--arrow-down(width="15" height="8" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M14.142.071l-7.07 7.071L0 .072z" fill="#b30018" fill-rule="nonzero")
+                                div.tooltip
+                                    ul.tooltip__list
+                                        li.tooltip__li
+                                            a.tooltip__link(href='#') Make invalid
+                        .address-edit
+                            .address-edit__btn.js-show-popup(href="#editAddress") Edit
+                            .address-edit__btn Delete
+                    .address-box__content
+                        ul
+                            li Marian Frazier
+                            li 8285C Center Ave.
+                            li Latrobe, Pensylvania
+                            li 15680
+                            li United States
+                            li 215-345-4678
+                .address-box
+                    .address-box__header
+                        .address-status-list
+                            .address-status.valid.show-tooltip Valid Address
+                                svg.icon.icon--arrow-down(width="15" height="8" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M14.142.071l-7.07 7.071L0 .072z" fill="#59D900" fill-rule="nonzero")
+                                div.tooltip
+                                    ul.tooltip__list
+                                        li.tooltip__li
+                                            a.tooltip__link(href='#') Make invalid
+                        .address-edit
+                            .address-edit__btn Edit
+                            .address-edit__btn Delete
+                    .address-box__content
+                        ul
+                            li Marian Frazier
+                            li 8285C Center Ave.
+                            li Latrobe, Pensylvania
+                            li 15680
+                            li United States
+                            li 215-345-4678
+                    .address-box__footer
+                        ul
+                            li Valid from 09/20/20 to 05/09/20
+                            li Do not deliver USPS on this address
+                .address-box
+                    .address-box__header
+                        .address-status-list
+                            .address-status.file Address on file
+                            .address-status.invalid.show-tooltip Invalid Address
+                                svg.icon.icon--arrow-down(width="15" height="8" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M14.142.071l-7.07 7.071L0 .072z" fill="#b30018" fill-rule="nonzero")
+                                div.tooltip
+                                    ul.tooltip__list
+                                        li.tooltip__li
+                                            a.tooltip__link(href='#') Make invalid
+                    .address-box__content
+                        ul
+                            li Marian Frazier
+                            li 8285C Center Ave.
+                            li Latrobe, Pensylvania
+                            li 15680
+                            li United States
+                            li 215-345-4678
+            .form__btn.form__btn--center
+                .form__btn-itm
+                    a.btn-b.b-close(href='#') Cancel
+                .form__btn-itm
+                    button.btn-a.btn-a--small(type='button') Save

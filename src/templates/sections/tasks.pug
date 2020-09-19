@@ -1,0 +1,137 @@
+section.panel.panel--tasks
+    .container
+        .panel--right
+            .panel__outer
+                .panel__itm
+                    h2.title-h2 Tasks
+                .panel__itm
+                    .filter
+                        .search
+                            .search__outer
+                                .search__itm
+                                    svg.icon.icon--search(xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M0 0h28v28H0V0z', fill='none')
+                                        path(d='M17.162 16.333h.921l5.822 5.834-1.738 1.738-5.834-5.822v-.921l-.315-.327a7.55 7.55 0 01-4.935 1.832 7.583 7.583 0 110-15.167 7.583 7.583 0 017.584 7.583 7.55 7.55 0 01-1.832 4.935l.327.315zm-11.329-5.25a5.243 5.243 0 005.25 5.25 5.243 5.243 0 005.25-5.25 5.243 5.243 0 00-5.25-5.25 5.243 5.243 0 00-5.25 5.25z')
+                                .search__itm.search__field
+                                    input.search__inp(type='text' placeholder='Search by subject, description')
+                        .filter__buttons
+                            a.btn-d(href='#') Open Items
+                            a.btn-d(href='#') Resolved Items
+                            a.btn-d(href='#') Declined Items
+                            a.btn-d.btn-d--active(href='#') Reassigned Items
+                        .filter__outer
+                            .filter__itm
+                                .date
+                                    span.date__ttl Due date & time
+                                    .date__outer
+                                        svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                        input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                            .filter__itm
+                                .filter__outer
+                                    .filter__itm
+                                        .checkbox
+                                            label.checkbox__label
+                                                input.checkbox__inp(type='checkbox')
+                                                span.checkbox__btn
+                                                span.checkbox__text Show Overdue
+                                    .filter__itm.filter__itm-checkbox
+                                        span.filter__checkbox Priority:
+                                    .filter__itm
+                                        .checkbox
+                                            label.checkbox__label
+                                                input.checkbox__inp(type='checkbox')
+                                                span.checkbox__btn
+                                                span.checkbox__text High
+                                    .filter__itm
+                                        .checkbox
+                                            label.checkbox__label
+                                                input.checkbox__inp(type='checkbox')
+                                                span.checkbox__btn
+                                                span.checkbox__text Medium
+                                    .filter__itm
+                                        .checkbox
+                                            label.checkbox__label
+                                                input.checkbox__inp(type='checkbox')
+                                                span.checkbox__btn
+                                                span.checkbox__text Low
+                .panel__itm.panel__itm--task
+                    .task.task--high
+                        .task__outer
+                            .task__itm
+                                a.task__ttl.js-show-popup(href='#viewTask') Make a call
+                                p.task__text Reassigned on: 02/23/2020 3:45 PM
+                                p.task__text Reassigned to: Ann Smith
+                                p.task__text Current status: DECLINED 02/23/2020 3:45 PM
+                                p.task__text Relates to: John Doe
+                                    =' '
+                                    a.task__link(href='') (Member ID: 726354)
+                                p.task__text Call to Mike and confirm if he need some help with delivery…
+                            .task__itm
+                                .task__inner
+                                    .task__inner-itm
+                                        span.task__status High
+                                    .task__inner-itm
+                                        .task__links
+                                            a.task__link.js-show-popup(href='#viewTask') View
+                .panel__itm.panel__itm--task
+                    .task.task--medium
+                        .task__outer
+                            .task__itm
+                                a.task__ttl.js-show-popup(href='#viewTask') Make a call
+                                p.task__text Resolution date and time: DECLINED 02/23/2020 3:45 PM
+                                p.task__text Resolution note: Phone was unavaliable
+                                p.task__text Relates to: John Doe
+                                    =' '
+                                    a.task__link(href='') (Member ID: 726354)
+                                p.task__text Call to Mike and confirm if he need some help with delivery…
+                            .task__itm
+                                .task__inner
+                                    .task__inner-itm
+                                        span.task__status Medium
+                                    .task__inner-itm
+                                        .task__links
+                                            a.task__link.js-show-popup(href='#viewTask') View
+                                            a.task__link.js-show-popup(href='#reopenTask') Reopen
+                .panel__itm
+                    h3.title-h3 06/01/2020
+                .panel__itm.panel__itm--task
+                    .task.task--low
+                        .task__outer
+                            .task__itm
+                                a.task__ttl.js-show-popup(href='#viewTask') Make a call
+                                p.task__text Due date and time: 05/23/2020 3.00 PM
+                                p.task__text Relates to: John Doe
+                                    =' '
+                                    a.task__link(href='') (Member ID: 726354)
+                                p.task__text Call to Mike and confirm if he need some help with delivery…
+                            .task__itm
+                                .task__inner
+                                    .task__inner-itm
+                                        span.task__status Low
+                                    .task__inner-itm
+                                        .task__links
+                                            a.task__link.js-show-popup(href='#viewTask') View
+                                            a.task__link.js-show-popup(href='#reopenTask') Reopen
+                                            a.task__link.js-show-popup(href='#declineTask') Decline
+                .panel__itm
+                    h3.title-h3 Overdue
+                .panel__itm.panel__itm--task
+                    .task.task--high.task--overdue
+                        .task__outer
+                            .task__itm
+                                a.task__ttl.js-show-popup(href='#viewTask') Make a call
+                                p.task__text Due date and time: 05/23/2020 3.00 PM
+                                p.task__text Relates to:
+                                    =' '
+                                    a.task__link(href='') Order #235454
+                                p.task__text Call to Mike and confirm if he need some help with delivery…
+                            .task__itm
+                                .task__inner
+                                    .task__inner-itm
+                                        span.task__status High
+                                    .task__inner-itm
+                                        .task__links
+                                            a.task__link.js-show-popup(href='#viewTask') View
+                                            a.task__link.js-show-popup(href='#resolveTask') Resolve
+                                            a.task__link.js-show-popup(href='#declineTask') Decline

@@ -1,0 +1,57 @@
+.popup.popup--new-task#addNewTask
+    .popup__top
+        h2.title-h2 Add new task
+        a.popup__close.b-close(href='#')
+    .popup__bottom
+        form.form
+            .form__itm
+                label.form__label
+                    span.form__ttl Title
+                    input.form__inp(type='text' value='' placeholder='Username')
+            .form__itm
+                label.form__label
+                    span.form__ttl Description
+                    textarea.form__textarea
+            .form__itm
+                label.form__label.form--inline.form--small
+                    span.form__ttl Priority
+                    select.form__select
+                        option(value='high') High
+                        option(value='medium') Medium
+                        option(value='low') Low
+            .form__itm
+                label.form__label.form--inline.form--medium
+                    span.form__ttl Assigned
+                    select.form__select
+                        option(value='') John Doe 15
+                        option(value='') John Doe 1
+                        option(value='') John Doe 4
+            .form__itm
+                .date.date--inline
+                    span.date__ttl Due date & time
+                    .date__outer
+                        svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                        input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+            .form__itm
+                .form__row
+                    .form__col
+                        label.form__label.form--inline.form--small
+                            span.form__ttl Relates to
+                            select.form__select
+                                option(value='id') Member ID
+                                option(value='id') Member ID
+                                option(value='id') Member ID
+                    .form__col
+                        label.form__label.form--inline.form--large
+                            select.form__select
+                                option(value='') Search Member ID or Name
+                                option(value='') Search Member ID or Name
+                                option(value='') Search Member ID or Name
+            .form__btn.form__btn--center
+                .form__btn-itm
+                    a.btn-b.b-close(href='#') Cancel
+                .form__btn-itm
+                    button.btn-a.btn-a--small(type='button') Save
+                .form__btn-itm
+                    a.btn-a.b-close.js-show-popup(href='#createdTask') Save and create next

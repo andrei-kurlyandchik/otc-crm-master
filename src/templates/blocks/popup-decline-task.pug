@@ -1,0 +1,19 @@
+.popup.popup--new-task#declineTask
+    .popup__top
+        h2.title-h2 Decline task
+        a.popup__close.b-close(href='#')
+    .popup__bottom
+        form.form
+            .form__itm
+                .form__row.form__row--center
+                    .form__col
+                        p Resolution note* (required)
+                    .form__col.form__col--full
+                        label.form__label
+                            span.form__ttl Enter the note
+                            input.form__inp(type='text' value='' placeholder='New Order Placed')
+            .form__btn.form__btn--center
+                .form__btn-itm
+                    a.btn-b.b-close(href='#') Cancel
+                .form__btn-itm
+                    button.btn-a.btn-a--small(type='button') Decline

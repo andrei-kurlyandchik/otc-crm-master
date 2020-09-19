@@ -1,0 +1,427 @@
+section.panel.panel--user-info
+    .container
+        .panel__row
+            .panel__col.panel__col--left
+                .panel__outer.panel--user.panel--active
+                    .panel__item
+                        .user-profile
+                            div.user-profile__label.user-profile__label--active
+                                img.icon.icon--check(src='img/check.svg')
+                                span Registered on the website
+                            p.title-h2 Edward Green
+                            div.user-profile-tags
+                                div.user-profile-tags__list
+                                    .tags.tags--blue Do not call
+                                    .tags.tags--blue Talking loud
+                                .dropdown.dropdown-user-edit
+                                    a.btn-e.dropdown-active(href="#") edit
+                                    .dropdown__bottom.dropdown-tag-edit-popup
+                                        h2.title-h2 Edit Tags
+                                        form.form
+                                            .form__itm.form__add
+                                                label.form__label
+                                                    span.form__ttl Title
+                                                    input.form__inp(type='text' value='' placeholder='Username')
+                                                button.btn-dd.btn-c--blue(type='button') + add
+                                            .form__itm.form__tags
+                                                .tags.tags--blue Do not call
+                                                    img.icon.icon--close(src='img/close.svg')
+                                                .tags.tags--blue Talking loud
+                                                    img.icon.icon--close(src='img/close.svg')
+                                            .form__btn.form__btn--center
+                                                .form__btn-itm
+                                                    a.btn-b.b-close(href='#') Cancel
+                                                .form__btn-itm
+                                                    button.btn-a.btn-a--small(type='button') Save
+                            div.user-profile-status
+                                .user-profile-status__title Status
+                                .user-profile-status__tags.user-profile-status__tags--not-active Active from 10/20/2020
+                                //.user-profile-status__tags.user-profile-status__tags--active Active User
+                            div.user-profile-i
+                                .user-profile-i__title Member ID
+                                .user-profile-i__content 33342425
+                            div.user-profile-i
+                                .user-profile-i__title Plan
+                                .user-profile-i__content Special ($ 300.00/quaterly)
+                                //.user-profile-i__content.not-s Not Specified
+                                //    img.icon.icon--warning(src='img/warning.svg')
+                            div.user-profile-i
+                                .user-profile-i__title Balance
+                                .user-profile-i__content $ 124.56
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Personal Data
+                                    .user-profile-info__title-line
+                                    .dropdown.dropdown-user-edit
+                                        .btn-e.dropdown-active Override
+                                        .dropdown__bottom.dropdown-email-edit-popup
+                                            h2.title-h2 Edit Personal Data
+                                            form.form
+                                                table.user__table.user__table--edit.user__table--personal
+                                                    tr
+                                                        td.header-td
+                                                        td.header-td On File
+                                                        td.header-td Enable Override
+                                                        td.header-td Override
+                                                    tr
+                                                        td.body-td Gender
+                                                        td.body-td Male
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='female') Female
+                                                                    option(value='male') Male
+                                                    tr
+                                                        td.body-td DOB
+                                                        td.body-td 12/09/1956
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check
+                                                        td.body-td
+                                                    tr
+                                                        td.body-td.body-td__top Language
+                                                        td.body-td.body-td__top
+                                                            .user__row
+                                                                .user__col
+                                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
+                                                                .user__col
+                                                                    span English (EN)
+                                                        td.body-td.body-td__top.body-td__top--toogle
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                        td.body-td
+                                                            .language-selection
+                                                                .language-selection__row
+                                                                    label.form__label
+                                                                        select.form__select
+                                                                            option(value='primary') Primary
+                                                                            option(value='secondary') Secondary
+                                                                    label.form__label
+                                                                        select.form__select
+                                                                            option(value='español') Español
+                                                                            option(value='english') English
+                                                                .btn-del
+                                                                   img.icon.icon--trash(src='img/trash.svg')
+                                                            .language-selection
+                                                                .language-selection__row
+                                                                    label.form__label
+                                                                        select.form__select
+                                                                            option(value='primary') Primary
+                                                                            option(value='secondary') Secondary
+                                                                    label.form__label
+                                                                        select.form__select
+                                                                            option(value='español') Español
+                                                                            option(value='english') English
+                                                                .btn-del
+                                                                    img.icon.icon--trash(src='img/trash.svg')
+                                                            button.btn-dd.btn-dd--o(type='button') + ADD 1 more
+                                                .form__btn.form__btn--center
+                                                    .form__btn-itm
+                                                        a.btn-b.b-close(href='#') Cancel
+                                                    .form__btn-itm
+                                                        button.btn-a.btn-a--small(type='button') Save
+                                table.user__table.user__table--profile
+                                    tr
+                                        td Gender
+                                        td Male
+                                    tr
+                                        td DOB
+                                        td 12/09/1954
+                                    tr
+                                        td Language
+                                        td
+                                            .user__row
+                                                .user__col
+                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
+                                                .user__col
+                                                    span English (EN)
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Email
+                                    .user-profile-info__title-line
+                                    .dropdown.dropdown-user-edit
+                                        .btn-e.dropdown-active Manage
+                                        .dropdown__bottom.dropdown-email-edit-popup
+                                            h2.title-h2 Manage Emails
+                                            form.form
+                                                .form__itm
+                                                    button.btn-dd.btn-c--blue(type='button') + Add 1 more email
+
+
+                                                table.user__table.user__table--edit.user__table--email
+                                                    tr
+                                                        td.header-td
+                                                        td.header-td Email
+                                                        td.header-td Valid/Invalid
+                                                        td.header-td Email Marketing
+                                                        td.header-td
+                                                    tr
+                                                        td.body-td 1. Reg.
+                                                        td.body-td ann.smith@gmail.com
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='valid') Valid
+                                                                    option(value='invalid') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                    tr
+                                                        td.body-td 2.
+                                                        td.body-td
+                                                            label.form__label
+                                                                input.form__inp(type='text' value='' placeholder='Email')
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='valid') Valid
+                                                                    option(value='invalid') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+                                                    tr
+                                                        td.body-td 3.
+                                                        td.body-td
+                                                            label.form__label.form__error
+                                                                input.form__inp(type='text' value='' placeholder='Email')
+                                                            span.form__hint Wrong email format
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='valid') Valid
+                                                                    option(value='invalid') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+
+                                                .form__btn.form__btn--center
+                                                    .form__btn-itm
+                                                        a.btn-b.b-close(href='#') Cancel
+                                                    .form__btn-itm
+                                                        button.btn-a.btn-a--small(type='button') Save
+                                ol.user-profile-info__email
+                                    li Reg.: ekonstantinipilsky@gmail.com
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Phone
+                                    .user-profile-info__title-line
+                                    .dropdown.dropdown-user-edit
+                                        .btn-e.dropdown-active edit
+                                        .dropdown__bottom.dropdown-phone-edit-popup
+                                            h2.title-h2 Edit Phone Numbers
+                                            form.form
+                                                table.user__table.user__table--edit.user__table--phone-edit
+                                                    tr
+                                                        td.header-td
+                                                        td.header-td Phone Type
+                                                        td.header-td Phone #
+                                                        td.header-td Valid/Invalid
+                                                        td.header-td Call
+                                                        td.header-td SMS
+                                                        td.header-td Valid dates (Optional)
+                                                    tr
+                                                        td.body-td Primary
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='landline') Landline
+                                                                    option(value='landline') Landline
+                                                        td.body-td
+                                                            label.form__label
+                                                                input.form__inp(type='text' value='' placeholder='Phone')
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='valid') Valid
+                                                                    option(value='invalid') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .form__row
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl From
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl To
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                    tr
+                                                        td.body-td Secondary
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='landline') Landline
+                                                                    option(value='landline') Landline
+                                                        td.body-td
+                                                            label.form__label
+                                                                input.form__inp(type='text' value='' placeholder='Phone')
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='valid') Valid
+                                                                    option(value='invalid') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .form__row
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl From
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl To
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+
+                                                    tr
+                                                        td.body-td Temporary
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='landline') Landline
+                                                                    option(value='landline') Landline
+                                                        td.body-td
+                                                            label.form__label
+                                                                input.form__inp(type='text' value='' placeholder='Phone')
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='valid') Valid
+                                                                    option(value='invalid') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .form__row
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl From
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl To
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                    tr
+                                                        td.body-td Member File
+                                                        td.body-td
+                                                        td.body-td +1 (324) 452-4566
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='valid') Valid
+                                                                    option(value='invalid') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .form__row
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl From
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl To
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+
+                                                .form__btn.form__btn--center
+                                                    .form__btn-itm
+                                                        a.btn-b.b-close(href='#') Cancel
+                                                    .form__btn-itm
+                                                        button.btn-a.btn-a--small(type='button') Save
+                                table.user__table.user__table--phone
+                                    tr
+                                        td.phone-affiliation Primary
+                                            img.icon.icon--phone-iphone(src='img/phone-iphone.svg')
+                                        td.phone-number +1 (324) 543-5422
+                                    tr
+                                        td.phone-affiliation Secondary
+                                            img.icon.icon--home-black(src='img/home-black.svg')
+                                        td.phone-number +1 (324) 543-5422
+                                            img.icon.icon--warning(src='img/warning.svg')
+                                    tr
+                                        td.phone-affiliation Temporary
+                                        td.phone-number +1 (324) 543-5422
+                                    tr
+                                        td.phone-affiliation Registration
+                                        td.phone-number +1 (324) 543-5422
+                                    tr
+                                        td.phone-affiliation Member File
+                                        td.phone-number +1 (324) 543-5422
+                                            img.icon.icon--warning(src='img/warning.svg')
+
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Address
+                                    .user-profile-info__title-line
+                                    a.btn-e.js-show-popup(href="#addNewAddress") Manage
+                                ul.user-profile-info__address
+                                    li 140 Atlantic Avenue 
+                                    li RApartment K1
+                                    li Jenkintown, PA 19133
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Notes
+                                    .user-profile-info__title-line
+                                    a.btn-e.js-show-popup(href="#addNewNotes") Manage
+                                .user-profile-info__notes Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore

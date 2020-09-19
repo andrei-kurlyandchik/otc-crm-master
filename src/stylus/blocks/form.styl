@@ -1,0 +1,265 @@
+.form {
+  &__row {
+    display flex
+    margin 0 -10px
+  }
+  &__row--center {
+    align-items center
+  }
+  &__col {
+    padding 0 10px
+    &--title {
+      display flex
+      align-items center
+      height 100%
+    }
+  }
+  &__col--full {
+    flex-grow 1
+  }
+  &__itm {
+    margin-bottom 25px
+    position relative
+  }
+  &__label {
+    display block
+    position relative
+    border 1px solid #CECECE
+    border-radius 5px
+    &.form__error {
+      border-color redColor
+      .form__ttl {
+        color redColor
+      }
+      ~ .form__hint {
+        color redColor
+      }
+    }
+  }
+  &--inline {
+    display inline-block
+    min-width 200px
+  }
+  &--small {
+    width 200px
+  }
+  &--medium {
+    width 300px
+  }
+  &--large {
+    width 400px
+  }
+  &__ttl {
+    position: absolute;
+    top: -8px;
+    font-size: 12px;
+    left: 10px;
+    background: #fff;
+    padding: 0 5px;
+  }
+  &__textarea {
+    height: 100px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    color: #333;
+    resize: none;
+    padding: 18px 15px 15px;
+    border-radius: 10px;
+    &::placeholder {
+      font-family: 'Roboto', sans-serif;
+      color #333333
+    }
+  }
+  &__hint {
+    font-size: 12px;
+    padding-left 15px
+  }
+  &__select {
+    border-radius 10px
+    font-size 16px
+    color #333333
+    padding 18px 15px 15px
+  }
+  &__inp {
+    padding 18px 15px 15px
+    display block
+    width 100%
+    &::placeholder {
+      color #333333
+    }
+  }
+  &__link {
+    display inline-block
+    color: blueColor;
+    border-bottom 1px solid blueColor
+    transition border-color 0.2s
+    &:hover {
+      border-color transparent
+    }
+  }
+  &--center {
+    text-align center
+  }
+  &__text {
+    margin-bottom 15px
+  }
+  &__validation {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left 10px
+    max-width 170px
+    &-outer {
+      display flex
+      margin 0 -5px
+      align-items center
+    }
+    &-itm {
+      padding 0 5px
+    }
+  }
+  &__btn {
+    display flex
+    align-items center
+    justify-content space-between
+    margin 0 -10px
+  }
+  &__btn--center {
+    justify-content center
+  }
+  &__btn--rigth {
+    justify-content flex-end
+  }
+  &__btn-itm {
+    padding 0 10px
+  }
+  &__add {
+    display flex
+    align-items stretch
+    justify-content flex-start
+    .form__label {
+      flex 1
+      width 0
+      & + .btn-dd {
+        margin-left 19px
+      }
+    }
+    .btn-dd {
+      padding: 15px 35px;
+    }
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.search {
+  border-radius: 2px;
+  border: 1px solid #c7c7c7;
+  background: #ffffff;
+  padding 15px
+  margin-bottom 15px
+  &__outer {
+    display flex
+    align-items center
+    margin 0 -5px
+  }
+  &__itm {
+    padding 0 5px
+  }
+  &__field {
+    flex-grow 1
+  }
+  &__inp {
+    display block
+    width 100%
+    color: #3a3a3a;
+    &::placeholder {
+      color: #3a3a3a;
+    }
+  }
+}
+
+.checkbox {
+  &__text {
+    color: #3a3a3a;
+  }
+  &__inp {
+    position absolute
+    opacity 0
+    &:checked {
+      ~.checkbox__btn {
+        border-color blueColor
+        background blueColor
+        &:after {
+          display block
+        }
+      }
+    }
+  }
+  &__label {
+    display flex
+    align-items center
+    user-select none
+  }
+  &__btn {
+    display block
+    width: 20px;
+    height: 20px;
+    position relative
+    border 2px solid #c7c7c7
+    margin-right 10px
+    &:after {
+      content ''
+      transform: rotate(-50deg);
+      width: 13px;
+      height: 7px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      display: none;
+      top: 3px;
+      left: 0;
+      position: absolute;
+      margin: 0 auto;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.date {
+  position relative
+  border 1px solid #CECECE
+  border-radius 5px
+  height 56px
+  &--inline {
+    display inline-block
+  }
+  &__ttl {
+    position: absolute;
+    top: -8px;
+    font-size: 12px;
+    left: 10px;
+    background: #fff;
+    padding: 0 5px;
+  }
+  &__inp {
+    padding 18px 18px 18px 50px
+    width 100%
+    display block
+  }
+  .icon {
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    left 15px
+  }
+}
+
+.xdsoft_datetimepicker {
+  z-index 10000
+}

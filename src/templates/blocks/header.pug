@@ -1,0 +1,94 @@
+mixin header(o)
+    - let mainMenu = o.nav;
+    header.header
+        .container
+            .header__wrap
+                .header__wrap-itm.header__wrap-left
+                    .header__wrap-inner
+                        .header__outer.header__outer--between
+                            .header__itm
+                                .header__outer.header__nav
+                                    .header__itm.header__nav-itm
+                                        .header__wrap
+                                            a.logo(href='dashboard.html' title='logo')
+                                                img.logo__img(src='img/logo.svg' alt='logo')
+                                    .header__itm.header__nav-itm
+                                        nav.nav
+                                            ul.nav__list
+                                                li.nav__li
+                                                    a.nav__link.nav__link--active(href='dashboard.html' class=mainMenu == 1 ? 'nav__link--active' : '' title='Dashboard')
+                                                        span.nav__text Dashboard
+                                                li.nav__li
+                                                    a.nav__link(href='calls.html' class=mainMenu == 3 ? 'nav__link--active' : '' title='Calls')
+                                                        span.nav__text Calls
+                                                li.nav__li
+                                                    a.nav__link(href='members.html' class=mainMenu == 4 ? 'nav__link--active' : '' title='Members')
+                                                        span.nav__text Members
+                                                li.nav__li
+                                                    a.nav__link(href='orders.html' class=mainMenu == 5 ? 'nav__link--active' : '' title='Orders')
+                                                        span.nav__text Orders
+                            .header__itm
+                                .header__outer.header__buttons
+                                    .header__itm
+                                        a.btn-c.btn-c--col.btn-c--blue.js-show-popup(href="#")
+                                            img.icon.icon--task(src="img/task.svg")
+                                            span.btn-c--text Accept task
+                                    .header__itm
+                                        a.btn-c.btn-c--col.btn-c--blue.js-show-popup(href="#addNewTask")
+                                            img.icon.icon--plus(src="img/plus.svg")
+                                            span.btn-c--text Add task
+                                    .header__itm
+                                        a.btn-c.btn-c--col.btn-c--green(href="#")
+                                            img.icon.icon--phone(src="img/inbound-call.svg")
+                                            span.btn-c--text Inbound
+                                                br
+                                                |call
+                                    .header__itm
+                                        a.btn-c.btn-c--col.btn-c--orange(href="#")
+                                            img.icon.icon--phone(src="img/outbound-call.svg")
+                                            span.btn-c--text Outbound
+                                                br
+                                                |call
+                .header__wrap-itm
+                    .header__wrap-inner
+                        .header__outer.header__outer--between
+                            .dropdown.dropdown-leng
+                                a.dropdown__top.dropdown-active(href='#')
+                                    .dropdown__outer
+                                        .dropdown__outer
+                                            .dropdown__itm
+                                                .dropdown__inner
+                                                    span.dropdown__flag
+                                                        img.icon.icon--flag(src="img/flags/united-states-of-america.svg")
+                                                    span.dropdown__lang (en)
+                                        .dropdown__itm
+                                            span.dropdown__btn
+                                .dropdown__bottom
+                                    ul.dropdown__list.dropdown__list-leng
+                                        li.dropdown__li
+                                            a.dropdown__link-leng(href='#')
+                                                span.dropdown__flag
+                                                    img.icon.icon--flag(src="img/flags/united-states-of-america.svg")
+                                                span.dropdown__lang English (EN)
+                                        li.dropdown__li
+                                            a.dropdown__link-leng(href='#')
+                                                span.dropdown__flag
+                                                    img.icon.icon--flag(src="img/flags/spain.svg")
+                                                span.dropdown__lang Español (ESP)
+                            .dropdown
+                                a.dropdown__top.dropdown-active(href='#')
+                                    .dropdown__outer
+                                        .dropdown__outer
+                                            .dropdown__itm
+                                                .dropdown__inner
+                                                    span.dropdown__user
+                                                    span.dropdown__name John Doe
+                                        .dropdown__itm
+                                            span.dropdown__btn
+                                .dropdown__bottom
+                                    ul.dropdown__list
+                                        li.dropdown__li
+                                            a.dropdown__link(href='#') Logout
+
+
+

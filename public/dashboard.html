@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OTC stores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/vendor/selectric.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body>
+    <main class="main">
+            <header class="header">
+              <div class="container">
+                <div class="header__wrap">
+                  <div class="header__wrap-itm header__wrap-left">
+                    <div class="header__wrap-inner">
+                      <div class="header__outer header__outer--between">
+                        <div class="header__itm">
+                          <div class="header__outer header__nav">
+                            <div class="header__itm header__nav-itm">
+                              <div class="header__wrap"><a class="logo" href="dashboard.html" title="logo"><img class="logo__img" src="img/logo.svg" alt="logo"></a></div>
+                            </div>
+                            <div class="header__itm header__nav-itm">
+                              <nav class="nav">
+                                <ul class="nav__list">
+                                  <li class="nav__li"><a class="nav__link nav__link--active nav__link--active" href="dashboard.html" title="Dashboard"><span class="nav__text">Dashboard</span></a></li>
+                                  <li class="nav__li"><a class="nav__link" href="calls.html" title="Calls"><span class="nav__text">Calls</span></a></li>
+                                  <li class="nav__li"><a class="nav__link" href="members.html" title="Members"><span class="nav__text">Members</span></a></li>
+                                  <li class="nav__li"><a class="nav__link" href="orders.html" title="Orders"><span class="nav__text">Orders</span></a></li>
+                                </ul>
+                              </nav>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header__itm">
+                          <div class="header__outer header__buttons">
+                            <div class="header__itm"><a class="btn-c btn-c--col btn-c--blue js-show-popup" href="#"><img class="icon icon--task" src="img/task.svg"><span class="btn-c--text">Accept task</span></a></div>
+                            <div class="header__itm"><a class="btn-c btn-c--col btn-c--blue js-show-popup" href="#addNewTask"><img class="icon icon--plus" src="img/plus.svg"><span class="btn-c--text">Add task</span></a></div>
+                            <div class="header__itm"><a class="btn-c btn-c--col btn-c--green" href="#"><img class="icon icon--phone" src="img/inbound-call.svg"><span class="btn-c--text">Inbound<br>call</span></a></div>
+                            <div class="header__itm"><a class="btn-c btn-c--col btn-c--orange" href="#"><img class="icon icon--phone" src="img/outbound-call.svg"><span class="btn-c--text">Outbound<br>call</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__wrap-itm">
+                    <div class="header__wrap-inner">
+                      <div class="header__outer header__outer--between">
+                        <div class="dropdown dropdown-leng"><a class="dropdown__top dropdown-active" href="#">
+                            <div class="dropdown__outer">
+                              <div class="dropdown__outer">
+                                <div class="dropdown__itm">
+                                  <div class="dropdown__inner"><span class="dropdown__flag"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></span><span class="dropdown__lang">(en)</span></div>
+                                </div>
+                              </div>
+                              <div class="dropdown__itm"><span class="dropdown__btn"></span></div>
+                            </div></a>
+                          <div class="dropdown__bottom">
+                            <ul class="dropdown__list dropdown__list-leng">
+                              <li class="dropdown__li"><a class="dropdown__link-leng" href="#"><span class="dropdown__flag"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></span><span class="dropdown__lang">English (EN)</span></a></li>
+                              <li class="dropdown__li"><a class="dropdown__link-leng" href="#"><span class="dropdown__flag"><img class="icon icon--flag" src="img/flags/spain.svg"></span><span class="dropdown__lang">Español (ESP)</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="dropdown"><a class="dropdown__top dropdown-active" href="#">
+                            <div class="dropdown__outer">
+                              <div class="dropdown__outer">
+                                <div class="dropdown__itm">
+                                  <div class="dropdown__inner"><span class="dropdown__user"></span><span class="dropdown__name">John Doe</span></div>
+                                </div>
+                              </div>
+                              <div class="dropdown__itm"><span class="dropdown__btn"></span></div>
+                            </div></a>
+                          <div class="dropdown__bottom">
+                            <ul class="dropdown__list">
+                              <li class="dropdown__li"><a class="dropdown__link" href="#">Logout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+      <div class="content">
+        <section class="panel panel--tasks">
+          <div class="container">
+            <div class="panel--right">
+              <div class="panel__outer">
+                <div class="panel__itm">
+                  <h2 class="title-h2">Tasks</h2>
+                </div>
+                <div class="panel__itm">
+                  <div class="filter">
+                    <div class="search">
+                      <div class="search__outer">
+                        <div class="search__itm">
+                          <svg class="icon icon--search" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h28v28H0V0z" fill="none"></path>
+                            <path d="M17.162 16.333h.921l5.822 5.834-1.738 1.738-5.834-5.822v-.921l-.315-.327a7.55 7.55 0 01-4.935 1.832 7.583 7.583 0 110-15.167 7.583 7.583 0 017.584 7.583 7.55 7.55 0 01-1.832 4.935l.327.315zm-11.329-5.25a5.243 5.243 0 005.25 5.25 5.243 5.243 0 005.25-5.25 5.243 5.243 0 00-5.25-5.25 5.243 5.243 0 00-5.25 5.25z"></path>
+                          </svg>
+                        </div>
+                        <div class="search__itm search__field">
+                          <input class="search__inp" type="text" placeholder="Search by subject, description">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__buttons"><a class="btn-d" href="#">Open Items</a><a class="btn-d" href="#">Resolved Items</a><a class="btn-d" href="#">Declined Items</a><a class="btn-d btn-d--active" href="#">Reassigned Items</a></div>
+                    <div class="filter__outer">
+                      <div class="filter__itm">
+                        <div class="date"><span class="date__ttl">Due date & time</span>
+                          <div class="date__outer">
+                            <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                            </svg>
+                            <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter__itm">
+                        <div class="filter__outer">
+                          <div class="filter__itm">
+                            <div class="checkbox">
+                              <label class="checkbox__label">
+                                <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Show Overdue</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="filter__itm filter__itm-checkbox"><span class="filter__checkbox">Priority:</span></div>
+                          <div class="filter__itm">
+                            <div class="checkbox">
+                              <label class="checkbox__label">
+                                <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">High</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="filter__itm">
+                            <div class="checkbox">
+                              <label class="checkbox__label">
+                                <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Medium</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="filter__itm">
+                            <div class="checkbox">
+                              <label class="checkbox__label">
+                                <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Low</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel__itm panel__itm--task">
+                  <div class="task task--high">
+                    <div class="task__outer">
+                      <div class="task__itm"><a class="task__ttl js-show-popup" href="#viewTask">Make a call</a>
+                        <p class="task__text">Reassigned on: 02/23/2020 3:45 PM</p>
+                        <p class="task__text">Reassigned to: Ann Smith</p>
+                        <p class="task__text">Current status: DECLINED 02/23/2020 3:45 PM</p>
+                        <p class="task__text">Relates to: John Doe <a class="task__link" href="">(Member ID: 726354)</a>
+                        </p>
+                        <p class="task__text">Call to Mike and confirm if he need some help with delivery…</p>
+                      </div>
+                      <div class="task__itm">
+                        <div class="task__inner">
+                          <div class="task__inner-itm"><span class="task__status">High</span></div>
+                          <div class="task__inner-itm">
+                            <div class="task__links"><a class="task__link js-show-popup" href="#viewTask">View</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel__itm panel__itm--task">
+                  <div class="task task--medium">
+                    <div class="task__outer">
+                      <div class="task__itm"><a class="task__ttl js-show-popup" href="#viewTask">Make a call</a>
+                        <p class="task__text">Resolution date and time: DECLINED 02/23/2020 3:45 PM</p>
+                        <p class="task__text">Resolution note: Phone was unavaliable</p>
+                        <p class="task__text">Relates to: John Doe <a class="task__link" href="">(Member ID: 726354)</a>
+                        </p>
+                        <p class="task__text">Call to Mike and confirm if he need some help with delivery…</p>
+                      </div>
+                      <div class="task__itm">
+                        <div class="task__inner">
+                          <div class="task__inner-itm"><span class="task__status">Medium</span></div>
+                          <div class="task__inner-itm">
+                            <div class="task__links"><a class="task__link js-show-popup" href="#viewTask">View</a><a class="task__link js-show-popup" href="#reopenTask">Reopen</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel__itm">
+                  <h3 class="title-h3">06/01/2020</h3>
+                </div>
+                <div class="panel__itm panel__itm--task">
+                  <div class="task task--low">
+                    <div class="task__outer">
+                      <div class="task__itm"><a class="task__ttl js-show-popup" href="#viewTask">Make a call</a>
+                        <p class="task__text">Due date and time: 05/23/2020 3.00 PM</p>
+                        <p class="task__text">Relates to: John Doe <a class="task__link" href="">(Member ID: 726354)</a>
+                        </p>
+                        <p class="task__text">Call to Mike and confirm if he need some help with delivery…</p>
+                      </div>
+                      <div class="task__itm">
+                        <div class="task__inner">
+                          <div class="task__inner-itm"><span class="task__status">Low</span></div>
+                          <div class="task__inner-itm">
+                            <div class="task__links"><a class="task__link js-show-popup" href="#viewTask">View</a><a class="task__link js-show-popup" href="#reopenTask">Reopen</a><a class="task__link js-show-popup" href="#declineTask">Decline</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel__itm">
+                  <h3 class="title-h3">Overdue</h3>
+                </div>
+                <div class="panel__itm panel__itm--task">
+                  <div class="task task--high task--overdue">
+                    <div class="task__outer">
+                      <div class="task__itm"><a class="task__ttl js-show-popup" href="#viewTask">Make a call</a>
+                        <p class="task__text">Due date and time: 05/23/2020 3.00 PM</p>
+                        <p class="task__text">Relates to: <a class="task__link" href="">Order #235454</a>
+                        </p>
+                        <p class="task__text">Call to Mike and confirm if he need some help with delivery…</p>
+                      </div>
+                      <div class="task__itm">
+                        <div class="task__inner">
+                          <div class="task__inner-itm"><span class="task__status">High</span></div>
+                          <div class="task__inner-itm">
+                            <div class="task__links"><a class="task__link js-show-popup" href="#viewTask">View</a><a class="task__link js-show-popup" href="#resolveTask">Resolve</a><a class="task__link js-show-popup" href="#declineTask">Decline</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="popup popup--new-task" id="addNewTask">
+          <div class="popup__top">
+            <h2 class="title-h2">Add new task</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="form__itm">
+                <label class="form__label"><span class="form__ttl">Title</span>
+                  <input class="form__inp" type="text" value="" placeholder="Username">
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label"><span class="form__ttl">Description</span>
+                  <textarea class="form__textarea"></textarea>
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--inline form--small"><span class="form__ttl">Priority</span>
+                  <select class="form__select">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--inline form--medium"><span class="form__ttl">Assigned</span>
+                  <select class="form__select">
+                    <option value="">John Doe 15</option>
+                    <option value="">John Doe 1</option>
+                    <option value="">John Doe 4</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form__itm">
+                <div class="date date--inline"><span class="date__ttl">Due date & time</span>
+                  <div class="date__outer">
+                    <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                    </svg>
+                    <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                  </div>
+                </div>
+              </div>
+              <div class="form__itm">
+                <div class="form__row">
+                  <div class="form__col">
+                    <label class="form__label form--inline form--small"><span class="form__ttl">Relates to</span>
+                      <select class="form__select">
+                        <option value="id">Member ID</option>
+                        <option value="id">Member ID</option>
+                        <option value="id">Member ID</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="form__col">
+                    <label class="form__label form--inline form--large">
+                      <select class="form__select">
+                        <option value="">Search Member ID or Name</option>
+                        <option value="">Search Member ID or Name</option>
+                        <option value="">Search Member ID or Name</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a btn-a--small" type="button">Save</button>
+                </div>
+                <div class="form__btn-itm"><a class="btn-a b-close js-show-popup" href="#createdTask">Save and create next</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--new-task" id="viewTask">
+          <div class="popup__top">
+            <h2 class="title-h2">Make a call</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <table class="table">
+              <tr>
+                <td>Description:</td>
+                <td>Call to Mike and clarify delivery address.</td>
+              </tr>
+              <tr>
+                <td>Priority:</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>Asignee:</td>
+                <td>John Doe</td>
+              </tr>
+              <tr>
+                <td>Due Date & Time:</td>
+                <td>09/23/2020 12:30</td>
+              </tr>
+              <tr>
+                <td>Relates to:</td>
+                <td>John Doe <a class="link" href="#">(Member ID: 45624)</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Resolution Note:</td>
+                <td>-</td>
+              </tr>
+            </table>
+            <form class="form">
+              <div class="form__btn form__btn--rigth">
+                <div class="form__btn-itm"><a class="btn-a btn-a--small js-show-popup b-close" href="#editTask">Edit</a></div>
+                <div class="form__btn-itm"><a class="btn-a btn-a--smal js-show-popup b-close" href="#resolveTask">Resolve</a></div>
+                <div class="form__btn-itm"><a class="btn-a btn-a--small js-show-popup b-close" href="#declineTask">Decline</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--new-task" id="editTask">
+          <div class="popup__top">
+            <h2 class="title-h2">Edit task</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="form__itm">
+                <label class="form__label"><span class="form__ttl">Title</span>
+                  <input class="form__inp" type="text" value="" placeholder="Username">
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label"><span class="form__ttl">Description</span>
+                  <textarea class="form__textarea"></textarea>
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--inline form--small"><span class="form__ttl">Priority</span>
+                  <select class="form__select">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--inline form--medium"><span class="form__ttl">Assigned</span>
+                  <select class="form__select">
+                    <option value="">John Doe 15</option>
+                    <option value="">John Doe 1</option>
+                    <option value="">John Doe 4</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form__itm">
+                <div class="date date--inline"><span class="date__ttl">Due date & time</span>
+                  <div class="date__outer">
+                    <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                    </svg>
+                    <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                  </div>
+                </div>
+              </div>
+              <div class="form__itm">
+                <div class="form__row">
+                  <div class="form__col">
+                    <label class="form__label form--inline form--small"><span class="form__ttl">Relates to</span>
+                      <select class="form__select">
+                        <option value="id">Member ID</option>
+                        <option value="id">Member ID</option>
+                        <option value="id">Member ID</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="form__col">
+                    <label class="form__label form--inline form--large">
+                      <select class="form__select">
+                        <option value="">Search Member ID or Name</option>
+                        <option value="">Search Member ID or Name</option>
+                        <option value="">Search Member ID or Name</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a btn-a--small" type="button">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--new-task" id="declineTask">
+          <div class="popup__top">
+            <h2 class="title-h2">Decline task</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="form__itm">
+                <div class="form__row form__row--center">
+                  <div class="form__col">
+                    <p>Resolution note* (required)</p>
+                  </div>
+                  <div class="form__col form__col--full">
+                    <label class="form__label"><span class="form__ttl">Enter the note</span>
+                      <input class="form__inp" type="text" value="" placeholder="New Order Placed">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a btn-a--small" type="button">Decline</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--new-task" id="resolveTask">
+          <div class="popup__top">
+            <h2 class="title-h2">Resolve task</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="form__itm">
+                <div class="form__row form__row--center">
+                  <div class="form__col">
+                    <p>Resolution Note (Optional)</p>
+                  </div>
+                  <div class="form__col form__col--full">
+                    <label class="form__label"><span class="form__ttl">Enter the note</span>
+                      <input class="form__inp" type="text" value="" placeholder="New Order Placed">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                <div class="form__btn-itm"><a class="btn-a btn-a--small js-show-popup b-close" href="#resolve">Resolve</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--notification success" id="resolve">
+          <div class="popup__row">
+            <div class="popup__col">
+              <p class="popup__info">Task has been resolved</p>
+            </div>
+            <div class="popup__col"><a class="btn-a btn-a--small" href="#">Reopen</a></div>
+            <div class="popup__col"><a class="popup__close b-close" href="#"></a></div>
+          </div>
+        </div>
+        <div class="popup popup--notification success" id="createdTask">
+          <div class="popup__row">
+            <div class="popup__col">
+              <p class="popup__info">Task has been created</p>
+            </div>
+            <div class="popup__col"><a class="popup__info" href="">View</a></div>
+            <div class="popup__col"><a class="popup__close b-close" href="#"></a></div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container"></div>
+      </footer>
+    </main>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/vendor/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/vendor/jquery.bpopup.min.js"></script>
+    <script src="js/vendor/jquery.selectric.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

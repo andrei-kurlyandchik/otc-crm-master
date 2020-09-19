@@ -1,0 +1,342 @@
+.user {
+  &__label {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-transform uppercase
+    font-weight: 500;
+    padding 6px 20px
+    text-align center
+    position absolute
+    top 0
+    right 0
+    border-top-right-radius 20px
+    border-bottom-left-radius 20px
+    border 2px solid transparent
+    .icon {
+      margin-left 3px
+    }
+  }
+  &__label--active {
+    background greenColor
+    color #fff
+  }
+  &__label--outdated {
+    background #5e656c
+    color #fff
+  }
+  &__label--locked {
+    background yellowColor
+    color #000
+  }
+  &__label--active-from {
+    background transparent
+    color greenColor
+    border-color greenColor
+  }
+  &__table {
+    td {
+      padding 0 30px 20px 0
+      vertical-align middle
+    }
+    &--profile {
+      margin-left 110px
+      td {
+        padding: 0 30px 10px 0;
+      }
+    }
+    &--phone {
+      margin-left 110px
+      td {
+        padding: 0 30px 10px 0;
+      }
+      .phone-affiliation {
+        position relative
+        .icon {
+          position absolute
+          top 0
+        }
+        .icon--phone-iphone {
+          left -24px
+        }
+        .icon--home-black {
+          left -27px
+        }
+      }
+      .phone-number {
+        position relative
+        .icon {
+          position absolute
+          top 0
+          right 0
+        }
+      }
+    }
+    &--edit {
+      width 100%
+      margin-bottom 25px
+      tr {
+        border-bottom 1px solid #979797
+      }
+      .header-td {
+        font-size 14px
+        font-weight: 600
+        padding: 0 20px 10px 0;
+      }
+      .body-td {
+        padding 13px 20px 13px 0
+        position relative
+        &__top {
+          vertical-align: top;
+          padding 30px 20px 13px 0
+          &--toogle {
+            padding 13px 20px 13px 0
+          }
+        }
+
+      }
+      .text-right-td {
+        text-align right
+        button {
+          display: inline-flex;
+        }
+      }
+      .form__hint {
+        position absolute
+        bottom 0
+        left 0
+      }
+      .toggle-box {
+        min-height 55px
+      }
+      .btn-list-table {
+        display flex
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .btn-list-table__row {
+        display flex
+        button {
+          font-size 14px
+          font-weight 500
+          margin-right 20px
+        }
+      }
+    }
+    &--email {
+      .body-td:first-child {
+        padding 13px
+      }
+      .body-td:last-child {
+        padding 13px 13px 13px 0
+      }
+    }
+    &--personal {
+      .language-selection {
+        display flex
+        align-items center
+        justify-content space-between
+        margin-bottom 10px
+        &__row {
+          display: flex;
+          width: 90%;
+          justify-content: space-between;
+        }
+        .form__label {
+          width: 50%;
+        }
+      }
+    }
+    &--edit-notes {
+      .body-td:first-child {
+        width 490px
+        padding-right 40px
+      }
+    }
+    &--phone-edit {
+
+    }
+  }
+  &__text {
+    margin-bottom 25px
+  }
+  &__row {
+    display flex
+    align-items center
+    margin 0 -5px
+  }
+  &__col {
+    padding 0 5px
+  }
+  .title-h2 {
+    margin-bottom 25px
+  }
+}
+
+.user-profile {
+  &__label {
+    display: flex;
+    align-items: center
+    color: #ffffff;
+    text-transform uppercase
+    font-size 16px
+    font-weight: 300
+    padding 3px 20px
+    text-align center
+    position absolute
+    top 0
+    right 0
+    border-top-right-radius 20px
+    border-bottom-left-radius 20px
+    border 2px solid transparent
+    .icon {
+      margin-left 3px
+    }
+  }
+  &__label--active {
+    background greenColor
+    color #fff
+  }
+  &__label--outdated {
+    background #5e656c
+    color #fff
+  }
+  &__label--locked {
+    background yellowColor
+    color #000
+  }
+  &__label--active-from {
+    background transparent
+    color greenColor
+    border-color greenColor
+  }
+}
+
+.user-profile-tags {
+  display flex
+  justify-content: space-between
+  margin-top 20px
+  align-items: start;
+  &__list {
+    display flex
+    flex-wrap wrap
+  }
+}
+
+.user-profile-status {
+  display flex
+  align-items center
+  margin-bottom 25px
+  &__title {
+    width 105px
+    padding-right 5px
+    font-size 16px
+    font-weight: 300
+    color grey
+  }
+  &__tags {
+    &--not-active {
+      font-size 16px
+      font-weight: 500
+      padding 2px 12px
+      color #89C541
+      border-radius 16px
+      border 2px solid #89C541
+    }
+    &--active {
+      display block
+      padding 6px 12px
+      border-radius 16px
+      font-size: 14px
+      line-height 20px
+      font-weight: 400
+      color white
+      background greenColor
+    }
+  }
+}
+
+.user-profile-i {
+  display flex
+  align-items center
+  margin-bottom 10px
+  &__title {
+    width 105px
+    padding-right 5px
+    font-size 16px
+    font-weight: 300
+    color grey
+  }
+  &__content {
+    padding-right 5px
+    font-size 16px
+    font-weight: 300
+    color grey
+    display flex
+    align-items center
+    &.not-s {
+      color redColor
+    }
+  }
+}
+
+
+.user-profile-info {
+  width 100%
+  margin-bottom 25px
+  &__title {
+    display flex
+    align-items center
+    justify-content flex-start
+    margin-bottom 10px
+    &-text {
+      padding-right 5px
+      font-size 16px
+      font-weight: 300
+      color grey
+      flex 0 0 auto
+    }
+    &-line {
+      flex: 1
+      width: 0
+      position relative
+      margin: 0 8px
+      &:before {
+        content ''
+        position absolute
+        width 100%
+        border-top 1px dashed grey
+        top: 0
+        left 0
+      }
+    }
+    .btn-e {
+      flex 0 0 auto
+    }
+  }
+  &__email {
+    font-size 16px
+    font-weight: 300
+    color grey
+    margin-left 125px
+    list-style decimal
+    li {
+      margin-bottom 10px
+    }
+  }
+  &__address {
+    font-size 16px
+    font-weight: 300
+    color grey
+    margin-left 110px
+    li {
+      margin-bottom 10px
+    }
+  }
+  &__notes {
+    font-size 16px
+    font-weight: 300
+    color grey
+    margin-left 110px
+  }
+}

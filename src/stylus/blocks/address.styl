@@ -1,0 +1,98 @@
+.address-list {
+	display flex
+	flex-wrap wrap
+	border-bottom 1px solid #979797
+	padding-bottom 20px
+	margin-bottom 20px  }
+
+.address-box {
+	width 49%
+	border-radius 20px
+	border 1px solid #979797
+	padding-bottom 20px
+	margin-bottom 20px
+	&:nth-child(odd) {
+		margin-right 1%
+	}
+	&:nth-child(even) {
+		margin-left 1%
+	}
+	&__header {
+		display flex
+		align-items center
+		justify-content space-between
+		margin-bottom 7px
+	}
+	&__content {
+		font-size 16px
+		font-weight 300
+		line-height 27px
+		color grey
+		padding 0 20px 8px 20px
+	}
+	&__footer {
+		border-top 1px solid #979797
+		font-size 16px
+		font-weight 300
+		line-height 27px
+		color grey
+		padding 8px 20px 0 20px
+	}
+}
+
+.address-status-list {
+	display flex
+	align-items center
+}
+
+.address-status {
+	display flex
+	align-items center
+	text-transform uppercase
+	padding 8px 27px
+	border-top-left-radius 20px
+	border-bottom-right-radius 20px
+	border 2px solid transparent
+	font-size 16px
+	font-weight 300
+	line-height 27px
+	position relative
+	&.del {
+		color #5E656C
+		background-color #D8D8D8
+	}
+	&.invalid {
+		color redColor
+		background-color rgba(208, 2, 27, .20)
+	}
+	&.valid {
+		color #59D900
+		background-color rgba(126, 211, 33, .20)
+	}
+	&.file {
+		color: #2979ff;
+		background: #e3f2fd;
+	}
+	&:nth-child(1) {
+		display: flex;
+		z-index: 1;
+	}
+	&:nth-child(2) {
+		margin-left -15px
+	}
+}
+
+.address-edit {
+	display flex
+	align-items center
+	justify-content: end;
+	&__btn {
+		font-size 16px
+		font-weight 300
+		line-height 27px
+		color #0F73E7
+		text-decoration underline
+		cursor pointer
+		margin-right 20px
+	}
+}

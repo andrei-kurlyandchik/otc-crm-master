@@ -1,0 +1,45 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight 400
+  font-size 16px
+  height: 100%;
+  color: #333333;
+  background: blueLight;
+}
+img {
+  max-width: 100%;
+}
+.link {
+  color #0f73e7
+  transition opacity 0.2s
+  &:hover {
+    opacity 0.7
+  }
+}
+.container {
+  max-width 1880px
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.main {
+  &.main--login {
+    height 100%
+    display flex
+    justify-content center
+    align-items center
+    .content {
+      margin auto
+      padding 15px 0
+    }
+  }
+}
+.content {
+  padding 120px 15px 0
+}

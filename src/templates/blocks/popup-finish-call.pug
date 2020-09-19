@@ -1,0 +1,35 @@
+.popup.popup--new-task#finishCall
+    .popup__top
+        h2.title-h2 Select call category
+        a.popup__close.b-close(href='#')
+    .popup__bottom
+        form.form
+            .form__itm
+                label.form__label
+                    span.form__ttl Reason
+                    select.form__select
+                        optgroup(label='No action needed')
+                            option(value='') New Order Placed
+                            option(value='') Existing Order Information call (out of stock, problrm solved, etc)
+                            option(value='') Assistance with e-commerce (registration, online order)
+                            option(value='') Informed about the benefit
+                            option(value='') Transferred to HPP
+                            option(value='') Transferred to Another CSR
+                        optgroup(label='Action needed')
+                            option(value='') Existing order problem call
+                            option(value='') Callback required
+                            option(value='') Return (requested or expected)
+                            option(value='') Member hung up (scared of fraud, angry, etc)
+                        optgroup(label='Do not disturb')
+                            option(value='') Unsubscribe (do not disturb by phone)
+                        optgroup(label='Info check')
+                            option(value='') View member’s profile
+            .form__itm
+                label.form__label
+                    span.form__ttl Notes
+                    textarea.form__textarea(placeholder="Call to Mike and clarify delivery address")
+            .form__btn.form__btn--center
+                .form__btn-itm
+                    a.btn-b.b-close(href='#') Cancel
+                .form__btn-itm
+                    button.btn-a.btn-a--small.btn-a--red(type='button') Finish call
