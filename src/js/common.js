@@ -35,6 +35,24 @@
 
     $('.form__select').selectric();
 
+    $('.form__select--leng').selectric({
+        optionsItemBuilder: function(itemData) {
+            return itemData.value.length ? '<img class="icon icon--flag" src="img/flags/' + itemData.value +  '.svg">' + itemData.text : itemData.text;
+        },
+        labelBuilder: function(currItem) {
+            return (currItem.value.length ? '<img class="icon icon--flag" src="img/flags/' + currItem.value +  '.svg">' : '') + currItem.text;
+        }
+    });
+
+    $('.form__select--valid').selectric({
+        optionsItemBuilder: function(itemData) {
+            return itemData.value.length ? '<img class="icon icon--valid" src="img/' + itemData.value +  '.svg">' + itemData.text : itemData.text;
+        },
+        labelBuilder: function(currItem) {
+            return (currItem.value.length ? '<img class="icon icon--valid" src="img/' + currItem.value +  '.svg">' : '') + currItem.text;
+        }
+    });
+
 }());
 
 
