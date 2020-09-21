@@ -3,3 +3,66 @@
     padding 7px 30px 8px 0
   }
 }
+.table-members-list {
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius 20px
+  background-color white
+  table {
+    width 100%
+  }
+  tr {
+    border-bottom: 1px solid #CCCCCC;
+    &:first-child {
+      border-bottom: 2px solid #f0f4f9;
+    }
+    &:last-child {
+      border-bottom none
+    }
+  }
+  .header-td {
+    padding: 30px 30px 30px 0;
+    font-weight 500
+    &:first-child {
+      padding-left 37px
+    }
+    span {
+      display flex
+      align-items: center;
+    }
+  }
+  .body-td {
+    padding: 15px 30px 15px 0;
+    vertical-align: middle;
+    &:first-child {
+      padding-left 37px
+    }
+    a {
+      color #0F73E7
+      text-decoration underline
+    }
+    .tags {
+      margin 0
+      display inline-flex
+    }
+  }
+  .btn-list-table {
+    display flex
+    align-items stretch
+    justify-content flex-end
+    .btn-a, .btn-c {
+      font-size 14px
+      font-weight 500
+      color white
+      text-decoration none
+      flex-flow row
+      align-items center
+      margin 0 auto
+      border-radius 3px
+    }
+    .icon {
+      margin-bottom 0
+      margin-right 12px
+    }
+  }
+}

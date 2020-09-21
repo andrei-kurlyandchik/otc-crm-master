@@ -26,9 +26,9 @@
                             <div class="header__itm header__nav-itm">
                               <nav class="nav">
                                 <ul class="nav__list">
-                                  <li class="nav__li"><a class="nav__link nav__link--active" href="dashboard.html" title="Dashboard"><span class="nav__text">Dashboard</span></a></li>
+                                  <li class="nav__li"><a class="nav__link" href="dashboard.html" title="Dashboard"><span class="nav__text">Dashboard</span></a></li>
                                   <li class="nav__li"><a class="nav__link" href="calls.html" title="Calls"><span class="nav__text">Calls</span></a></li>
-                                  <li class="nav__li"><a class="nav__link" href="members.html" title="Members"><span class="nav__text">Members</span></a></li>
+                                  <li class="nav__li"><a class="nav__link nav__link--active" href="members.html" title="Members"><span class="nav__text">Members</span></a></li>
                                   <li class="nav__li"><a class="nav__link" href="orders.html" title="Orders"><span class="nav__text">Orders</span></a></li>
                                 </ul>
                               </nav>
@@ -87,166 +87,134 @@
               </div>
             </header>
       <div class="content">
-        <section class="panel panel--tasks">
+        <section class="panel panel--members">
           <div class="container">
-            <div class="panel--right">
-              <div class="panel__outer">
-                <div class="panel__itm">
-                  <h2 class="title-h2">Tasks</h2>
-                </div>
-                <div class="panel__itm">
-                  <div class="filter">
-                    <div class="search">
-                      <div class="search__outer">
-                        <div class="search__itm">
-                          <svg class="icon icon--search" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h28v28H0V0z" fill="none"></path>
-                            <path d="M17.162 16.333h.921l5.822 5.834-1.738 1.738-5.834-5.822v-.921l-.315-.327a7.55 7.55 0 01-4.935 1.832 7.583 7.583 0 110-15.167 7.583 7.583 0 017.584 7.583 7.55 7.55 0 01-1.832 4.935l.327.315zm-11.329-5.25a5.243 5.243 0 005.25 5.25 5.243 5.243 0 005.25-5.25 5.243 5.243 0 00-5.25-5.25 5.243 5.243 0 00-5.25 5.25z"></path>
-                          </svg>
-                        </div>
-                        <div class="search__itm search__field">
-                          <input class="search__inp" type="text" placeholder="Search by subject, description">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="filter__buttons"><a class="btn-d" href="#">Open Items</a><a class="btn-d" href="#">Resolved Items</a><a class="btn-d" href="#">Declined Items</a><a class="btn-d btn-d--active" href="#">Reassigned Items</a></div>
-                    <div class="filter__outer">
-                      <div class="filter__itm">
-                        <div class="date"><span class="date__ttl">Due date & time</span>
-                          <div class="date__outer">
-                            <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                            </svg>
-                            <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__itm">
-                        <div class="filter__outer">
-                          <div class="filter__itm">
-                            <div class="checkbox">
-                              <label class="checkbox__label">
-                                <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Show Overdue</span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="filter__itm filter__itm-checkbox"><span class="filter__checkbox">Priority:</span></div>
-                          <div class="filter__itm">
-                            <div class="checkbox">
-                              <label class="checkbox__label">
-                                <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">High</span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="filter__itm">
-                            <div class="checkbox">
-                              <label class="checkbox__label">
-                                <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Medium</span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="filter__itm">
-                            <div class="checkbox">
-                              <label class="checkbox__label">
-                                <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Low</span>
-                              </label>
-                            </div>
-                          </div>
-                        </div>
+            <h2 class="title-h2">Members</h2>
+            <div class="panel__outer">
+              <div class="panel__itm search-members">
+                <h2 class="title-h2">Search</h2>
+                <div class="search-members__filter">
+                  <div class="search">
+                    <div class="search__outer">
+                      <div class="search__itm search__field">
+                        <input class="search__inp" type="text" placeholder="Search by Member ID, First Name,  Last Name">
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="panel__itm panel__itm--task">
-                  <div class="task task--high">
-                    <div class="task__outer">
-                      <div class="task__itm"><a class="task__ttl js-show-popup" href="#viewTask">Make a call</a>
-                        <p class="task__text">Reassigned on: 02/23/2020 3:45 PM</p>
-                        <p class="task__text">Reassigned to: Ann Smith</p>
-                        <p class="task__text">Current status: DECLINED 02/23/2020 3:45 PM</p>
-                        <p class="task__text">Relates to: John Doe <a class="task__link" href="">(Member ID: 726354)</a>
-                        </p>
-                        <p class="task__text">Call to Mike and confirm if he need some help with delivery…</p>
-                      </div>
-                      <div class="task__itm">
-                        <div class="task__inner">
-                          <div class="task__inner-itm"><span class="task__status">High</span></div>
-                          <div class="task__inner-itm">
-                            <div class="task__links"><a class="task__link js-show-popup" href="#viewTask">View</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel__itm panel__itm--task">
-                  <div class="task task--medium">
-                    <div class="task__outer">
-                      <div class="task__itm"><a class="task__ttl js-show-popup" href="#viewTask">Make a call</a>
-                        <p class="task__text">Resolution date and time: DECLINED 02/23/2020 3:45 PM</p>
-                        <p class="task__text">Resolution note: Phone was unavaliable</p>
-                        <p class="task__text">Relates to: John Doe <a class="task__link" href="">(Member ID: 726354)</a>
-                        </p>
-                        <p class="task__text">Call to Mike and confirm if he need some help with delivery…</p>
-                      </div>
-                      <div class="task__itm">
-                        <div class="task__inner">
-                          <div class="task__inner-itm"><span class="task__status">Medium</span></div>
-                          <div class="task__inner-itm">
-                            <div class="task__links"><a class="task__link js-show-popup" href="#viewTask">View</a><a class="task__link js-show-popup" href="#reopenTask">Reopen</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel__itm">
-                  <h3 class="title-h3">06/01/2020</h3>
-                </div>
-                <div class="panel__itm panel__itm--task">
-                  <div class="task task--low">
-                    <div class="task__outer">
-                      <div class="task__itm"><a class="task__ttl js-show-popup" href="#viewTask">Make a call</a>
-                        <p class="task__text">Due date and time: 05/23/2020 3.00 PM</p>
-                        <p class="task__text">Relates to: John Doe <a class="task__link" href="">(Member ID: 726354)</a>
-                        </p>
-                        <p class="task__text">Call to Mike and confirm if he need some help with delivery…</p>
-                      </div>
-                      <div class="task__itm">
-                        <div class="task__inner">
-                          <div class="task__inner-itm"><span class="task__status">Low</span></div>
-                          <div class="task__inner-itm">
-                            <div class="task__links"><a class="task__link js-show-popup" href="#viewTask">View</a><a class="task__link js-show-popup" href="#reopenTask">Reopen</a><a class="task__link js-show-popup" href="#declineTask">Decline</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel__itm">
-                  <h3 class="title-h3">Overdue</h3>
-                </div>
-                <div class="panel__itm panel__itm--task">
-                  <div class="task task--high task--overdue">
-                    <div class="task__outer">
-                      <div class="task__itm"><a class="task__ttl js-show-popup" href="#viewTask">Make a call</a>
-                        <p class="task__text">Due date and time: 05/23/2020 3.00 PM</p>
-                        <p class="task__text">Relates to: <a class="task__link" href="">Order #235454</a>
-                        </p>
-                        <p class="task__text">Call to Mike and confirm if he need some help with delivery…</p>
-                      </div>
-                      <div class="task__itm">
-                        <div class="task__inner">
-                          <div class="task__inner-itm"><span class="task__status">High</span></div>
-                          <div class="task__inner-itm">
-                            <div class="task__links"><a class="task__link js-show-popup" href="#viewTask">View</a><a class="task__link js-show-popup" href="#resolveTask">Resolve</a><a class="task__link js-show-popup" href="#declineTask">Decline</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <button class="btn-dd btn-c--blue" type="button">SEARCH</button>
                 </div>
               </div>
+            </div>
+            <div class="table-members-list">
+              <form class="form form-members-list">
+                <table>
+                  <tr>
+                    <td class="header-td">Member ID</td>
+                    <td class="header-td">First Name</td>
+                    <td class="header-td">Last Name</td>
+                    <td class="header-td">Gender</td>
+                    <td class="header-td"><span>Date of Birth<img class="icon icon--sort" src="img/sort.svg"></span></td>
+                    <td class="header-td">Language</td>
+                    <td class="header-td">Status</td>
+                    <td class="header-td"></td>
+                  </tr>
+                  <tr>
+                    <td class="body-td"><a href="#">4567</a></td>
+                    <td class="body-td">Ann</td>
+                    <td class="body-td">Smith</td>
+                    <td class="body-td">Female</td>
+                    <td class="body-td">12/09/2020</td>
+                    <td class="body-td">
+                      <div class="user__row">
+                        <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                        <div class="user__col"><span>English (EN)</span></div>
+                      </div>
+                    </td>
+                    <td class="body-td">
+                      <div class="tags tags--green">Active User</div>
+                    </td>
+                    <td class="body-td">
+                      <div class="btn-list-table"><a class="btn-c btn-c--col btn-c--green" href="#"><img class="icon icon--phone" src="img/inbound-call.svg"><span class="btn-c--text">Inbound call</span></a><a class="btn-c btn-c--col btn-c--orange" href="#"><img class="icon icon--phone" src="img/outbound-call.svg"><span class="btn-c--text">Outbound call</span></a><a class="btn-a btn-a--small" href="#"><span class="btn-c--text">view profile</span></a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="body-td"><a href="#">4567</a></td>
+                    <td class="body-td">Ann</td>
+                    <td class="body-td">Smith</td>
+                    <td class="body-td">Female</td>
+                    <td class="body-td">12/09/2020</td>
+                    <td class="body-td">
+                      <div class="user__row">
+                        <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                        <div class="user__col"><span>English (EN)</span></div>
+                      </div>
+                    </td>
+                    <td class="body-td">
+                      <div class="tags tags--green">Active User</div>
+                    </td>
+                    <td class="body-td">
+                      <div class="btn-list-table"><a class="btn-c btn-c--col btn-c--green" href="#"><img class="icon icon--phone" src="img/inbound-call.svg"><span class="btn-c--text">Inbound call</span></a><a class="btn-c btn-c--col btn-c--orange" href="#"><img class="icon icon--phone" src="img/outbound-call.svg"><span class="btn-c--text">Outbound call</span></a><a class="btn-a btn-a--small" href="#"><span class="btn-c--text">view profile</span></a></div>
+                    </td>
+                    <tr>
+                      <td class="body-td"><a href="#">4567</a></td>
+                      <td class="body-td">Ann</td>
+                      <td class="body-td">Smith</td>
+                      <td class="body-td">Female</td>
+                      <td class="body-td">12/09/2020</td>
+                      <td class="body-td">
+                        <div class="user__row">
+                          <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                          <div class="user__col"><span>English (EN)</span></div>
+                        </div>
+                      </td>
+                      <td class="body-td">
+                        <div class="tags tags--green">Active User</div>
+                      </td>
+                      <td class="body-td">
+                        <div class="btn-list-table"><a class="btn-c btn-c--col btn-c--green" href="#"><img class="icon icon--phone" src="img/inbound-call.svg"><span class="btn-c--text">Inbound call</span></a><a class="btn-c btn-c--col btn-c--orange" href="#"><img class="icon icon--phone" src="img/outbound-call.svg"><span class="btn-c--text">Outbound call</span></a><a class="btn-a btn-a--small" href="#"><span class="btn-c--text">view profile</span></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="body-td"><a href="#">4567</a></td>
+                      <td class="body-td">Ann</td>
+                      <td class="body-td">Smith</td>
+                      <td class="body-td">Female</td>
+                      <td class="body-td">12/09/2020</td>
+                      <td class="body-td">
+                        <div class="user__row">
+                          <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                          <div class="user__col"><span>English (EN)</span></div>
+                        </div>
+                      </td>
+                      <td class="body-td">
+                        <div class="tags tags--green">Active User</div>
+                      </td>
+                      <td class="body-td">
+                        <div class="btn-list-table"><a class="btn-c btn-c--col btn-c--green" href="#"><img class="icon icon--phone" src="img/inbound-call.svg"><span class="btn-c--text">Inbound call</span></a><a class="btn-c btn-c--col btn-c--orange" href="#"><img class="icon icon--phone" src="img/outbound-call.svg"><span class="btn-c--text">Outbound call</span></a><a class="btn-a btn-a--small" href="#"><span class="btn-c--text">view profile</span></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="body-td"><a href="#">4567</a></td>
+                      <td class="body-td">Ann</td>
+                      <td class="body-td">Smith</td>
+                      <td class="body-td">Female</td>
+                      <td class="body-td">12/09/2020</td>
+                      <td class="body-td">
+                        <div class="user__row">
+                          <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                          <div class="user__col"><span>English (EN)</span></div>
+                        </div>
+                      </td>
+                      <td class="body-td">
+                        <div class="tags tags--green">Active User</div>
+                      </td>
+                      <td class="body-td">
+                        <div class="btn-list-table"><a class="btn-c btn-c--col btn-c--green" href="#"><img class="icon icon--phone" src="img/inbound-call.svg"><span class="btn-c--text">Inbound call</span></a><a class="btn-c btn-c--col btn-c--orange" href="#"><img class="icon icon--phone" src="img/outbound-call.svg"><span class="btn-c--text">Outbound call</span></a><a class="btn-a btn-a--small" href="#"><span class="btn-c--text">view profile</span></a></div>
+                      </td>
+                    </tr>
+                  </tr>
+                </table>
+              </form>
             </div>
           </div>
         </section>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="10px" viewBox="0 0 8 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>sort</title>
+    <defs>
+        <path d="M3.21247692,6.75117188 L8.79060192,6.75117188 C9.29216442,6.75117188 9.54294567,7.35820313 9.18903942,7.71210938 L6.39997692,10.5011719 C6.17966442,10.7214844 5.82341442,10.7214844 5.60544567,10.5011719 L2.81403942,7.71210938 C2.46013317,7.35820313 2.71091442,6.75117188 3.21247692,6.75117188 Z M9.18903942,4.29023438 L6.39997692,1.50117188 C6.17966442,1.28085937 5.82341442,1.28085937 5.60544567,1.50117188 L2.81403942,4.29023438 C2.46013317,4.64414062 2.71091442,5.25117188 3.21247692,5.25117188 L8.79060192,5.25117188 C9.29216442,5.25117188 9.54294567,4.64414062 9.18903942,4.29023438 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Clients/header" transform="translate(-833.000000, -35.000000)">
+            <g id="sort" transform="translate(831.012987, 34.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)" fill="#000000" fill-opacity="0.87">
+                    <g id="Color">
+                        <rect id="Purple" x="0" y="0" width="12" height="12"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
