@@ -16,6 +16,11 @@
         $('.dropdown').removeClass('active');
     })
 
+    $('.b--close-dropdown').on('click', function (e){
+        e.preventDefault();
+        $(this).closest('.dropdown').removeClass('active');
+    })
+
     $('.date__inp').datetimepicker({
         format:'m/d/y H:i',
         formatTime:'H:i',
@@ -26,7 +31,9 @@
         e.preventDefault();
         let href = $(this).attr('href');
         let currentPopup = $('body').find(href);
-        currentPopup.bPopup();
+        currentPopup.bPopup({
+            scrollBar: false,
+        });
     })
 
     setTimeout(function (){

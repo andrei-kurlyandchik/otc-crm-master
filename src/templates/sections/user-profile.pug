@@ -17,11 +17,12 @@ section.panel.panel--user-info
                                     a.btn-e.dropdown-active(href="#") edit
                                     .dropdown__bottom.dropdown-tag-edit-popup
                                         h2.title-h2 Edit Tags
+                                        a.popup__close.b-close.b--close-dropdown(href='#')
                                         form.form
                                             .form__itm.form__add
                                                 label.form__label
-                                                    span.form__ttl Title
-                                                    input.form__inp(type='text' value='' placeholder='Username')
+                                                    span.form__ttl Tags
+                                                    input.form__inp(type='text' value='' placeholder='Type a phrase')
                                                 button.btn-dd.btn-c--blue(type='button') + add
                                             .form__itm.form__tags
                                                 .tags.tags--blue Do not call
@@ -56,6 +57,7 @@ section.panel.panel--user-info
                                         .btn-e.dropdown-active Override
                                         .dropdown__bottom.dropdown-email-edit-popup
                                             h2.title-h2 Edit Personal Data
+                                            a.popup__close.b-close.b--close-dropdown(href='#')
                                             form.form
                                                 table.user__table.user__table--edit.user__table--personal
                                                     tr
@@ -146,11 +148,10 @@ section.panel.panel--user-info
                                         .btn-e.dropdown-active Manage
                                         .dropdown__bottom.dropdown-email-edit-popup
                                             h2.title-h2 Manage Emails
+                                            a.popup__close.b-close.b--close-dropdown(href='#')
                                             form.form
                                                 .form__itm
                                                     button.btn-dd.btn-c--blue(type='button') + Add 1 more email
-
-
                                                 table.user__table.user__table--edit.user__table--email
                                                     tr
                                                         td.header-td
@@ -201,7 +202,7 @@ section.panel.panel--user-info
                                                                     option(value='warning') Invalid
                                                         td.body-td
                                                             .toggle-box
-                                                                .toggle-check
+                                                                .toggle-check.active-check
                                                                 span Allowed
                                                         td.body-td
                                                             .btn-del
@@ -222,6 +223,7 @@ section.panel.panel--user-info
                                         .btn-e.dropdown-active edit
                                         .dropdown__bottom.dropdown-phone-edit-popup
                                             h2.title-h2 Edit Phone Numbers
+                                            a.popup__close.b-close.b--close-dropdown(href='#')
                                             form.form
                                                 table.user__table.user__table--edit.user__table--phone-edit
                                                     tr
@@ -232,6 +234,7 @@ section.panel.panel--user-info
                                                         td.header-td Call
                                                         td.header-td SMS
                                                         td.header-td Valid dates (Optional)
+                                                        td.header-td
                                                     tr
                                                         td.body-td Primary
                                                         td.body-td
@@ -241,7 +244,7 @@ section.panel.panel--user-info
                                                                     option(value='landline') Landline
                                                         td.body-td
                                                             label.form__label
-                                                                input.form__inp(type='text' value='' placeholder='Phone')
+                                                                input.form__inp(type='tel' value='' placeholder='+1 (623) 453-6547')
                                                         td.body-td
                                                             label.form__label
                                                                 select.form__select--valid
@@ -271,6 +274,9 @@ section.panel.panel--user-info
                                                                             svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
                                                                                 path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
                                                                             input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
                                                     tr
                                                         td.body-td Secondary
                                                         td.body-td
@@ -280,7 +286,7 @@ section.panel.panel--user-info
                                                                     option(value='landline') Landline
                                                         td.body-td
                                                             label.form__label
-                                                                input.form__inp(type='text' value='' placeholder='Phone')
+                                                                input.form__inp(type='tel' value='' placeholder='+1 (623) 453-6547')
                                                         td.body-td
                                                             label.form__label
                                                                 select.form__select--valid
@@ -310,7 +316,9 @@ section.panel.panel--user-info
                                                                             svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
                                                                                 path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
                                                                             input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
-
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
                                                     tr
                                                         td.body-td Temporary
                                                         td.body-td
@@ -320,7 +328,7 @@ section.panel.panel--user-info
                                                                     option(value='landline') Landline
                                                         td.body-td
                                                             label.form__label
-                                                                input.form__inp(type='text' value='' placeholder='Phone')
+                                                                input.form__inp(type='tel' value='' placeholder='+1 (623) 453-6547')
                                                         td.body-td
                                                             label.form__label
                                                                 select.form__select--valid
@@ -350,6 +358,9 @@ section.panel.panel--user-info
                                                                             svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
                                                                                 path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
                                                                             input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
                                                     tr
                                                         td.body-td Member File
                                                         td.body-td

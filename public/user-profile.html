@@ -69,11 +69,11 @@
                         </div>
                         <div class="dropdown dropdown-user-edit"><a class="btn-e dropdown-active" href="#">edit</a>
                           <div class="dropdown__bottom dropdown-tag-edit-popup">
-                            <h2 class="title-h2">Edit Tags</h2>
+                            <h2 class="title-h2">Edit Tags</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
                             <form class="form">
                               <div class="form__itm form__add">
-                                <label class="form__label"><span class="form__ttl">Title</span>
-                                  <input class="form__inp" type="text" value="" placeholder="Username">
+                                <label class="form__label"><span class="form__ttl">Tags</span>
+                                  <input class="form__inp" type="text" value="" placeholder="Type a phrase">
                                 </label>
                                 <button class="btn-dd btn-c--blue" type="button">+ add</button>
                               </div>
@@ -117,7 +117,7 @@
                           <div class="dropdown dropdown-user-edit">
                             <div class="btn-e dropdown-active">Override</div>
                             <div class="dropdown__bottom dropdown-email-edit-popup">
-                              <h2 class="title-h2">Edit Personal Data</h2>
+                              <h2 class="title-h2">Edit Personal Data</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
                               <form class="form">
                                 <table class="user__table user__table--edit user__table--personal">
                                   <tr>
@@ -242,7 +242,7 @@
                           <div class="dropdown dropdown-user-edit">
                             <div class="btn-e dropdown-active">Manage</div>
                             <div class="dropdown__bottom dropdown-email-edit-popup">
-                              <h2 class="title-h2">Manage Emails</h2>
+                              <h2 class="title-h2">Manage Emails</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
                               <form class="form">
                                 <div class="form__itm">
                                   <button class="btn-dd btn-c--blue" type="button">+ Add 1 more email</button>
@@ -314,7 +314,7 @@
                                     </td>
                                     <td class="body-td">
                                       <div class="toggle-box">
-                                        <div class="toggle-check"></div><span>Allowed</span>
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
                                       </div>
                                     </td>
                                     <td class="body-td">
@@ -343,7 +343,7 @@
                           <div class="dropdown dropdown-user-edit">
                             <div class="btn-e dropdown-active">edit</div>
                             <div class="dropdown__bottom dropdown-phone-edit-popup">
-                              <h2 class="title-h2">Edit Phone Numbers</h2>
+                              <h2 class="title-h2">Edit Phone Numbers</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
                               <form class="form">
                                 <table class="user__table user__table--edit user__table--phone-edit">
                                   <tr>
@@ -354,6 +354,7 @@
                                     <td class="header-td">Call</td>
                                     <td class="header-td">SMS</td>
                                     <td class="header-td">Valid dates (Optional)</td>
+                                    <td class="header-td"></td>
                                   </tr>
                                   <tr>
                                     <td class="body-td">Primary</td>
@@ -367,7 +368,7 @@
                                     </td>
                                     <td class="body-td">
                                       <label class="form__label">
-                                        <input class="form__inp" type="text" value="" placeholder="Phone">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
                                       </label>
                                     </td>
                                     <td class="body-td">
@@ -411,6 +412,9 @@
                                           </div>
                                         </div>
                                       </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
                                     </td>
                                   </tr>
                                   <tr>
@@ -425,7 +429,7 @@
                                     </td>
                                     <td class="body-td">
                                       <label class="form__label">
-                                        <input class="form__inp" type="text" value="" placeholder="Phone">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
                                       </label>
                                     </td>
                                     <td class="body-td">
@@ -469,6 +473,9 @@
                                           </div>
                                         </div>
                                       </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
                                     </td>
                                   </tr>
                                   <tr>
@@ -483,7 +490,7 @@
                                     </td>
                                     <td class="body-td">
                                       <label class="form__label">
-                                        <input class="form__inp" type="text" value="" placeholder="Phone">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
                                       </label>
                                     </td>
                                     <td class="body-td">
@@ -527,6 +534,9 @@
                                           </div>
                                         </div>
                                       </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
                                     </td>
                                   </tr>
                                   <tr>
@@ -753,7 +763,7 @@
                         </svg>
                         <div class="tooltip">
                           <ul class="tooltip__list">
-                            <li class="tooltip__li"><a class="tooltip__link" href="#">Make invalid</a></li>
+                            <li class="tooltip__li"><a class="tooltip__link" href="#">Make valid</a></li>
                           </ul>
                         </div>
                       </div>
@@ -820,7 +830,7 @@
                         </svg>
                         <div class="tooltip">
                           <ul class="tooltip__list">
-                            <li class="tooltip__li"><a class="tooltip__link" href="#">Make invalid</a></li>
+                            <li class="tooltip__li"><a class="tooltip__link" href="#">Make valid</a></li>
                           </ul>
                         </div>
                       </div>
