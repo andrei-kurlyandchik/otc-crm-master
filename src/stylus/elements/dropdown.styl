@@ -184,11 +184,26 @@
   }
 }
 
+.dropdown-profile-card-color-popup {
+  width 545px
+  min-height 200px
+  top -100%
+  left 90px
+  flex-flow column
+  &:before {
+    left: -14px;
+    right: auto;
+    top: 50px;
+    display: block;
+    transform: rotate(45deg);
+  }
+}
+
 .dropdown-email-edit-popup {
   width 810px
   min-height 200px
   top -100%
-  left 120px
+  left 90px
   flex-flow column
   &:before {
     left: -14px;
@@ -212,5 +227,21 @@
     top: -14px;
     display: block;
     transform: rotate(135deg);
+  }
+}
+
+.dropdown-view-note {
+  min-width: auto;
+}
+
+.dropdown-view-note-popup {
+  width 575px
+  padding 30px
+  right -30px
+  left auto
+  top 70px
+  &:before {
+    left auto
+    right 85px
   }
 }

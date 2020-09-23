@@ -10,4 +10,205 @@ section.panel.panel--calls
                     .calls-filters-title__col
                         .btn-calls-filters Show basic filters
                         .btn-calls-filters Show all filters
+                .calls-filters-list
+                    .calls-filters-input
+                        label.form__label
+                            span.form__ttl CSR Name
+                            input.form__inp(type='text' value='' placeholder='Mike Jordan')
+                        .filters-date
+                            .date
+                                span.date__ttl Call Date from
+                                .date__outer
+                                    svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                    input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                            .date
+                                span.date__ttl Call Date to
+                                .date__outer
+                                    svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                    input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                        label.form__label.form--small
+                            span.form__ttl Issue Categories
+                            select.form__select
+                                option(value='not selected') Not Selected
+                        label.form__label.form--small
+                            span.form__ttl Call Types
+                            select.form__select
+                                option(value='not selected') Not Selected
+                        label.form__label.form--small
+                            span.form__ttl Call Categories
+                            select.form__select
+                                option(value='not selected') Not Selected
+                    .calls-filters-check
+                        .calls-filters-check__box
+                            .checkbox
+                                label.checkbox__label
+                                    input.checkbox__inp(type='checkbox')
+                                    span.checkbox__btn
+                                    span.checkbox__text New Order Placed
+                            .checkbox
+                                label.checkbox__label
+                                    input.checkbox__inp(type='checkbox')
+                                    span.checkbox__btn
+                                    span.checkbox__text Refund Request
+                            .checkbox
+                                label.checkbox__label
+                                    input.checkbox__inp(type='checkbox')
+                                    span.checkbox__btn
+                                    span.checkbox__text Return Request
+                    .calls-filters-input
+                        label.form__label
+                            span.form__ttl First Name
+                            input.form__inp(type='text' value='' placeholder='Enter Name')
+                        label.form__label
+                            span.form__ttl Last Name
+                            input.form__inp(type='text' value='' placeholder='Enter Name')
+                        label.form__label
+                            span.form__ttl Member ID
+                            input.form__inp(type='text' value='' placeholder='Enter Member ID')
+                        label.form__label
+                            span.form__ttl Phone
+                            input.form__inp(type='tel' value='' placeholder='Enter phone')
+                    .calls-filters-input
+                        label.form__label
+                            span.form__ttl Order #
+                            input.form__inp(type='text' value='' placeholder='Order #')
+                        label.form__label.form--small
+                            span.form__ttl Order Type
+                            select.form__select
+                                option(value='Enter Order Type') Enter Order Type
+                        label.form__label.form--small
+                            span.form__ttl Order Status
+                            select.form__select
+                                option(value='Not Selected') Not Selected
+                        label.form__label
+                            span.form__ttl Phone
+                            input.form__inp(type='tel' value='' placeholder='Enter phone')
+                        .filters-date
+                            .date
+                                span.date__ttl Order Date from
+                                .date__outer
+                                    svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                    input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                            .date
+                                span.date__ttl Order Date to
+                                .date__outer
+                                    svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                    input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                        .filters-date
+                            .date
+                                span.date__ttl Order Date from
+                                .date__outer
+                                    svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                    input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                            .date
+                                span.date__ttl Order Date to
+                                .date__outer
+                                    svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                    input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                    .calls-filters-check
+                        .calls-filters-check__box
+                            .checkbox
+                                label.checkbox__label
+                                    input.checkbox__inp(type='checkbox')
+                                    span.checkbox__btn
+                                    span.checkbox__text Recurring order
                 .call-type-list
+                    .call-type-tags
+                        .call-type-tags__title Call Type:
+                        .call-type-tags__status Inbound
+                        .call-type-tags__clear
+        .table-calls-list
+            form.form.form-calls-list
+                .form-list-header
+                    h3.title-h3 Filtered Results
+                    button.btn-dd.btn-c--blue(type='button') Export to .CSV
+                table
+                    tr
+                        td.header-td Call Type
+                        td.header-td CSR Name
+                        td.header-td Date
+                        td.header-td Call Start Time
+                        td.header-td Call Duration
+                        td.header-td Member ID
+                        td.header-td Member Full Name
+                        td.header-td Plan
+                        td.header-td Call Category
+                        td.header-td Telephone
+                        td.header-td Hangup Note
+                    tr
+                        td.body-td
+                            .calls-icon-table
+                                img.icon.icon--inbound-tabl(src='img/inbound-table.svg')
+                                span Inbound
+                        td.body-td Jesse Goodwin
+                        td.body-td 02/26/2020
+                        td.body-td 12:23
+                        td.body-td 23:09
+                        td.body-td
+                            a(href="#") 726354
+                        td.body-td Ruby Taylor
+                        td.body-td Special
+                        td.body-td Order Placed
+                        td.body-td +1 (324) 543-5422
+                        td.body-td
+                            .dropdown.dropdown-view-note
+                                a.dropdown-active(href="#") View Note
+                                .dropdown__bottom.dropdown-view-note-popup
+                                    .dropdown-view-note-popup__text World over people use massage therapy to help promote healthy skin, nourish and strengthen the body, relieve stress, reduce pain, and encourage balance and well being. Massage opens and increases the flow of energy, balancing the entire nervous system and helping to release physical and emotional disharmony. The many benefits of massage are enhanced by the use of high quality massage oil.
+                    tr
+                        td.body-td
+                            .calls-icon-table
+                                img.icon.icon--inbound-tabl(src='img/outbound-table.svg')
+                                span Outbound
+                        td.body-td Jesse Goodwin
+                        td.body-td 02/26/2020
+                        td.body-td 12:23
+                        td.body-td 23:09
+                        td.body-td
+                            a(href="#") 726354
+                        td.body-td Ruby Taylor
+                        td.body-td Special
+                        td.body-td Order Placed
+                        td.body-td +1 (324) 543-5422
+                        td.body-td
+                            a(href="#") View Note
+                    tr
+                        td.body-td
+                            .calls-icon-table
+                                img.icon.icon--inbound-tabl(src='img/inbound-table.svg')
+                                span Inbound
+                        td.body-td Jesse Goodwin
+                        td.body-td 02/26/2020
+                        td.body-td 12:23
+                        td.body-td 23:09
+                        td.body-td
+                            a(href="#") 726354
+                        td.body-td Ruby Taylor
+                        td.body-td Special
+                        td.body-td Order Placed
+                        td.body-td +1 (324) 543-5422
+                        td.body-td
+                            a(href="#") View Note
+                    tr
+                        td.body-td
+                            .calls-icon-table
+                                img.icon.icon--inbound-tabl(src='img/outbound-table.svg')
+                                span Outbound
+                        td.body-td Jesse Goodwin
+                        td.body-td 02/26/2020
+                        td.body-td 12:23
+                        td.body-td 23:09
+                        td.body-td
+                            a(href="#") 726354
+                        td.body-td Ruby Taylor
+                        td.body-td Special
+                        td.body-td Order Placed
+                        td.body-td +1 (324) 543-5422
+                        td.body-td
+                            a(href="#") View Note

@@ -25,7 +25,10 @@
                     <div class="header__outer header__buttons">
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Make New Order</span></a></div>
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Log Issue</span></a></div>
-                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#addNewTask"><img class="icon icon--plus" src="img/plus.svg"><span class="btn-c--text">Add task</span></a></div>
+                      <!--.header__itm-->
+                      <!--    a.btn-c.btn-c--blue.js-show-popup(href="#addNewTask")-->
+                      <!--        img.icon.icon--plus(src="img/plus.svg")-->
+                      <!--        span.btn-c--text Add task-->
                     </div>
                   </div>
                 </div>
@@ -45,7 +48,7 @@
                       </svg><span class="header__call--time">02:34</span>
                     </div>
                   </div>
-                  <div class="header__itm"><a class="btn-c btn-c--red js-show-popup" href="#finishCall">Finish Call</a></div>
+                  <div class="header__itm"><a class="btn-c btn-c--call btn-c--red js-show-popup" href="#finishCall">Finish Call</a></div>
                 </div>
               </div>
             </div>
@@ -57,6 +60,14 @@
           <div class="container">
             <div class="panel__row">
               <div class="panel__col panel__col--left">
+                <div class="panel__outer panel--user panel--outdated">
+                  <div class="find-user">
+                    <div class="find-user__title">Find user by Member ID</div>
+                    <label class="form__label"><span class="form__ttl">Member ID</span>
+                      <input class="form__inp" type="text" value="" placeholder="615246">
+                    </label>
+                  </div>
+                </div>
                 <div class="panel__outer panel--user panel--active">
                   <div class="panel__itm">
                     <div class="user">

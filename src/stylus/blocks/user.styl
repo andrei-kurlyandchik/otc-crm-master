@@ -193,9 +193,25 @@
       margin-left 3px
     }
   }
-  &__label--active {
+  &__label--active, &__label--good-customer {
     background greenColor
     color #fff
+  }
+  &__label--customer-blocked {
+    background #485A63
+    color #fff
+  }
+  &__label--angry-customer {
+    color white
+    background #C62828
+  }
+  &__label--good-amber-customer {
+    color white
+    background #FFA000
+  }
+  &__label--lying-customer {
+    color white
+    background #6D4C41
   }
   &__label--outdated {
     background #5e656c
@@ -223,9 +239,38 @@
   }
 }
 
+.user-profile-card-color {
+  width 100%
+  margin-bottom 15px
+  &__title {
+    display flex
+    align-items center
+    justify-content flex-start
+    &-text {
+      padding-right 5px
+      font-size 16px
+      font-weight: 300
+      color grey
+      flex 0 0 auto
+      width 105px
+    }
+    &-color {
+      flex: 1
+      width: 0
+      position relative
+      font-size 16px
+      font-weight: 300
+      color grey
+    }
+    .btn-e {
+      flex 0 0 auto
+    }
+  }
+}
+
 .user-profile-status {
   display flex
-  align-items center
+  align-items flex-start
   margin-bottom 25px
   &__title {
     width 105px
@@ -233,15 +278,19 @@
     font-size 16px
     font-weight: 300
     color grey
+    padding-top 6px
+  }
+  &__info {
+    width 210px
   }
   &__tags {
+    text-align center
+    width max-content
     &--not-active {
       font-size 16px
       font-weight: 500
       padding 2px 12px
-      color #89C541
       border-radius 16px
-      border 2px solid #89C541
     }
     &--active {
       display block
@@ -250,9 +299,13 @@
       font-size: 14px
       line-height 20px
       font-weight: 400
-      color white
-      background greenColor
     }
+  }
+  &__text {
+    font-size 12px
+    font-weight: 300
+    color #5D656D
+    margin-top 8px
   }
 }
 
@@ -338,5 +391,14 @@
     font-weight: 300
     color grey
     margin-left 110px
+  }
+}
+
+.find-user {
+  &__title {
+    font-size 16px
+    font-weight: 300
+    color #333
+    margin-bottom 15px
   }
 }

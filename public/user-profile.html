@@ -25,7 +25,10 @@
                     <div class="header__outer header__buttons">
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Make New Order</span></a></div>
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Log Issue</span></a></div>
-                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#addNewTask"><img class="icon icon--plus" src="img/plus.svg"><span class="btn-c--text">Add task</span></a></div>
+                      <!--.header__itm-->
+                      <!--    a.btn-c.btn-c--blue.js-show-popup(href="#addNewTask")-->
+                      <!--        img.icon.icon--plus(src="img/plus.svg")-->
+                      <!--        span.btn-c--text Add task-->
                     </div>
                   </div>
                 </div>
@@ -45,7 +48,7 @@
                       </svg><span class="header__call--time">02:34</span>
                     </div>
                   </div>
-                  <div class="header__itm"><a class="btn-c btn-c--red js-show-popup" href="#finishCall">Finish Call</a></div>
+                  <div class="header__itm"><a class="btn-c btn-c--call btn-c--red js-show-popup" href="#finishCall">Finish Call</a></div>
                 </div>
               </div>
             </div>
@@ -57,10 +60,10 @@
           <div class="container">
             <div class="panel__row">
               <div class="panel__col panel__col--left">
-                <div class="panel__outer panel--user panel--active">
+                <div class="panel__outer panel--user panel--good-customer">
                   <div class="panel__item">
                     <div class="user-profile">
-                      <div class="user-profile__label user-profile__label--active"><img class="icon icon--check" src="img/check.svg"><span>Registered on the website</span></div>
+                      <div class="user-profile__label user-profile__label--good-customer"><img class="icon icon--check" src="img/check.svg"><span>Registered on the website</span></div>
                       <p class="title-h2">Edward Green</p>
                       <div class="user-profile-tags">
                         <div class="user-profile-tags__list">
@@ -75,7 +78,12 @@
                                 <label class="form__label"><span class="form__ttl">Tags</span>
                                   <input class="form__inp" type="text" value="" placeholder="Type a phrase">
                                 </label>
-                                <button class="btn-dd btn-c--blue" type="button">+ add</button>
+                                <!--label.form__label-->
+                                <!--    select.form__select-->
+                                <!--        option(value='0') Select with few options-->
+                                <!--        option(value='primary') Primary-->
+                                <!--        option(value='secondary') Secondary-->
+                                <!--button.btn-dd.btn-c--blue(type='button') + add-->
                               </div>
                               <div class="form__itm form__tags">
                                 <div class="tags tags--blue">Do not call<img class="icon icon--close" src="img/close.svg"></div>
@@ -91,10 +99,43 @@
                           </div>
                         </div>
                       </div>
+                      <div class="user-profile-card-color">
+                        <div class="user-profile-card-color__title">
+                          <div class="user-profile-card-color__title-text">Card Color</div>
+                          <div class="user-profile-card-color__title-color">Green (Good Customer)</div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-profile-card-color-popup">
+                              <h2 class="title-h2">Edit Card Color</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <div class="form__itm form__add">
+                                  <label class="form__label">
+                                    <select class="form__select">
+                                      <option value="">Green (Good Customer)</option>
+                                      <option value="">Grey (Customer blocked)</option>
+                                      <option value="">Red (Angry Customer)</option>
+                                      <option value="">Brown (Customer lying)</option>
+                                    </select>
+                                  </label>
+                                </div>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <div class="user-profile-status">
                         <div class="user-profile-status__title">Status</div>
-                        <div class="user-profile-status__tags user-profile-status__tags--not-active">Active from 10/20/2020</div>
-                        <!--.user-profile-status__tags.user-profile-status__tags--active Active User-->
+                        <div class="user-profile-status__info">
+                          <!--.user-profile-status__tags.user-profile-status__tags--not-active Active from 10/20/2020-->
+                          <div class="user-profile-status__tags user-profile-status__tags--active">Active User</div>
+                          <!--.user-profile-status__text Please note, that customer can’t pass registration on the website-->
+                        </div>
                       </div>
                       <div class="user-profile-i">
                         <div class="user-profile-i__title">Member ID</div>
@@ -115,7 +156,7 @@
                           <div class="user-profile-info__title-text">Personal Data</div>
                           <div class="user-profile-info__title-line"></div>
                           <div class="dropdown dropdown-user-edit">
-                            <div class="btn-e dropdown-active">Override</div>
+                            <div class="btn-e dropdown-active">edit</div>
                             <div class="dropdown__bottom dropdown-email-edit-popup">
                               <h2 class="title-h2">Edit Personal Data</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
                               <form class="form">
@@ -128,7 +169,7 @@
                                   </tr>
                                   <tr>
                                     <td class="body-td">Gender</td>
-                                    <td class="body-td">Male</td>
+                                    <td class="body-td toggle-check-info toggle-active">Male</td>
                                     <td class="body-td">
                                       <div class="toggle-box">
                                         <div class="toggle-check active-check"></div>
@@ -144,18 +185,8 @@
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td class="body-td">DOB</td>
-                                    <td class="body-td">12/09/1956</td>
-                                    <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check"></div>
-                                      </div>
-                                    </td>
-                                    <td class="body-td"></td>
-                                  </tr>
-                                  <tr>
                                     <td class="body-td body-td__top">Language</td>
-                                    <td class="body-td body-td__top">
+                                    <td class="body-td body-td__top toggle-check-info toggle-active">
                                       <div class="user__row">
                                         <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
                                         <div class="user__col"><span>English (EN)</span></div>
@@ -240,7 +271,7 @@
                           <div class="user-profile-info__title-text">Email</div>
                           <div class="user-profile-info__title-line"></div>
                           <div class="dropdown dropdown-user-edit">
-                            <div class="btn-e dropdown-active">Manage</div>
+                            <div class="btn-e dropdown-active">edit</div>
                             <div class="dropdown__bottom dropdown-email-edit-popup">
                               <h2 class="title-h2">Manage Emails</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
                               <form class="form">
@@ -623,7 +654,7 @@
                       <div class="user-profile-info">
                         <div class="user-profile-info__title">
                           <div class="user-profile-info__title-text">Address</div>
-                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewAddress">Manage</a>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewAddress">edit</a>
                         </div>
                         <ul class="user-profile-info__address">
                           <li>140 Atlantic Avenue </li>
@@ -634,7 +665,2351 @@
                       <div class="user-profile-info">
                         <div class="user-profile-info__title">
                           <div class="user-profile-info__title-text">Notes</div>
-                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewNotes">Manage</a>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewNotes">edit</a>
+                        </div>
+                        <div class="user-profile-info__notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel__outer panel--user panel--customer-blocked">
+                  <div class="panel__item">
+                    <div class="user-profile">
+                      <div class="user-profile__label user-profile__label--customer-blocked"><img class="icon icon--check" src="img/check.svg"><span>Registered on the website</span></div>
+                      <p class="title-h2">Edward Green</p>
+                      <div class="user-profile-tags">
+                        <div class="user-profile-tags__list">
+                          <div class="tags tags--blue">Do not call</div>
+                          <div class="tags tags--blue">Talking loud</div>
+                        </div>
+                        <div class="dropdown dropdown-user-edit"><a class="btn-e dropdown-active" href="#">edit</a>
+                          <div class="dropdown__bottom dropdown-tag-edit-popup">
+                            <h2 class="title-h2">Edit Tags</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                            <form class="form">
+                              <div class="form__itm form__add">
+                                <label class="form__label"><span class="form__ttl">Tags</span>
+                                  <input class="form__inp" type="text" value="" placeholder="Type a phrase">
+                                </label>
+                                <button class="btn-dd btn-c--blue" type="button">+ add</button>
+                              </div>
+                              <div class="form__itm form__tags">
+                                <div class="tags tags--blue">Do not call<img class="icon icon--close" src="img/close.svg"></div>
+                                <div class="tags tags--blue">Talking loud<img class="icon icon--close" src="img/close.svg"></div>
+                              </div>
+                              <div class="form__btn form__btn--center">
+                                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                <div class="form__btn-itm">
+                                  <button class="btn-a btn-a--small" type="button">Save</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="user-profile-card-color">
+                        <div class="user-profile-card-color__title">
+                          <div class="user-profile-card-color__title-text">Card Color</div>
+                          <div class="user-profile-card-color__title-color">Green (Good Customer)</div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="user-profile-status">
+                        <div class="user-profile-status__title">Status</div>
+                        <div class="user-profile-status__info">
+                          <div class="user-profile-status__tags user-profile-status__tags--not-active">Active from 10/20/2020</div>
+                          <!--.user-profile-status__tags.user-profile-status__tags--active Active User-->
+                          <div class="user-profile-status__text">Please note, that customer can’t pass registration on the website</div>
+                        </div>
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Member ID</div>
+                        <div class="user-profile-i__content">33342425</div>
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Plan</div>
+                        <div class="user-profile-i__content">Special ($ 300.00/quaterly)</div>
+                        <!--.user-profile-i__content.not-s Not Specified-->
+                        <!--    img.icon.icon--warning(src='img/warning.svg')-->
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Balance</div>
+                        <div class="user-profile-i__content">$ 124.56</div>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Personal Data</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-email-edit-popup">
+                              <h2 class="title-h2">Edit Personal Data</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <table class="user__table user__table--edit user__table--personal">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">On File</td>
+                                    <td class="header-td">Enable Override</td>
+                                    <td class="header-td">Override</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Gender</td>
+                                    <td class="body-td toggle-check-info toggle-active">Male</td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="female">Female</option>
+                                          <option value="male">Male</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td body-td__top">Language</td>
+                                    <td class="body-td body-td__top toggle-check-info toggle-active">
+                                      <div class="user__row">
+                                        <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                                        <div class="user__col"><span>English (EN)</span></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td body-td__top body-td__top--toogle">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="language-selection">
+                                        <div class="language-selection__row">
+                                          <label class="form__label">
+                                            <select class="form__select">
+                                              <option value="primary">Primary</option>
+                                              <option value="secondary">Secondary</option>
+                                            </select>
+                                          </label>
+                                          <label class="form__label">
+                                            <select class="form__select--leng">
+                                              <option value="united-kingdom">English</option>
+                                              <option value="spain">Español</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                      </div>
+                                      <div class="language-selection">
+                                        <div class="language-selection__row">
+                                          <label class="form__label">
+                                            <select class="form__select">
+                                              <option value="primary">Primary</option>
+                                              <option value="secondary">Secondary</option>
+                                            </select>
+                                          </label>
+                                          <label class="form__label">
+                                            <select class="form__select--leng">
+                                              <option value="united-kingdom">English</option>
+                                              <option value="spain">Español</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                      </div>
+                                      <button class="btn-dd btn-dd--o" type="button">+ ADD 1 more</button>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <table class="user__table user__table--profile">
+                          <tr>
+                            <td>Gender</td>
+                            <td>Male</td>
+                          </tr>
+                          <tr>
+                            <td>DOB</td>
+                            <td>12/09/1954</td>
+                          </tr>
+                          <tr>
+                            <td>Language</td>
+                            <td>
+                              <div class="user__row">
+                                <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                                <div class="user__col"><span>English (EN)</span></div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Email</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-email-edit-popup">
+                              <h2 class="title-h2">Manage Emails</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <div class="form__itm">
+                                  <button class="btn-dd btn-c--blue" type="button">+ Add 1 more email</button>
+                                </div>
+                                <table class="user__table user__table--edit user__table--email">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">Email</td>
+                                    <td class="header-td">Valid/Invalid</td>
+                                    <td class="header-td">Email Marketing</td>
+                                    <td class="header-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">1. Reg.</td>
+                                    <td class="body-td">ann.smith@gmail.com</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">2.</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="text" value="" placeholder="Email">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">3.</td>
+                                    <td class="body-td">
+                                      <label class="form__label form__error">
+                                        <input class="form__inp" type="text" value="" placeholder="Email">
+                                      </label><span class="form__hint">Wrong email format</span>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <ol class="user-profile-info__email">
+                          <li>Reg.: ekonstantinipilsky@gmail.com</li>
+                        </ol>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Phone</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-phone-edit-popup">
+                              <h2 class="title-h2">Edit Phone Numbers</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <table class="user__table user__table--edit user__table--phone-edit">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">Phone Type</td>
+                                    <td class="header-td">Phone #</td>
+                                    <td class="header-td">Valid/Invalid</td>
+                                    <td class="header-td">Call</td>
+                                    <td class="header-td">SMS</td>
+                                    <td class="header-td">Valid dates (Optional)</td>
+                                    <td class="header-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Primary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Secondary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Temporary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Member File</td>
+                                    <td class="body-td"></td>
+                                    <td class="body-td">+1 (324) 452-4566</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <table class="user__table user__table--phone">
+                          <tr>
+                            <td class="phone-affiliation">Primary<img class="icon icon--phone-iphone" src="img/phone-iphone.svg"></td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Secondary<img class="icon icon--home-black" src="img/home-black.svg"></td>
+                            <td class="phone-number">+1 (324) 543-5422<img class="icon icon--warning" src="img/warning.svg"></td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Temporary</td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Registration</td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Member File</td>
+                            <td class="phone-number">+1 (324) 543-5422<img class="icon icon--warning" src="img/warning.svg"></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Address</div>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewAddress">edit</a>
+                        </div>
+                        <ul class="user-profile-info__address">
+                          <li>140 Atlantic Avenue </li>
+                          <li>RApartment K1</li>
+                          <li>Jenkintown, PA 19133</li>
+                        </ul>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Notes</div>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewNotes">edit</a>
+                        </div>
+                        <div class="user-profile-info__notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel__outer panel--user panel--angry-customer">
+                  <div class="panel__item">
+                    <div class="user-profile">
+                      <div class="user-profile__label user-profile__label--angry-customer"><img class="icon icon--check" src="img/check.svg"><span>Registered on the website</span></div>
+                      <p class="title-h2">Edward Green</p>
+                      <div class="user-profile-tags">
+                        <div class="user-profile-tags__list">
+                          <div class="tags tags--blue">Do not call</div>
+                          <div class="tags tags--blue">Talking loud</div>
+                        </div>
+                        <div class="dropdown dropdown-user-edit"><a class="btn-e dropdown-active" href="#">edit</a>
+                          <div class="dropdown__bottom dropdown-tag-edit-popup">
+                            <h2 class="title-h2">Edit Tags</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                            <form class="form">
+                              <div class="form__itm form__add">
+                                <label class="form__label"><span class="form__ttl">Tags</span>
+                                  <input class="form__inp" type="text" value="" placeholder="Type a phrase">
+                                </label>
+                                <button class="btn-dd btn-c--blue" type="button">+ add</button>
+                              </div>
+                              <div class="form__itm form__tags">
+                                <div class="tags tags--blue">Do not call<img class="icon icon--close" src="img/close.svg"></div>
+                                <div class="tags tags--blue">Talking loud<img class="icon icon--close" src="img/close.svg"></div>
+                              </div>
+                              <div class="form__btn form__btn--center">
+                                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                <div class="form__btn-itm">
+                                  <button class="btn-a btn-a--small" type="button">Save</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="user-profile-card-color">
+                        <div class="user-profile-card-color__title">
+                          <div class="user-profile-card-color__title-text">Card Color</div>
+                          <div class="user-profile-card-color__title-color">Green (Good Customer)</div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="user-profile-status">
+                        <div class="user-profile-status__title">Status</div>
+                        <div class="user-profile-status__info">
+                          <div class="user-profile-status__tags user-profile-status__tags--not-active">Active from 10/20/2020</div>
+                          <!--.user-profile-status__tags.user-profile-status__tags--active Active User-->
+                          <div class="user-profile-status__text">Please note, that customer can’t pass registration on the website</div>
+                        </div>
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Member ID</div>
+                        <div class="user-profile-i__content">33342425</div>
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Plan</div>
+                        <div class="user-profile-i__content">Special ($ 300.00/quaterly)</div>
+                        <!--.user-profile-i__content.not-s Not Specified-->
+                        <!--    img.icon.icon--warning(src='img/warning.svg')-->
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Balance</div>
+                        <div class="user-profile-i__content">$ 124.56</div>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Personal Data</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-email-edit-popup">
+                              <h2 class="title-h2">Edit Personal Data</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <table class="user__table user__table--edit user__table--personal">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">On File</td>
+                                    <td class="header-td">Enable Override</td>
+                                    <td class="header-td">Override</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Gender</td>
+                                    <td class="body-td toggle-check-info toggle-active">Male</td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="female">Female</option>
+                                          <option value="male">Male</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td body-td__top">Language</td>
+                                    <td class="body-td body-td__top toggle-check-info toggle-active">
+                                      <div class="user__row">
+                                        <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                                        <div class="user__col"><span>English (EN)</span></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td body-td__top body-td__top--toogle">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="language-selection">
+                                        <div class="language-selection__row">
+                                          <label class="form__label">
+                                            <select class="form__select">
+                                              <option value="primary">Primary</option>
+                                              <option value="secondary">Secondary</option>
+                                            </select>
+                                          </label>
+                                          <label class="form__label">
+                                            <select class="form__select--leng">
+                                              <option value="united-kingdom">English</option>
+                                              <option value="spain">Español</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                      </div>
+                                      <div class="language-selection">
+                                        <div class="language-selection__row">
+                                          <label class="form__label">
+                                            <select class="form__select">
+                                              <option value="primary">Primary</option>
+                                              <option value="secondary">Secondary</option>
+                                            </select>
+                                          </label>
+                                          <label class="form__label">
+                                            <select class="form__select--leng">
+                                              <option value="united-kingdom">English</option>
+                                              <option value="spain">Español</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                      </div>
+                                      <button class="btn-dd btn-dd--o" type="button">+ ADD 1 more</button>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <table class="user__table user__table--profile">
+                          <tr>
+                            <td>Gender</td>
+                            <td>Male</td>
+                          </tr>
+                          <tr>
+                            <td>DOB</td>
+                            <td>12/09/1954</td>
+                          </tr>
+                          <tr>
+                            <td>Language</td>
+                            <td>
+                              <div class="user__row">
+                                <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                                <div class="user__col"><span>English (EN)</span></div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Email</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-email-edit-popup">
+                              <h2 class="title-h2">Manage Emails</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <div class="form__itm">
+                                  <button class="btn-dd btn-c--blue" type="button">+ Add 1 more email</button>
+                                </div>
+                                <table class="user__table user__table--edit user__table--email">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">Email</td>
+                                    <td class="header-td">Valid/Invalid</td>
+                                    <td class="header-td">Email Marketing</td>
+                                    <td class="header-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">1. Reg.</td>
+                                    <td class="body-td">ann.smith@gmail.com</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">2.</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="text" value="" placeholder="Email">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">3.</td>
+                                    <td class="body-td">
+                                      <label class="form__label form__error">
+                                        <input class="form__inp" type="text" value="" placeholder="Email">
+                                      </label><span class="form__hint">Wrong email format</span>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <ol class="user-profile-info__email">
+                          <li>Reg.: ekonstantinipilsky@gmail.com</li>
+                        </ol>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Phone</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-phone-edit-popup">
+                              <h2 class="title-h2">Edit Phone Numbers</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <table class="user__table user__table--edit user__table--phone-edit">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">Phone Type</td>
+                                    <td class="header-td">Phone #</td>
+                                    <td class="header-td">Valid/Invalid</td>
+                                    <td class="header-td">Call</td>
+                                    <td class="header-td">SMS</td>
+                                    <td class="header-td">Valid dates (Optional)</td>
+                                    <td class="header-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Primary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Secondary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Temporary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Member File</td>
+                                    <td class="body-td"></td>
+                                    <td class="body-td">+1 (324) 452-4566</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <table class="user__table user__table--phone">
+                          <tr>
+                            <td class="phone-affiliation">Primary<img class="icon icon--phone-iphone" src="img/phone-iphone.svg"></td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Secondary<img class="icon icon--home-black" src="img/home-black.svg"></td>
+                            <td class="phone-number">+1 (324) 543-5422<img class="icon icon--warning" src="img/warning.svg"></td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Temporary</td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Registration</td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Member File</td>
+                            <td class="phone-number">+1 (324) 543-5422<img class="icon icon--warning" src="img/warning.svg"></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Address</div>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewAddress">edit</a>
+                        </div>
+                        <ul class="user-profile-info__address">
+                          <li>140 Atlantic Avenue </li>
+                          <li>RApartment K1</li>
+                          <li>Jenkintown, PA 19133</li>
+                        </ul>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Notes</div>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewNotes">edit</a>
+                        </div>
+                        <div class="user-profile-info__notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel__outer panel--user panel--good-amber-customer">
+                  <div class="panel__item">
+                    <div class="user-profile">
+                      <div class="user-profile__label user-profile__label--good-amber-customer"><img class="icon icon--check" src="img/check.svg"><span>Registered on the website</span></div>
+                      <p class="title-h2">Edward Green</p>
+                      <div class="user-profile-tags">
+                        <div class="user-profile-tags__list">
+                          <div class="tags tags--blue">Do not call</div>
+                          <div class="tags tags--blue">Talking loud</div>
+                        </div>
+                        <div class="dropdown dropdown-user-edit"><a class="btn-e dropdown-active" href="#">edit</a>
+                          <div class="dropdown__bottom dropdown-tag-edit-popup">
+                            <h2 class="title-h2">Edit Tags</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                            <form class="form">
+                              <div class="form__itm form__add">
+                                <label class="form__label"><span class="form__ttl">Tags</span>
+                                  <input class="form__inp" type="text" value="" placeholder="Type a phrase">
+                                </label>
+                                <button class="btn-dd btn-c--blue" type="button">+ add</button>
+                              </div>
+                              <div class="form__itm form__tags">
+                                <div class="tags tags--blue">Do not call<img class="icon icon--close" src="img/close.svg"></div>
+                                <div class="tags tags--blue">Talking loud<img class="icon icon--close" src="img/close.svg"></div>
+                              </div>
+                              <div class="form__btn form__btn--center">
+                                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                <div class="form__btn-itm">
+                                  <button class="btn-a btn-a--small" type="button">Save</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="user-profile-card-color">
+                        <div class="user-profile-card-color__title">
+                          <div class="user-profile-card-color__title-text">Card Color</div>
+                          <div class="user-profile-card-color__title-color">Green (Good Customer)</div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="user-profile-status">
+                        <div class="user-profile-status__title">Status</div>
+                        <div class="user-profile-status__info">
+                          <div class="user-profile-status__tags user-profile-status__tags--not-active">Active from 10/20/2020</div>
+                          <!--.user-profile-status__tags.user-profile-status__tags--active Active User-->
+                          <div class="user-profile-status__text">Please note, that customer can’t pass registration on the website</div>
+                        </div>
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Member ID</div>
+                        <div class="user-profile-i__content">33342425</div>
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Plan</div>
+                        <div class="user-profile-i__content">Special ($ 300.00/quaterly)</div>
+                        <!--.user-profile-i__content.not-s Not Specified-->
+                        <!--    img.icon.icon--warning(src='img/warning.svg')-->
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Balance</div>
+                        <div class="user-profile-i__content">$ 124.56</div>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Personal Data</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-email-edit-popup">
+                              <h2 class="title-h2">Edit Personal Data</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <table class="user__table user__table--edit user__table--personal">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">On File</td>
+                                    <td class="header-td">Enable Override</td>
+                                    <td class="header-td">Override</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Gender</td>
+                                    <td class="body-td toggle-check-info toggle-active">Male</td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="female">Female</option>
+                                          <option value="male">Male</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td body-td__top">Language</td>
+                                    <td class="body-td body-td__top toggle-check-info toggle-active">
+                                      <div class="user__row">
+                                        <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                                        <div class="user__col"><span>English (EN)</span></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td body-td__top body-td__top--toogle">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="language-selection">
+                                        <div class="language-selection__row">
+                                          <label class="form__label">
+                                            <select class="form__select">
+                                              <option value="primary">Primary</option>
+                                              <option value="secondary">Secondary</option>
+                                            </select>
+                                          </label>
+                                          <label class="form__label">
+                                            <select class="form__select--leng">
+                                              <option value="united-kingdom">English</option>
+                                              <option value="spain">Español</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                      </div>
+                                      <div class="language-selection">
+                                        <div class="language-selection__row">
+                                          <label class="form__label">
+                                            <select class="form__select">
+                                              <option value="primary">Primary</option>
+                                              <option value="secondary">Secondary</option>
+                                            </select>
+                                          </label>
+                                          <label class="form__label">
+                                            <select class="form__select--leng">
+                                              <option value="united-kingdom">English</option>
+                                              <option value="spain">Español</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                      </div>
+                                      <button class="btn-dd btn-dd--o" type="button">+ ADD 1 more</button>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <table class="user__table user__table--profile">
+                          <tr>
+                            <td>Gender</td>
+                            <td>Male</td>
+                          </tr>
+                          <tr>
+                            <td>DOB</td>
+                            <td>12/09/1954</td>
+                          </tr>
+                          <tr>
+                            <td>Language</td>
+                            <td>
+                              <div class="user__row">
+                                <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                                <div class="user__col"><span>English (EN)</span></div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Email</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-email-edit-popup">
+                              <h2 class="title-h2">Manage Emails</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <div class="form__itm">
+                                  <button class="btn-dd btn-c--blue" type="button">+ Add 1 more email</button>
+                                </div>
+                                <table class="user__table user__table--edit user__table--email">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">Email</td>
+                                    <td class="header-td">Valid/Invalid</td>
+                                    <td class="header-td">Email Marketing</td>
+                                    <td class="header-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">1. Reg.</td>
+                                    <td class="body-td">ann.smith@gmail.com</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">2.</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="text" value="" placeholder="Email">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">3.</td>
+                                    <td class="body-td">
+                                      <label class="form__label form__error">
+                                        <input class="form__inp" type="text" value="" placeholder="Email">
+                                      </label><span class="form__hint">Wrong email format</span>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <ol class="user-profile-info__email">
+                          <li>Reg.: ekonstantinipilsky@gmail.com</li>
+                        </ol>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Phone</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-phone-edit-popup">
+                              <h2 class="title-h2">Edit Phone Numbers</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <table class="user__table user__table--edit user__table--phone-edit">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">Phone Type</td>
+                                    <td class="header-td">Phone #</td>
+                                    <td class="header-td">Valid/Invalid</td>
+                                    <td class="header-td">Call</td>
+                                    <td class="header-td">SMS</td>
+                                    <td class="header-td">Valid dates (Optional)</td>
+                                    <td class="header-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Primary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Secondary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Temporary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Member File</td>
+                                    <td class="body-td"></td>
+                                    <td class="body-td">+1 (324) 452-4566</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <table class="user__table user__table--phone">
+                          <tr>
+                            <td class="phone-affiliation">Primary<img class="icon icon--phone-iphone" src="img/phone-iphone.svg"></td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Secondary<img class="icon icon--home-black" src="img/home-black.svg"></td>
+                            <td class="phone-number">+1 (324) 543-5422<img class="icon icon--warning" src="img/warning.svg"></td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Temporary</td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Registration</td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Member File</td>
+                            <td class="phone-number">+1 (324) 543-5422<img class="icon icon--warning" src="img/warning.svg"></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Address</div>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewAddress">edit</a>
+                        </div>
+                        <ul class="user-profile-info__address">
+                          <li>140 Atlantic Avenue </li>
+                          <li>RApartment K1</li>
+                          <li>Jenkintown, PA 19133</li>
+                        </ul>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Notes</div>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewNotes">edit</a>
+                        </div>
+                        <div class="user-profile-info__notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel__outer panel--user panel--lying-customer">
+                  <div class="panel__item">
+                    <div class="user-profile">
+                      <div class="user-profile__label user-profile__label--lying-customer"><img class="icon icon--check" src="img/check.svg"><span>Registered on the website</span></div>
+                      <p class="title-h2">Edward Green</p>
+                      <div class="user-profile-tags">
+                        <div class="user-profile-tags__list">
+                          <div class="tags tags--blue">Do not call</div>
+                          <div class="tags tags--blue">Talking loud</div>
+                        </div>
+                        <div class="dropdown dropdown-user-edit"><a class="btn-e dropdown-active" href="#">edit</a>
+                          <div class="dropdown__bottom dropdown-tag-edit-popup">
+                            <h2 class="title-h2">Edit Tags</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                            <form class="form">
+                              <div class="form__itm form__add">
+                                <label class="form__label"><span class="form__ttl">Tags</span>
+                                  <input class="form__inp" type="text" value="" placeholder="Type a phrase">
+                                </label>
+                                <button class="btn-dd btn-c--blue" type="button">+ add</button>
+                              </div>
+                              <div class="form__itm form__tags">
+                                <div class="tags tags--blue">Do not call<img class="icon icon--close" src="img/close.svg"></div>
+                                <div class="tags tags--blue">Talking loud<img class="icon icon--close" src="img/close.svg"></div>
+                              </div>
+                              <div class="form__btn form__btn--center">
+                                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                <div class="form__btn-itm">
+                                  <button class="btn-a btn-a--small" type="button">Save</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="user-profile-card-color">
+                        <div class="user-profile-card-color__title">
+                          <div class="user-profile-card-color__title-text">Card Color</div>
+                          <div class="user-profile-card-color__title-color">Green (Good Customer)</div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="user-profile-status">
+                        <div class="user-profile-status__title">Status</div>
+                        <div class="user-profile-status__info">
+                          <div class="user-profile-status__tags user-profile-status__tags--not-active">Active from 10/20/2020</div>
+                          <!--.user-profile-status__tags.user-profile-status__tags--active Active User-->
+                          <div class="user-profile-status__text">Please note, that customer can’t pass registration on the website</div>
+                        </div>
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Member ID</div>
+                        <div class="user-profile-i__content">33342425</div>
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Plan</div>
+                        <div class="user-profile-i__content">Special ($ 300.00/quaterly)</div>
+                        <!--.user-profile-i__content.not-s Not Specified-->
+                        <!--    img.icon.icon--warning(src='img/warning.svg')-->
+                      </div>
+                      <div class="user-profile-i">
+                        <div class="user-profile-i__title">Balance</div>
+                        <div class="user-profile-i__content">$ 124.56</div>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Personal Data</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-email-edit-popup">
+                              <h2 class="title-h2">Edit Personal Data</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <table class="user__table user__table--edit user__table--personal">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">On File</td>
+                                    <td class="header-td">Enable Override</td>
+                                    <td class="header-td">Override</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Gender</td>
+                                    <td class="body-td toggle-check-info toggle-active">Male</td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="female">Female</option>
+                                          <option value="male">Male</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td body-td__top">Language</td>
+                                    <td class="body-td body-td__top toggle-check-info toggle-active">
+                                      <div class="user__row">
+                                        <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                                        <div class="user__col"><span>English (EN)</span></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td body-td__top body-td__top--toogle">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="language-selection">
+                                        <div class="language-selection__row">
+                                          <label class="form__label">
+                                            <select class="form__select">
+                                              <option value="primary">Primary</option>
+                                              <option value="secondary">Secondary</option>
+                                            </select>
+                                          </label>
+                                          <label class="form__label">
+                                            <select class="form__select--leng">
+                                              <option value="united-kingdom">English</option>
+                                              <option value="spain">Español</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                      </div>
+                                      <div class="language-selection">
+                                        <div class="language-selection__row">
+                                          <label class="form__label">
+                                            <select class="form__select">
+                                              <option value="primary">Primary</option>
+                                              <option value="secondary">Secondary</option>
+                                            </select>
+                                          </label>
+                                          <label class="form__label">
+                                            <select class="form__select--leng">
+                                              <option value="united-kingdom">English</option>
+                                              <option value="spain">Español</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                      </div>
+                                      <button class="btn-dd btn-dd--o" type="button">+ ADD 1 more</button>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <table class="user__table user__table--profile">
+                          <tr>
+                            <td>Gender</td>
+                            <td>Male</td>
+                          </tr>
+                          <tr>
+                            <td>DOB</td>
+                            <td>12/09/1954</td>
+                          </tr>
+                          <tr>
+                            <td>Language</td>
+                            <td>
+                              <div class="user__row">
+                                <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
+                                <div class="user__col"><span>English (EN)</span></div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Email</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-email-edit-popup">
+                              <h2 class="title-h2">Manage Emails</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <div class="form__itm">
+                                  <button class="btn-dd btn-c--blue" type="button">+ Add 1 more email</button>
+                                </div>
+                                <table class="user__table user__table--edit user__table--email">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">Email</td>
+                                    <td class="header-td">Valid/Invalid</td>
+                                    <td class="header-td">Email Marketing</td>
+                                    <td class="header-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">1. Reg.</td>
+                                    <td class="body-td">ann.smith@gmail.com</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">2.</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="text" value="" placeholder="Email">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">3.</td>
+                                    <td class="body-td">
+                                      <label class="form__label form__error">
+                                        <input class="form__inp" type="text" value="" placeholder="Email">
+                                      </label><span class="form__hint">Wrong email format</span>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <ol class="user-profile-info__email">
+                          <li>Reg.: ekonstantinipilsky@gmail.com</li>
+                        </ol>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Phone</div>
+                          <div class="user-profile-info__title-line"></div>
+                          <div class="dropdown dropdown-user-edit">
+                            <div class="btn-e dropdown-active">edit</div>
+                            <div class="dropdown__bottom dropdown-phone-edit-popup">
+                              <h2 class="title-h2">Edit Phone Numbers</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
+                              <form class="form">
+                                <table class="user__table user__table--edit user__table--phone-edit">
+                                  <tr>
+                                    <td class="header-td"></td>
+                                    <td class="header-td">Phone Type</td>
+                                    <td class="header-td">Phone #</td>
+                                    <td class="header-td">Valid/Invalid</td>
+                                    <td class="header-td">Call</td>
+                                    <td class="header-td">SMS</td>
+                                    <td class="header-td">Valid dates (Optional)</td>
+                                    <td class="header-td"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Primary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Secondary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Temporary</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select">
+                                          <option value="landline">Landline</option>
+                                          <option value="landline">Landline</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <input class="form__inp" type="tel" value="" placeholder="+1 (623) 453-6547">
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="body-td">Member File</td>
+                                    <td class="body-td"></td>
+                                    <td class="body-td">+1 (324) 452-4566</td>
+                                    <td class="body-td">
+                                      <label class="form__label">
+                                        <select class="form__select--valid">
+                                          <option value="check-circle">Valid</option>
+                                          <option value="warning">Invalid</option>
+                                        </select>
+                                      </label>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="toggle-box">
+                                        <div class="toggle-check active-check"></div><span>Allowed</span>
+                                      </div>
+                                    </td>
+                                    <td class="body-td">
+                                      <div class="form__row">
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">From</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form__col">
+                                          <div class="date date--inline"><span class="date__ttl">To</span>
+                                            <div class="date__outer">
+                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                                              </svg>
+                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <div class="form__btn form__btn--center">
+                                  <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                                  <div class="form__btn-itm">
+                                    <button class="btn-a btn-a--small" type="button">Save</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <table class="user__table user__table--phone">
+                          <tr>
+                            <td class="phone-affiliation">Primary<img class="icon icon--phone-iphone" src="img/phone-iphone.svg"></td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Secondary<img class="icon icon--home-black" src="img/home-black.svg"></td>
+                            <td class="phone-number">+1 (324) 543-5422<img class="icon icon--warning" src="img/warning.svg"></td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Temporary</td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Registration</td>
+                            <td class="phone-number">+1 (324) 543-5422</td>
+                          </tr>
+                          <tr>
+                            <td class="phone-affiliation">Member File</td>
+                            <td class="phone-number">+1 (324) 543-5422<img class="icon icon--warning" src="img/warning.svg"></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Address</div>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewAddress">edit</a>
+                        </div>
+                        <ul class="user-profile-info__address">
+                          <li>140 Atlantic Avenue </li>
+                          <li>RApartment K1</li>
+                          <li>Jenkintown, PA 19133</li>
+                        </ul>
+                      </div>
+                      <div class="user-profile-info">
+                        <div class="user-profile-info__title">
+                          <div class="user-profile-info__title-text">Notes</div>
+                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewNotes">edit</a>
                         </div>
                         <div class="user-profile-info__notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
                       </div>
@@ -747,10 +3122,7 @@
                     <ul>
                       <li>Marian Frazier</li>
                       <li>8285C Center Ave.</li>
-                      <li>Latrobe, Pensylvania</li>
-                      <li>15680</li>
-                      <li>United States</li>
-                      <li>215-345-4678</li>
+                      <li>Latrobe, Pensylvania 15680</li>
                     </ul>
                   </div>
                 </div>
@@ -777,10 +3149,7 @@
                     <ul>
                       <li>Marian Frazier</li>
                       <li>8285C Center Ave.</li>
-                      <li>Latrobe, Pensylvania</li>
-                      <li>15680</li>
-                      <li>United States</li>
-                      <li>215-345-4678</li>
+                      <li>Latrobe, Pensylvania 15680</li>
                     </ul>
                   </div>
                 </div>
@@ -807,10 +3176,7 @@
                     <ul>
                       <li>Marian Frazier</li>
                       <li>8285C Center Ave.</li>
-                      <li>Latrobe, Pensylvania</li>
-                      <li>15680</li>
-                      <li>United States</li>
-                      <li>215-345-4678</li>
+                      <li>Latrobe, Pensylvania 15680</li>
                     </ul>
                   </div>
                   <div class="address-box__footer">
@@ -840,10 +3206,7 @@
                     <ul>
                       <li>Marian Frazier</li>
                       <li>8285C Center Ave.</li>
-                      <li>Latrobe, Pensylvania</li>
-                      <li>15680</li>
-                      <li>United States</li>
-                      <li>215-345-4678</li>
+                      <li>Latrobe, Pensylvania 15680</li>
                     </ul>
                   </div>
                 </div>
@@ -890,7 +3253,7 @@
               </div>
               <div class="form__itm">
                 <label class="form__label"><span class="form__ttl">Note (Optional)</span>
-                  <input class="form__inp" type="text" value="" placeholder="">
+                  <input class="form__inp" type="text" value="" placeholder="Do not deliver on this address">
                 </label>
               </div>
               <div class="form__itm">
@@ -940,27 +3303,10 @@
                   <tr>
                     <td class="header-td">Note Text</td>
                     <td class="header-td">Visible on client card</td>
+                    <td class="header-td">Created on</td>
+                    <td class="header-td">Created by</td>
                     <td class="header-td text-right-td">
-                      <button class="btn-dd btn-c--blue" type="button">+ Add note</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="body-td">This customer usually calls to clalify delivery</td>
-                    <td class="body-td">
-                      <div class="checkbox">
-                        <label class="checkbox__label">
-                          <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
-                        </label>
-                      </div>
-                    </td>
-                    <td class="body-td">
-                      <div class="btn-list-table">
-                        <div class="btn-list-table__row">
-                          <button class="btn-a btn-a--small" type="button">Add</button>
-                          <button class="btn-dd btn-c--blue" type="button">Show history</button>
-                        </div>
-                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
-                      </div>
+                      <button class="btn-dd btn-c--blue" type="button">Add note</button>
                     </td>
                   </tr>
                   <tr>
@@ -976,7 +3322,7 @@
                         </label>
                       </div>
                     </td>
-                    <td class="body-td">
+                    <td class="body-td" colspan="3">
                       <div class="btn-list-table">
                         <div class="btn-list-table__row">
                           <button class="btn-a btn-a--small" type="button">Save</button>
@@ -994,15 +3340,8 @@
                         </label>
                       </div>
                     </td>
-                    <td class="body-td">
-                      <div class="btn-list-table">
-                        <div class="btn-list-table__row">
-                          <button class="btn-a btn-a--small" type="button">Add</button>
-                          <button class="btn-dd btn-c--blue" type="button">Show history</button>
-                        </div>
-                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
-                      </div>
-                    </td>
+                    <td class="body-td">09/26/2020</td>
+                    <td class="body-td" colspan="2">James Brown</td>
                   </tr>
                   <tr>
                     <td class="body-td">This customer usually calls to clalify delivery</td>
@@ -1013,15 +3352,8 @@
                         </label>
                       </div>
                     </td>
-                    <td class="body-td">
-                      <div class="btn-list-table">
-                        <div class="btn-list-table__row">
-                          <button class="btn-a btn-a--small" type="button">Add</button>
-                          <button class="btn-dd btn-c--blue" type="button">Show history</button>
-                        </div>
-                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
-                      </div>
-                    </td>
+                    <td class="body-td">09/26/2020</td>
+                    <td class="body-td" colspan="2">James Brown</td>
                   </tr>
                   <tr>
                     <td class="body-td">This customer usually calls to clalify delivery</td>
@@ -1032,15 +3364,8 @@
                         </label>
                       </div>
                     </td>
-                    <td class="body-td">
-                      <div class="btn-list-table">
-                        <div class="btn-list-table__row">
-                          <button class="btn-a btn-a--small" type="button">Add</button>
-                          <button class="btn-dd btn-c--blue" type="button">Show history</button>
-                        </div>
-                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
-                      </div>
-                    </td>
+                    <td class="body-td">09/26/2020</td>
+                    <td class="body-td" colspan="2">James Brown</td>
                   </tr>
                   <tr>
                     <td class="body-td">This customer usually calls to clalify delivery</td>
@@ -1051,15 +3376,8 @@
                         </label>
                       </div>
                     </td>
-                    <td class="body-td">
-                      <div class="btn-list-table">
-                        <div class="btn-list-table__row">
-                          <button class="btn-a btn-a--small" type="button">Add</button>
-                          <button class="btn-dd btn-c--blue" type="button">Show history</button>
-                        </div>
-                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
-                      </div>
-                    </td>
+                    <td class="body-td">09/26/2020</td>
+                    <td class="body-td" colspan="2">James Brown</td>
                   </tr>
                   <tr>
                     <td class="body-td">This customer usually calls to clalify delivery</td>
@@ -1070,15 +3388,8 @@
                         </label>
                       </div>
                     </td>
-                    <td class="body-td">
-                      <div class="btn-list-table">
-                        <div class="btn-list-table__row">
-                          <button class="btn-a btn-a--small" type="button">Add</button>
-                          <button class="btn-dd btn-c--blue" type="button">Show history</button>
-                        </div>
-                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
-                      </div>
-                    </td>
+                    <td class="body-td">09/26/2020</td>
+                    <td class="body-td" colspan="2">James Brown</td>
                   </tr>
                   <tr>
                     <td class="body-td">This customer usually calls to clalify delivery</td>
@@ -1089,15 +3400,8 @@
                         </label>
                       </div>
                     </td>
-                    <td class="body-td">
-                      <div class="btn-list-table">
-                        <div class="btn-list-table__row">
-                          <button class="btn-a btn-a--small" type="button">Add</button>
-                          <button class="btn-dd btn-c--blue" type="button">Show history</button>
-                        </div>
-                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
-                      </div>
-                    </td>
+                    <td class="body-td">09/26/2020</td>
+                    <td class="body-td" colspan="2">James Brown</td>
                   </tr>
                 </table>
               </div>

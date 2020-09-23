@@ -37,8 +37,14 @@
                         </div>
                         <div class="header__itm">
                           <div class="header__outer header__buttons">
-                            <div class="header__itm"><a class="btn-c btn-c--col btn-c--blue js-show-popup" href="#"><img class="icon icon--task" src="img/task.svg"><span class="btn-c--text">Accept task</span></a></div>
-                            <div class="header__itm"><a class="btn-c btn-c--col btn-c--blue js-show-popup" href="#addNewTask"><img class="icon icon--plus" src="img/plus.svg"><span class="btn-c--text">Add task</span></a></div>
+                            <!--.header__itm-->
+                            <!--    a.btn-c.btn-c--col.btn-c--blue.js-show-popup(href="#")-->
+                            <!--        img.icon.icon--task(src="img/task.svg")-->
+                            <!--        span.btn-c--text Accept task-->
+                            <!--.header__itm-->
+                            <!--    a.btn-c.btn-c--col.btn-c--blue.js-show-popup(href="#addNewTask")-->
+                            <!--        img.icon.icon--plus(src="img/plus.svg")-->
+                            <!--        span.btn-c--text Add task-->
                             <div class="header__itm"><a class="btn-c btn-c--col btn-c--green" href="#"><img class="icon icon--phone" src="img/inbound-call.svg"><span class="btn-c--text">Inbound<br>call</span></a></div>
                             <div class="header__itm"><a class="btn-c btn-c--col btn-c--orange" href="#"><img class="icon icon--phone" src="img/outbound-call.svg"><span class="btn-c--text">Outbound<br>call</span></a></div>
                           </div>
@@ -102,8 +108,239 @@
                     <div class="btn-calls-filters">Show all filters</div>
                   </div>
                 </div>
-                <div class="call-type-list"></div>
+                <div class="calls-filters-list">
+                  <div class="calls-filters-input">
+                    <label class="form__label"><span class="form__ttl">CSR Name</span>
+                      <input class="form__inp" type="text" value="" placeholder="Mike Jordan">
+                    </label>
+                    <div class="filters-date">
+                      <div class="date"><span class="date__ttl">Call Date from</span>
+                        <div class="date__outer">
+                          <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                          </svg>
+                          <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                        </div>
+                      </div>
+                      <div class="date"><span class="date__ttl">Call Date to</span>
+                        <div class="date__outer">
+                          <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                          </svg>
+                          <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                        </div>
+                      </div>
+                    </div>
+                    <label class="form__label form--small"><span class="form__ttl">Issue Categories</span>
+                      <select class="form__select">
+                        <option value="not selected">Not Selected</option>
+                      </select>
+                    </label>
+                    <label class="form__label form--small"><span class="form__ttl">Call Types</span>
+                      <select class="form__select">
+                        <option value="not selected">Not Selected</option>
+                      </select>
+                    </label>
+                    <label class="form__label form--small"><span class="form__ttl">Call Categories</span>
+                      <select class="form__select">
+                        <option value="not selected">Not Selected</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="calls-filters-check">
+                    <div class="calls-filters-check__box">
+                      <div class="checkbox">
+                        <label class="checkbox__label">
+                          <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">New Order Placed</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label class="checkbox__label">
+                          <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Refund Request</span>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label class="checkbox__label">
+                          <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Return Request</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calls-filters-input">
+                    <label class="form__label"><span class="form__ttl">First Name</span>
+                      <input class="form__inp" type="text" value="" placeholder="Enter Name">
+                    </label>
+                    <label class="form__label"><span class="form__ttl">Last Name</span>
+                      <input class="form__inp" type="text" value="" placeholder="Enter Name">
+                    </label>
+                    <label class="form__label"><span class="form__ttl">Member ID</span>
+                      <input class="form__inp" type="text" value="" placeholder="Enter Member ID">
+                    </label>
+                    <label class="form__label"><span class="form__ttl">Phone</span>
+                      <input class="form__inp" type="tel" value="" placeholder="Enter phone">
+                    </label>
+                  </div>
+                  <div class="calls-filters-input">
+                    <label class="form__label"><span class="form__ttl">Order #</span>
+                      <input class="form__inp" type="text" value="" placeholder="Order #">
+                    </label>
+                    <label class="form__label form--small"><span class="form__ttl">Order Type</span>
+                      <select class="form__select">
+                        <option value="Enter Order Type">Enter Order Type</option>
+                      </select>
+                    </label>
+                    <label class="form__label form--small"><span class="form__ttl">Order Status</span>
+                      <select class="form__select">
+                        <option value="Not Selected">Not Selected</option>
+                      </select>
+                    </label>
+                    <label class="form__label"><span class="form__ttl">Phone</span>
+                      <input class="form__inp" type="tel" value="" placeholder="Enter phone">
+                    </label>
+                    <div class="filters-date">
+                      <div class="date"><span class="date__ttl">Order Date from</span>
+                        <div class="date__outer">
+                          <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                          </svg>
+                          <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                        </div>
+                      </div>
+                      <div class="date"><span class="date__ttl">Order Date to</span>
+                        <div class="date__outer">
+                          <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                          </svg>
+                          <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filters-date">
+                      <div class="date"><span class="date__ttl">Order Date from</span>
+                        <div class="date__outer">
+                          <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                          </svg>
+                          <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                        </div>
+                      </div>
+                      <div class="date"><span class="date__ttl">Order Date to</span>
+                        <div class="date__outer">
+                          <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
+                          </svg>
+                          <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calls-filters-check">
+                    <div class="calls-filters-check__box">
+                      <div class="checkbox">
+                        <label class="checkbox__label">
+                          <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span><span class="checkbox__text">Recurring order</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="call-type-list">
+                  <div class="call-type-tags">
+                    <div class="call-type-tags__title">Call Type:</div>
+                    <div class="call-type-tags__status">Inbound</div>
+                    <div class="call-type-tags__clear"></div>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="table-calls-list">
+              <form class="form form-calls-list">
+                <div class="form-list-header">
+                  <h3 class="title-h3">Filtered Results</h3>
+                  <button class="btn-dd btn-c--blue" type="button">Export to .CSV</button>
+                </div>
+                <table>
+                  <tr>
+                    <td class="header-td">Call Type</td>
+                    <td class="header-td">CSR Name</td>
+                    <td class="header-td">Date</td>
+                    <td class="header-td">Call Start Time</td>
+                    <td class="header-td">Call Duration</td>
+                    <td class="header-td">Member ID</td>
+                    <td class="header-td">Member Full Name</td>
+                    <td class="header-td">Plan</td>
+                    <td class="header-td">Call Category</td>
+                    <td class="header-td">Telephone</td>
+                    <td class="header-td">Hangup Note</td>
+                  </tr>
+                  <tr>
+                    <td class="body-td">
+                      <div class="calls-icon-table"><img class="icon icon--inbound-tabl" src="img/inbound-table.svg"><span>Inbound</span></div>
+                    </td>
+                    <td class="body-td">Jesse Goodwin</td>
+                    <td class="body-td">02/26/2020</td>
+                    <td class="body-td">12:23</td>
+                    <td class="body-td">23:09</td>
+                    <td class="body-td"><a href="#">726354</a></td>
+                    <td class="body-td">Ruby Taylor</td>
+                    <td class="body-td">Special</td>
+                    <td class="body-td">Order Placed</td>
+                    <td class="body-td">+1 (324) 543-5422</td>
+                    <td class="body-td">
+                      <div class="dropdown dropdown-view-note"><a class="dropdown-active" href="#">View Note</a>
+                        <div class="dropdown__bottom dropdown-view-note-popup">
+                          <div class="dropdown-view-note-popup__text">World over people use massage therapy to help promote healthy skin, nourish and strengthen the body, relieve stress, reduce pain, and encourage balance and well being. Massage opens and increases the flow of energy, balancing the entire nervous system and helping to release physical and emotional disharmony. The many benefits of massage are enhanced by the use of high quality massage oil.</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="body-td">
+                      <div class="calls-icon-table"><img class="icon icon--inbound-tabl" src="img/outbound-table.svg"><span>Outbound</span></div>
+                    </td>
+                    <td class="body-td">Jesse Goodwin</td>
+                    <td class="body-td">02/26/2020</td>
+                    <td class="body-td">12:23</td>
+                    <td class="body-td">23:09</td>
+                    <td class="body-td"><a href="#">726354</a></td>
+                    <td class="body-td">Ruby Taylor</td>
+                    <td class="body-td">Special</td>
+                    <td class="body-td">Order Placed</td>
+                    <td class="body-td">+1 (324) 543-5422</td>
+                    <td class="body-td"><a href="#">View Note</a></td>
+                  </tr>
+                  <tr>
+                    <td class="body-td">
+                      <div class="calls-icon-table"><img class="icon icon--inbound-tabl" src="img/inbound-table.svg"><span>Inbound</span></div>
+                    </td>
+                    <td class="body-td">Jesse Goodwin</td>
+                    <td class="body-td">02/26/2020</td>
+                    <td class="body-td">12:23</td>
+                    <td class="body-td">23:09</td>
+                    <td class="body-td"><a href="#">726354</a></td>
+                    <td class="body-td">Ruby Taylor</td>
+                    <td class="body-td">Special</td>
+                    <td class="body-td">Order Placed</td>
+                    <td class="body-td">+1 (324) 543-5422</td>
+                    <td class="body-td"><a href="#">View Note</a></td>
+                  </tr>
+                  <tr>
+                    <td class="body-td">
+                      <div class="calls-icon-table"><img class="icon icon--inbound-tabl" src="img/outbound-table.svg"><span>Outbound</span></div>
+                    </td>
+                    <td class="body-td">Jesse Goodwin</td>
+                    <td class="body-td">02/26/2020</td>
+                    <td class="body-td">12:23</td>
+                    <td class="body-td">23:09</td>
+                    <td class="body-td"><a href="#">726354</a></td>
+                    <td class="body-td">Ruby Taylor</td>
+                    <td class="body-td">Special</td>
+                    <td class="body-td">Order Placed</td>
+                    <td class="body-td">+1 (324) 543-5422</td>
+                    <td class="body-td"><a href="#">View Note</a></td>
+                  </tr>
+                </table>
+              </form>
             </div>
           </div>
         </section>

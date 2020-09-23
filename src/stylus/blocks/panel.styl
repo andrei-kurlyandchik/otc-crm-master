@@ -11,6 +11,9 @@
     .panel__outer {
       margin-bottom 30px
     }
+    .find-user {
+      padding 15px 30px 20px
+    }
   }
   &--user {
     position relative
@@ -41,7 +44,62 @@
     &.panel--locked {
       background yellowLight
     }
-  }
+    &.panel--good-customer {
+      background greenLight
+      .user-profile-status__tags--not-active {
+        color #89C541
+        border 2px solid #89C541
+      }
+      .user-profile-status__tags--active {
+        color white
+        background greenColor
+      }
+    }
+    &.panel--customer-blocked {
+      background #D0D8DC
+      .user-profile-status__tags--not-active {
+        color #485A63
+        border 2px solid #485A63
+      }
+      .user-profile-status__tags--active {
+        color white
+        background #485A63
+      }
+    }
+    &.panel--angry-customer {
+      background #FFEBEE
+      .user-profile-status__tags--not-active {
+        color #C62828
+        border 2px solid #C62828
+      }
+      .user-profile-status__tags--active {
+        color white
+        background #C62828
+      }
+    }
+    &.panel--good-amber-customer {
+      background #FFF7E6
+      .user-profile-status__tags--not-active {
+        color #FFA000
+        border 2px solid #FFA000
+      }
+      .user-profile-status__tags--active {
+        color white
+        background #FFA000
+      }
+    }
+    &.panel--lying-customer {
+      background #D7CCC8
+      .user-profile-status__tags--not-active {
+        color #6D4C41
+        border 2px solid #6D4C41
+      }
+      .user-profile-status__tags--active {
+        color white
+        background #6D4C41
+      }
+    }
+}
   &__row {
     display flex
     margin 0 -15px
@@ -73,6 +131,7 @@
   }
   &--members, &--calls {
     margin-top 45px
+    margin-bottom: 60px;
     .title-h2 {
       margin-left 30px
       margin-bottom 25px
