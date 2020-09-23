@@ -167,6 +167,21 @@
     display: flex;
     flex-wrap: wrap;
   }
+  &__add--tag {
+    .form__ttl {
+      z-index 10001
+    }
+    .input-add-tag {
+      position absolute
+      top 2px
+      left 2px
+      background-color white
+      padding 16px 15px 15px 15px
+      border none
+      width 330px
+      z-index 10000
+    }
+  }
 }
 
 .search {
@@ -283,5 +298,34 @@
   }
   .icon--flag, .icon--valid {
     margin-right 10px
+  }
+}
+
+.selectric-form__select--color {
+  li, .label {
+    display flex
+    align-items center
+  }
+  .green-color, .grey-color, .red-color, .amber-color, .brown-color {
+    margin-right 10px
+    border 1px solid #cecece
+    border-radius 50%
+    width 24px
+    height 24px
+  }
+  .green-color {
+    background #F7FFEF
+  }
+  .grey-color {
+    background #D0D8DC
+  }
+  .red-color {
+    background #FFEBEE
+  }
+  .amber-color {
+    background #FFF7E6
+  }
+  .brown-color {
+    background #D7CCC8
   }
 }

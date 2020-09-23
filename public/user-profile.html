@@ -74,16 +74,15 @@
                           <div class="dropdown__bottom dropdown-tag-edit-popup">
                             <h2 class="title-h2">Edit Tags</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
                             <form class="form">
-                              <div class="form__itm form__add">
-                                <label class="form__label"><span class="form__ttl">Tags</span>
-                                  <input class="form__inp" type="text" value="" placeholder="Type a phrase">
+                              <div class="form__itm form__add form__add--tag">
+                                <label class="form__label"><span class="form__ttl">Type the Phrase</span>
+                                  <input class="form__inp input-add-tag" type="text" value="" placeholder="Type tag">
+                                  <select class="form__select--tag">
+                                    <option value="">Do not call</option>
+                                    <option value="">Talking loud</option>
+                                  </select>
                                 </label>
-                                <!--label.form__label-->
-                                <!--    select.form__select-->
-                                <!--        option(value='0') Select with few options-->
-                                <!--        option(value='primary') Primary-->
-                                <!--        option(value='secondary') Secondary-->
-                                <!--button.btn-dd.btn-c--blue(type='button') + add-->
+                                <button class="btn-dd btn-c--blue add-tag" type="button">+ add</button>
                               </div>
                               <div class="form__itm form__tags">
                                 <div class="tags tags--blue">Do not call<img class="icon icon--close" src="img/close.svg"></div>
@@ -109,12 +108,13 @@
                               <h2 class="title-h2">Edit Card Color</h2><a class="popup__close b-close b--close-dropdown" href="#"></a>
                               <form class="form">
                                 <div class="form__itm form__add">
-                                  <label class="form__label">
-                                    <select class="form__select">
-                                      <option value="">Green (Good Customer)</option>
-                                      <option value="">Grey (Customer blocked)</option>
-                                      <option value="">Red (Angry Customer)</option>
-                                      <option value="">Brown (Customer lying)</option>
+                                  <label class="form__label"><span class="form__ttl">Card color</span>
+                                    <select class="form__select--color">
+                                      <option value="green-color">Green (Good Customer)</option>
+                                      <option value="grey-color">Grey (Customer blocked)</option>
+                                      <option value="red-color">Red (Angry Customer)</option>
+                                      <option value="amber-color">Amber (Good Customer)</option>
+                                      <option value="brown-color">Brown (Customer lying)</option>
                                     </select>
                                   </label>
                                 </div>

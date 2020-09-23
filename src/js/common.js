@@ -60,6 +60,28 @@
         }
     });
 
+    $('.form__select--color').selectric({
+        optionsItemBuilder: function(itemData) {
+            return itemData.value.length ? '<span class="' + itemData.value +  '"></span>' + itemData.text : itemData.text;
+        },
+        labelBuilder: function(currItem) {
+            return (currItem.value.length ? '<span class="' + currItem.value +  '"></span>' : '') + currItem.text;
+        }
+    });
+
+    $('.form__select--tag').selectric();
+
+    $('.add-tag').click(function() {
+        // Store the value in a variable
+        let value = $('.input-add-tag').val();
+
+        // Append to original select
+        $('.form__select--tag').append('<option>' + (value ? value : 'Empty') + '</option>');
+
+        // Refresh Selectric
+        $('.form__select--tag').selectric('refresh');
+    });
+
 }());
 
 

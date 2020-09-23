@@ -19,16 +19,14 @@ section.panel.panel--user-info
                                         h2.title-h2 Edit Tags
                                         a.popup__close.b-close.b--close-dropdown(href='#')
                                         form.form
-                                            .form__itm.form__add
+                                            .form__itm.form__add.form__add--tag
                                                 label.form__label
-                                                    span.form__ttl Tags
-                                                    input.form__inp(type='text' value='' placeholder='Type a phrase')
-                                                //label.form__label
-                                                //    select.form__select
-                                                //        option(value='0') Select with few options
-                                                //        option(value='primary') Primary
-                                                //        option(value='secondary') Secondary
-                                                //button.btn-dd.btn-c--blue(type='button') + add
+                                                    span.form__ttl Type the Phrase
+                                                    input.form__inp.input-add-tag(type='text' value='' placeholder='Type tag')
+                                                    select.form__select--tag
+                                                        option(value='') Do not call
+                                                        option(value='') Talking loud
+                                                button.btn-dd.btn-c--blue.add-tag(type='button') + add
                                             .form__itm.form__tags
                                                 .tags.tags--blue Do not call
                                                     img.icon.icon--close(src='img/close.svg')
@@ -51,11 +49,13 @@ section.panel.panel--user-info
                                             form.form
                                                 .form__itm.form__add
                                                     label.form__label
-                                                        select.form__select
-                                                            option(value='') Green (Good Customer)
-                                                            option(value='') Grey (Customer blocked)
-                                                            option(value='') Red (Angry Customer)
-                                                            option(value='') Brown (Customer lying)
+                                                        span.form__ttl Card color
+                                                        select.form__select--color
+                                                            option(value='green-color') Green (Good Customer)
+                                                            option(value='grey-color') Grey (Customer blocked)
+                                                            option(value='red-color') Red (Angry Customer)
+                                                            option(value='amber-color') Amber (Good Customer)
+                                                            option(value='brown-color') Brown (Customer lying)
                                                 .form__btn.form__btn--center
                                                     .form__btn-itm
                                                         a.btn-b.b-close(href='#') Cancel
