@@ -12,86 +12,49 @@
   </head>
   <body>
     <main class="main">
-            <header class="header">
-              <div class="container">
-                <div class="header__wrap">
-                  <div class="header__wrap-itm header__wrap-left">
-                    <div class="header__wrap-inner">
-                      <div class="header__outer header__outer--between">
-                        <div class="header__itm">
-                          <div class="header__outer header__nav">
-                            <div class="header__itm header__nav-itm">
-                              <div class="header__wrap"><a class="logo" href="dashboard.html" title="logo"><img class="logo__img" src="img/logo.svg" alt="logo"></a></div>
-                            </div>
-                            <div class="header__itm header__nav-itm">
-                              <nav class="nav">
-                                <ul class="nav__list">
-                                  <li class="nav__li"><a class="nav__link" href="dashboard.html" title="Dashboard"><span class="nav__text">Dashboard</span></a></li>
-                                  <li class="nav__li"><a class="nav__link" href="calls.html" title="Calls"><span class="nav__text">Calls</span></a></li>
-                                  <li class="nav__li"><a class="nav__link" href="members.html" title="Members"><span class="nav__text">Members</span></a></li>
-                                  <li class="nav__li"><a class="nav__link nav__link--active" href="orders.html" title="Orders"><span class="nav__text">Orders</span></a></li>
-                                </ul>
-                              </nav>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="header__itm">
-                          <div class="header__outer header__buttons">
-                            <!--.header__itm-->
-                            <!--    a.btn-c.btn-c--col.btn-c--blue.js-show-popup(href="#")-->
-                            <!--        img.icon.icon--task(src="img/task.svg")-->
-                            <!--        span.btn-c--text Accept task-->
-                            <!--.header__itm-->
-                            <!--    a.btn-c.btn-c--col.btn-c--blue.js-show-popup(href="#addNewTask")-->
-                            <!--        img.icon.icon--plus(src="img/plus.svg")-->
-                            <!--        span.btn-c--text Add task-->
-                            <div class="header__itm"><a class="btn-c btn-c--col btn-c--green" href="#"><img class="icon icon--phone" src="img/inbound-call.svg"><span class="btn-c--text">Inbound<br>call</span></a></div>
-                            <div class="header__itm"><a class="btn-c btn-c--col btn-c--orange" href="#"><img class="icon icon--phone" src="img/outbound-call.svg"><span class="btn-c--text">Outbound<br>call</span></a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__wrap-itm header__wrap-left">
+              <div class="header__wrap-inner">
+                <div class="header__outer header__outer--between">
+                  <div class="header__itm">
+                    <div class="header__wrap"><a class="logo" href="dashboard.html" title="logo"><img class="logo__img" src="img/logo.svg" alt="logo"></a></div>
                   </div>
-                  <div class="header__wrap-itm">
-                    <div class="header__wrap-inner">
-                      <div class="header__outer header__outer--between">
-                        <div class="dropdown dropdown-leng"><a class="dropdown__top dropdown-active" href="#">
-                            <div class="dropdown__outer">
-                              <div class="dropdown__outer">
-                                <div class="dropdown__itm">
-                                  <div class="dropdown__inner"><span class="dropdown__flag"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></span><span class="dropdown__lang">(en)</span></div>
-                                </div>
-                              </div>
-                              <div class="dropdown__itm"><span class="dropdown__btn"></span></div>
-                            </div></a>
-                          <div class="dropdown__bottom">
-                            <ul class="dropdown__list dropdown__list-leng">
-                              <li class="dropdown__li"><a class="dropdown__link-leng" href="#"><span class="dropdown__flag"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></span><span class="dropdown__lang">English (EN)</span></a></li>
-                              <li class="dropdown__li"><a class="dropdown__link-leng" href="#"><span class="dropdown__flag"><img class="icon icon--flag" src="img/flags/spain.svg"></span><span class="dropdown__lang">Español (ESP)</span></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="dropdown"><a class="dropdown__top dropdown-active" href="#">
-                            <div class="dropdown__outer">
-                              <div class="dropdown__outer">
-                                <div class="dropdown__itm">
-                                  <div class="dropdown__inner"><span class="dropdown__user"></span><span class="dropdown__name">John Doe</span></div>
-                                </div>
-                              </div>
-                              <div class="dropdown__itm"><span class="dropdown__btn"></span></div>
-                            </div></a>
-                          <div class="dropdown__bottom">
-                            <ul class="dropdown__list">
-                              <li class="dropdown__li"><a class="dropdown__link" href="#">Logout</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="header__itm">
+                    <div class="header__outer header__buttons">
+                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Make New Order</span></a></div>
+                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Log Issue</span></a></div>
+                      <!--.header__itm-->
+                      <!--    a.btn-c.btn-c--blue.js-show-popup(href="#addNewTask")-->
+                      <!--        img.icon.icon--plus(src="img/plus.svg")-->
+                      <!--        span.btn-c--text Add task-->
                     </div>
                   </div>
                 </div>
               </div>
-            </header>
+            </div>
+            <div class="header__wrap-itm">
+              <div class="header__wrap-inner">
+                <div class="header__outer header__buttons">
+                  <div class="header__itm">
+                    <div class="header__call">
+                      <svg class="icon icon--call" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 30c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15z" fill="#D1E7FF"></path>
+                        <g fill="#0F73E7">
+                          <path d="M15.679 12.285a2.035 2.035 0 012.035 2.036.679.679 0 001.357 0 3.393 3.393 0 00-3.392-3.393.679.679 0 000 1.357z"></path>
+                          <path d="M15.679 9.571a4.75 4.75 0 014.75 4.75.679.679 0 001.357 0 6.107 6.107 0 00-6.107-6.107.679.679 0 000 1.357zM21.616 17.653a.677.677 0 00-.489-.441l-4.071-.93a.68.68 0 00-.624.177c-.095.088-.102.094-.543.936a6.724 6.724 0 01-3.305-3.318c.862-.435.869-.435.957-.536a.678.678 0 00.176-.625l-.93-4.024a.679.679 0 00-.44-.488 2.574 2.574 0 00-.489-.122 2.673 2.673 0 00-.522-.068 3.121 3.121 0 00-3.122 3.121 10.463 10.463 0 0010.45 10.45 3.12 3.12 0 003.122-3.121 2.948 2.948 0 00-.17-1.011z"></path>
+                        </g>
+                      </svg><span class="header__call--time">02:34</span>
+                    </div>
+                  </div>
+                  <div class="header__itm"><a class="btn-c btn-c--call btn-c--red js-show-popup" href="#finishCall">Finish Call</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="content">
         <section class="panel panel--user-info">
           <div class="container">
@@ -682,211 +645,72 @@
                 </div>
               </div>
               <div class="panel__col panel__col--right">
-                <div class="orders-summary-header"><a class="link" href="#">Orders / Order# 7263467</a><a class="btn-link" href="#">Open member profile</a></div>
-                <div class="order-summer-content">
-                  <div class="order-summer-info">
-                    <div class="order-summer-info__header">
-                      <h2 class="title-h2">Order Summary</h2>
-                      <div class="btn-block"><a class="btn-dd btn-c--blue" href="#">Return/ Refund All</a><a class="btn-dd btn-c--blue" href="#">Resend Order Confirmation</a></div>
-                    </div>
-                    <div class="order-summer-info__table">
-                      <div class="table-label-box col-3">
-                        <div class="table-label-box__title">Order Information</div>
-                        <table>
-                          <tr>
-                            <td>Order #</td>
-                            <td>48756876</td>
-                          </tr>
-                          <tr>
-                            <td>Status:</td>
-                            <td>Not Shipped</td>
-                          </tr>
-                          <tr>
-                            <td>Order Type:</td>
-                            <td>Inbound</td>
-                          </tr>
-                          <tr>
-                            <td>Performer:</td>
-                            <td>Marta (marta.h@orcstores.com)</td>
-                          </tr>
-                          <tr>
-                            <td>Created at:</td>
-                            <td>05/11/2020 09:08 EDT</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div class="table-label-box col-3">
-                        <div class="table-label-box__title">Shipping Information</div>
-                        <table>
-                          <tr>
-                            <td>Shipping Address:</td>
-                            <td><span>Marian Frazier</span><span>8285C Center Ave.</span><span>Latrobe, Pensylvania</span><span>15680</span><span>United States</span><span>215-345-4678</span></td>
-                          </tr>
-                          <tr>
-                            <td>Delivery option:</td>
-                            <td>USPS</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div class="table-label-box col-3">
-                        <div class="table-label-box__title">Tracking Information</div>
-                        <table>
-                          <tr>
-                            <td>Sent on:</td>
-                            <td>11/09/2019</td>
-                          </tr>
-                          <tr>
-                            <td>Tracking number:</td>
-                            <td>93233626</td>
-                          </tr>
-                          <tr>
-                            <td>Delivered on:</td>
-                            <td>12/23/202</td>
-                          </tr>
-                          <tr>
-                            <td>Tracking Link:</td>
-                            <td>7236527365423456</td>
-                          </tr>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="block-flex-start">
-                      <div class="order-summer-info__notes">
-                        <div class="order-summer-info__notes--title">Order Note</div>
-                        <div class="order-summer-info__notes--content">The flax plant, an ancient crop, yields the fibre from which linen is woven, as well as seeds (linseed or flaxseed) and oil. The oil, also called linseed oil, has many industrial uses – it is an important ingredient in paints, varnishes and linoleum for example.</div>
-                      </div>
-                      <div class="order-summer-info__attachments">
-                        <div class="order-summer-info__attachments--title">Attachments</div>
-                        <div class="order-summer-info__attachments--product-list-img">
-                          <div class="order-summer-info__attachments--product-img"><img src="img/product/product-small.jpg"></div>
-                          <div class="order-summer-info__attachments--product-img"><img src="img/product/product-small.jpg"></div>
+                <div class="container-tabs">
+                  <div class="container-tabs-wrapper tabs">
+                    <ul class="tabs__caption">
+                      <li>History</li>
+                      <li class="active">Orders</li>
+                      <li>Issues</li>
+                    </ul>
+                    <div class="tabs__content"></div>
+                    <div class="tabs__content active">
+                      <div class="tabs-order">
+                        <h2 class="title-h2">Orders</h2>
+                        <div class="tabs-order-wrapper">
+                          <label class="form__label form--large"><span class="form__ttl">Status</span>
+                            <select class="form__select">
+                              <option value="All statuses">All statuses</option>
+                              <option value="Not Shipped - Address Verification">Not Shipped - Address Verification</option>
+                              <option value="Not Shipped - Being Packaged">Not Shipped - Being Packaged</option>
+                              <option value="Not Shipped - Awating Carrier Pickup">Not Shipped - Awating Carrier Pickup</option>
+                              <option value="Shipped">Shipped</option>
+                              <option value="Cancelled">Cancelled</option>
+                            </select>
+                          </label>
+                          <label class="form__label form--medium"><span class="form__ttl">Show orders for</span>
+                            <select class="form__select">
+                              <option value="Last 6 months">Last 6 months</option>
+                            </select>
+                          </label>
                         </div>
                       </div>
                     </div>
+                    <div class="tabs__content"></div>
                   </div>
-                  <div class="order-summer-tabs-order-total">
-                    <div class="order-summer-tabs tabs">
-                      <ul class="tabs__caption">
-                        <li class="active">Claims</li>
-                        <li>Items</li>
-                      </ul>
-                      <div class="tabs__content active">
-                        <div class="tabs-claims">
-                          <div class="btn-dd btn-c--blue">View Claim</div>
-                          <div class="tabs-claims__date">01/08/2020</div>
-                          <table class="tabs-claims__table">
-                            <tr>
-                              <td>Status:</td>
-                              <td>Not Resolved</td>
-                            </tr>
-                            <tr>
-                              <td>Description:</td>
-                              <td>
-                                <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day to day, also asks us to remain physically young. Young at heart, young in mind and young in your body has become the principle of survival.</p><br>
-                                <p>Yet our age increases with every day of our life. The fast pace of the world around us in fact makes us age faster. But, it is important to retain our youthful vigor, for it is only with young passion and energy that we can work towards success, enjoy a peaceful, healthy life, indulge ourselves in the pleasure of sex, and keep ourselves happy.</p><br>
-                                <p>How to remain young forever? How to defy your age? How to retain the youthful joy? How to remain passionate and energetic.</p>
-                              </td>
-                            </tr>
-                          </table>
-                        </div>
-                      </div>
-                      <div class="tabs__content">
-                        <div class="tabs-items">
-                          <div class="items-order">
-                            <div class="items-order__title">Delivered 12/23/2020</div>
-                            <div class="items-order__content">
-                              <div class="items-order__img"><img src="img/product/product-small.jpg"></div>
-                              <div class="items-order__info">
-                                <div class="items-order__info--title">Shop No7 Protect & Perfect Intense Advanced Eye Cream</div>
-                                <div class="items-order__info--list">
-                                  <div class="items-order__info--list-content">SKU: 6255</div>
-                                  <div class="items-order__info--list-content">Qty: 3</div>
-                                  <div class="items-order__info--list-content">Price: $22.99</div>
-                                </div>
-                              </div>
-                              <div class="items-order__price">$22.99</div>
-                              <div class="items-order__btn">
-                                <div class="btn-dd btn-c--blue">Return</div>
-                              </div>
-                            </div>
-                            <div class="items-order__content">
-                              <div class="items-order__img"><img src="img/product/product-small.jpg"></div>
-                              <div class="items-order__info">
-                                <div class="items-order__info--title">Shop No7 Protect & Perfect Intense Advanced Eye Cream</div>
-                                <div class="items-order__info--list">
-                                  <div class="items-order__info--list-content">SKU: 6255</div>
-                                  <div class="items-order__info--list-content">Qty: 3</div>
-                                  <div class="items-order__info--list-content">Price: $22.99</div>
-                                </div>
-                              </div>
-                              <div class="items-order__price">$22.99</div>
-                              <div class="items-order__btn"></div>
-                            </div>
-                          </div>
-                          <div class="items-order">
-                            <div class="items-order__title">Return started</div>
-                            <div class="items-order__content">
-                              <div class="items-order__img"><img src="img/product/product-small.jpg"></div>
-                              <div class="items-order__info">
-                                <div class="items-order__info--title">Shop No7 Protect & Perfect Intense Advanced Eye Cream</div>
-                                <div class="items-order__info--list">
-                                  <div class="items-order__info--list-content">SKU: 6255</div>
-                                  <div class="items-order__info--list-content">Qty: 3</div>
-                                  <div class="items-order__info--list-content">Price: $22.99</div>
-                                </div>
-                              </div>
-                              <div class="items-order__price">$22.99</div>
-                              <div class="items-order__btn">
-                                <div class="btn-dd btn-c--blue">Add return tracking</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="items-order">
-                            <div class="items-order__title">Return complete</div>
-                            <div class="items-order__content">
-                              <div class="items-order__img"><img src="img/product/product-small.jpg"></div>
-                              <div class="items-order__info">
-                                <div class="items-order__info--title">Shop No7 Protect & Perfect Intense Advanced Eye Cream</div>
-                                <div class="items-order__info--list">
-                                  <div class="items-order__info--list-content">SKU: 6255</div>
-                                  <div class="items-order__info--list-content">Qty: 3</div>
-                                  <div class="items-order__info--list-content">Price: $22.99</div>
-                                </div>
-                              </div>
-                              <div class="items-order__price">$22.99</div>
-                              <div class="items-order__btn">
-                                <div class="items-order__btn--refund"><span>Refund for this item</span><span>$ 171.98</span></div>
-                                <div class="btn-dd btn-c--blue">Add return tracking</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="order-summer-order-total">
-                      <div class="order-summer-order-total__title">Order Total</div>
-                      <div class="order-summer-order-total__content">
-                        <table>
-                          <tr>
-                            <td>Item(s) Subtotal:</td>
-                            <td>$299.00</td>
-                          </tr>
-                          <tr>
-                            <td>Shipping Price:</td>
-                            <td>$0.00</td>
-                          </tr>
-                          <tr>
-                            <td>Total Price:</td>
-                            <td>$299.00</td>
-                          </tr>
-                          <tr>
-                            <td>Refund amount:</td>
-                            <td>$171.98</td>
-                          </tr>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+                <div class="table-orders">
+                  <form class="form form-orders">
+                    <table>
+                      <tr>
+                        <td class="header-td">Order ID</td>
+                        <td class="header-td">Order Type</td>
+                        <td class="header-td">Order Date</td>
+                        <td class="header-td">Order Status</td>
+                        <td class="header-td">Order Total $</td>
+                        <td class="header-td">Note</td>
+                        <td class="header-td">Attachments</td>
+                        <td class="header-td">Carrier</td>
+                        <td class="header-td">Tracking URL</td>
+                        <td class="header-td">Est. Delivery Date</td>
+                        <td class="header-td"></td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">Inbound</td>
+                        <td class="body-td">09/23/2020</td>
+                        <td class="body-td">Not Shipped</td>
+                        <td class="body-td">$ 123.09</td>
+                        <td class="body-td"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a></td>
+                        <td class="body-td"><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></td>
+                        <td class="body-td">USPS</td>
+                        <td class="body-td"><a href="#">543543543535343</a></td>
+                        <td class="body-td">12/12/2020</td>
+                        <td class="body-td">
+                          <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
                 </div>
               </div>
             </div>

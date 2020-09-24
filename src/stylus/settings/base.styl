@@ -28,6 +28,12 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+.container-tabs {
+  width 100%
+  border-radius 20px
+  background-color #fff
+  margin-bottom 30px
+}
 .main {
   &.main--login {
     height 100%
@@ -45,4 +51,37 @@ img {
 }
 .scroll-hidden {
   overflow: hidden
+}
+.block-flex-start {
+  display flex
+  justify-content flex-start
+}
+.tabs {
+}
+.tabs__caption {
+  display flex
+  align-items center
+  justify-content flex-start
+  border-bottom 1px solid #CCCCCC
+  padding 0 20px
+  li {
+    font-size 14px
+    font-weight 400
+    color #5E656C
+    padding 16px
+    border-bottom  4px solid transparent
+    cursor pointer
+    text-transform uppercase
+    &.active {
+      color #0F73E7
+      border-bottom  4px solid #0F73E7
+    }
+  }
+}
+.tabs__content {
+  display none
+  padding 30px 20px 15px
+  &.active {
+    display block
+  }
 }

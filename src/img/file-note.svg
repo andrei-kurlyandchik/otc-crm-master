@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="24px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/Font-Awesome/fa-file-note" transform="translate(1.000000, 1.000000)" fill="#0F73E7">
+            <g id="Group-2" transform="translate(-0.130000, -0.480000)">
+                <path d="M0.359,22.087 C0.584,22.333 0.875,22.446 1.212,22.446 L18.024,22.446 C18.361,22.446 18.652,22.333 18.877,22.087 C19.124,21.862 19.236,21.57 19.236,21.234 L19.236,6.823 C19.236,6.487 19.146,6.105 18.989,5.701 C18.809,5.32 18.607,4.983 18.383,4.758 L14.478,0.853 C14.253,0.628 13.916,0.426 13.535,0.247 C13.131,0.09 12.749,0 12.412,0 L1.212,0 C0.875,0 0.584,0.112 0.359,0.359 C0.112,0.584 -6.21724894e-14,0.875 -6.21724894e-14,1.212 L-6.21724894e-14,21.234 C-6.21724894e-14,21.57 0.112,21.862 0.359,22.087 L0.359,22.087 Z M1.594,1.594 L11.223,1.594 L11.223,6.801 C11.223,7.138 11.335,7.43 11.582,7.654 C11.806,7.901 12.098,8.013 12.435,8.013 L17.642,8.013 L17.642,20.852 L1.594,20.852 L1.594,1.594 L1.594,1.594 Z M12.816,1.683 C13.063,1.773 13.22,1.863 13.333,1.975 L17.261,5.903 C17.373,6.015 17.463,6.173 17.553,6.419 L12.816,6.419 L12.816,1.683 L12.816,1.683 Z" id="Fill-225"></path>
+                <g id="Group" transform="translate(4.130000, 5.480000)">
+                    <rect id="Rectangle" x="0" y="0" width="6" height="1"></rect>
+                    <rect id="Rectangle-Copy" x="0" y="3" width="6" height="1"></rect>
+                    <rect id="Rectangle-Copy-2" x="0" y="6" width="11" height="1"></rect>
+                    <rect id="Rectangle-Copy-3" x="0" y="9" width="11" height="1"></rect>
+                    <rect id="Rectangle-Copy-4" x="0" y="12" width="11" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

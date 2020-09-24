@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+    include layout/head
+    body
+        main.main
+            include blocks/header-calls
+            .content
+                include sections/orders-card-filter
+                include blocks/popup-add-task
+                include blocks/popup-view-task
+                include blocks/popup-edit-task
+                include blocks/popup-decline-task
+                include blocks/popup-resolve-task
+                include blocks/popup-notification-resolve
+                include blocks/popup-notification-add-task
+            include blocks/footer
+        include layout/scripts

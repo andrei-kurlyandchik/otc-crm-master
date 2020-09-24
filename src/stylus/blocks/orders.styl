@@ -27,6 +27,7 @@
 	padding 23px 30px
 	border-radius 20px
 	background-color #F8FAFC
+	margin-bottom 30px
 	&__header {
 		display flex
 		align-items center
@@ -44,6 +45,183 @@
 	&__table {
 		width 100%
 		display inline-flex
-		margin-bottom 50pxs
+		margin-bottom 50px
 	}
+	&__notes {
+		width 680px
+		margin-right 20px
+		&--title {
+			font-size 24px
+			font-weight 500
+			color #333
+			margin-bottom 20px
+		}
+		&--content {
+
+		}
+	}
+	&__attachments {
+		&--title {
+			font-size 24px
+			font-weight 500
+			color #333
+			margin-bottom 20px
+		}
+		&--product-list-img {
+			display flex
+			justify-content flex-start
+		}
+		&--product-img {
+			width 75px
+			margin-right 20px
+			img {
+				width 100%
+			}
+		}
+	}
+}
+
+.order-summer-tabs-order-total {
+	display flex
+	justify-content flex-start
+	padding 0 20px 20px
+}
+
+.order-summer-tabs {
+	width 72%
+	margin-right 20px
+}
+
+.order-summer-order-total {
+	width 25%
+	margin-top 65px
+	&__title {
+		font-size 24px
+		font-weight 500
+		color #333
+		margin-bottom 20px
+	}
+	&__content {
+		width 100%
+		table {
+			width 100%
+		}
+		td {
+			padding 0 20px 10px 0
+			&:last-child {
+				font-size 16px
+				font-weight 500
+				text-align right
+				padding 0 0 10px 0
+			}
+		}
+	}
+}
+
+.tabs-claims {
+	width 100%
+	position relative
+	.btn-dd {
+		position absolute
+		top: 0px
+		right 0px
+	}
+	&__date {
+		font-size 16px
+		line-height 27px
+		font-weight 500
+		color #333333
+		margin-bottom 10px
+	}
+	.tabs-claims__table {
+		width 100%
+		td {
+			padding 0 20px 10px 0
+		}
+	}
+}
+
+.items-order {
+	border-top: 1px solid #ccc;
+	&:first-child {
+		border none
+	}
+	&__title {
+		font-size 16px
+		line-height 27px
+		font-weight 500
+		color #333333
+		margin-bottom 25px
+	}
+	&__content {
+		display flex
+		justify-content flex-start
+		margin-bottom 25px
+	}
+	&__img {
+		width 75px
+		margin-right 25px
+		img {
+			width 100%
+		}
+	}
+	&__info {
+		padding-right 20px
+		flex 1
+		width 0
+		&--title {
+			font-size 16px
+			line-height 27px
+			font-weight 500
+			color #333333
+		}
+		&--list {
+			display inline-flex
+		}
+		&--list-content {
+			font-size 16px
+			line-height 27px
+			font-weight 300
+			color #333333
+			margin-right 25px
+		}
+	}
+	&__price {
+		width 120px
+		padding-right 20px
+		padding-top 4px
+	}
+	&__btn {
+		width 270px
+		display flex
+		flex-flow column
+		.btn-dd {
+			justify-content center
+		}
+		&--refund {
+			display flex
+			align-items center
+			justify-content space-between
+			font-size 16px
+			line-height 27px
+			font-weight 500
+			color #136C00
+			margin-bottom 12px
+		}
+	}
+}
+
+.container-tabs-wrapper {
+	width 100%
+}
+
+.tabs-order {
+	margin-bottom 20px
+}
+
+.tabs-order-wrapper {
+	display flex
+	align-items center
+	justify-content space-between
+	margin-top 25px
 }
