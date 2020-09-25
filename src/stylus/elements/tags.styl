@@ -20,3 +20,55 @@
 		margin-left 10px
 	}
 }
+
+.tags-history {
+	border-radius 16px
+	height 24px
+	display: flex
+	align-items center
+	padding 0 13px
+	font-size: 14px
+	line-height 20px
+	margin-right 15px
+	margin-bottom 20px
+	&__border {
+		border-width 1px
+		border-style solid
+		&--blue {
+			border-color #2175FF
+			color #2175FF
+		}
+		&--green {
+			border-color #00B8A7
+			color #00B8A7
+		}
+		&--gray {
+			border-color greyLight
+			color greyLight
+		}
+		&--emphasis {
+			border-color emphasis
+			color emphasis
+		}
+		&--blue-dark {
+			border-color #0043AA
+			color #0043AA
+		}
+	}
+	&__no-border--green {
+		background-color #00B8A7
+		color white
+	}
+	&__no-border--gray {
+		background-color greyLight
+		color white
+	}
+	&__no-border--emphasis {
+		background-color emphasis
+		color white
+	}
+	&__no-border--blue-dark {
+		background-color #0043AA
+		color white
+	}
+}

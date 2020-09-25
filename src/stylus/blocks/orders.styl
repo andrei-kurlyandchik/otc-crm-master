@@ -225,3 +225,101 @@
 	justify-content space-between
 	margin-top 25px
 }
+
+.tabs-history {
+	.form__full {
+		border-bottom 1px solid #ccc
+	}
+	.history-calendar-data, .history-calendar-card {
+		margin-left 70px
+	}
+}
+
+.tabs-history-tags {
+	display flex
+	flex-wrap wrap
+	padding 20px 20px 0px
+}
+
+.history-calendar {
+	width 840px
+}
+
+.history-calendar-data {
+	position relative
+	width 100%
+	padding 40px 0 50px 44px
+	font-size 24px
+	font-weight 500
+	color #333333
+	display block
+	&:before {
+		content ''
+		position absolute
+		top 0px
+		left 12px
+		width 2px
+		height 100%
+		background-color #D8D8D8
+	}
+}
+
+.history-calendar-card {
+	position relative
+	width 100%
+	padding 0 0 50px 44px
+	&:before {
+		content ''
+		position absolute
+		top 0px
+		left 12px
+		width 2px
+		height 100%
+		background-color #D8D8D8
+	}
+	&__circle {
+		width 24px
+		height 24px
+		position absolute
+		top 0px
+		left 1px
+		background #FFFFFF
+		box-shadow 0 2px 1px -1px rgba(0,0,0,0.20), 0 1px 1px 0 rgba(0,0,0,0.12), 0 2px 1px -1px rgba(0,0,0,0.14)
+		border-radius 12px
+		&:before {
+			content ''
+			position absolute
+			width 16px
+			height 16px
+			background-color #9E9E9E
+			top 50%
+			left 50%
+			transform: translate(-50%, -50%);
+			border-radius 50%
+		}
+	}
+	&-content {
+		display flex
+		justify-content space-between
+	}
+	&__content {
+		text-align left
+		width 550px
+		&--title {
+			font-size 16px
+			line-height 27px
+			font-weight 500
+			color #333333
+		}
+		&--content {
+
+		}
+	}
+	&__data {
+		text-align right
+		width 200px
+	}
+	.tags-history {
+		display inline-flex
+	}
+}

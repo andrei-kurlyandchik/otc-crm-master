@@ -444,7 +444,112 @@ section.panel.panel--user-info
                             li.active Orders
                             li Issues
                         div.tabs__content
-
+                            .tabs-history
+                                .form__row
+                                    .form__col
+                                        .form__col--title Date range:
+                                    .form__col
+                                        .date.date--inline
+                                            span.date__ttl From
+                                            .date__outer
+                                                svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                    .form__col
+                                        .date.date--inline
+                                            span.date__ttl To
+                                            .date__outer
+                                                svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                .form__row.form__full
+                                    .tabs-history-tags
+                                        .tags-history.tags-history__border.tags-history__border--blue All
+                                        .tags-history.tags-history__border.tags-history__border--green Member Info Management
+                                        .tags-history.tags-history__no-border--green Portal
+                                        .tags-history.tags-history__no-border--green E-commerce
+                                        .tags-history.tags-history__border.tags-history__border--green CRM
+                                        .tags-history.tags-history__border.tags-history__border--green HPP File
+                                        .tags-history.tags-history__border.tags-history__border--blue-dark Orders Info Management
+                                        .tags-history.tags-history__border.tags-history__border--blue-dark Orders
+                                        .tags-history.tags-history__no-border--blue-dark Returns
+                                        .tags-history.tags-history__no-border--gray Marketing
+                                        .tags-history.tags-history__no-border--emphasis Issues
+                                .form__row
+                                    .history-calendar
+                                        .history-calendar-data 06/01/2020
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--green Registration
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--green Account
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--green Password Recovery
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--green Catalog
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--blue-dark Orders
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--blue-dark Refund
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--blue-dark Return
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--emphasis Grievance
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
+                                        .history-calendar-card
+                                            .history-calendar-card__circle
+                                            .tags-history.tags-history__no-border--gray Notes
+                                            .history-calendar-card-content
+                                                .history-calendar-card__content
+                                                    .history-calendar-card__content--title Password Recovery Phone Call Made
+                                                    .history-calendar-card__content--content Password recovery call made to +1 (324) 543-5422
+                                                .history-calendar-card__data 05/23/2020 3:00 PM EST
                         div.tabs__content.active
                             .tabs-order
                                 h2.title-h2 Orders
