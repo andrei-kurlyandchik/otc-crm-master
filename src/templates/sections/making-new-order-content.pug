@@ -1,0 +1,747 @@
+section.panel.panel--user-info
+    .container
+        .panel__row
+            .panel__col.panel__col--left
+                .panel__outer.panel--user.panel--good-customer
+                    .panel__item
+                        .user-profile
+                            div.user-profile__label.user-profile__label--good-customer
+                                img.icon.icon--check(src='img/check.svg')
+                                span Registered on the website
+                            p.title-h2 Edward Green
+                            div.user-profile-tags
+                                div.user-profile-tags__list
+                                    .tags.tags--blue Do not call
+                                    .tags.tags--blue Talking loud
+                                .dropdown.dropdown-user-edit
+                                    a.btn-e.dropdown-active(href="#") edit
+                                    .dropdown__bottom.dropdown-tag-edit-popup
+                                        h2.title-h2 Edit Tags
+                                        a.popup__close.b-close.b--close-dropdown(href='#')
+                                        form.form
+                                            .form__itm.form__add.form__add--tag
+                                                label.form__label
+                                                    span.form__ttl Type the Phrase
+                                                    input.form__inp.input-add-tag(type='text' value='' placeholder='Type tag')
+                                                    select.form__select--tag
+                                                        option(value='') Do not call
+                                                        option(value='') Talking loud
+                                                button.btn-dd.btn-c--blue.add-tag(type='button') + add
+                                            .form__itm.form__tags
+                                                .tags.tags--blue Do not call
+                                                    img.icon.icon--close(src='img/close.svg')
+                                                .tags.tags--blue Talking loud
+                                                    img.icon.icon--close(src='img/close.svg')
+                                            .form__btn.form__btn--center
+                                                .form__btn-itm
+                                                    a.btn-b.b-close(href='#') Cancel
+                                                .form__btn-itm
+                                                    button.btn-a.btn-a--small(type='button') Save
+                            div.user-profile-card-color
+                                .user-profile-card-color__title
+                                    .user-profile-card-color__title-text Card Color
+                                    .user-profile-card-color__title-color Green (Good Customer)
+                                    .dropdown.dropdown-user-edit
+                                        .btn-e.dropdown-active edit
+                                        .dropdown__bottom.dropdown-profile-card-color-popup
+                                            h2.title-h2 Edit Card Color
+                                            a.popup__close.b-close.b--close-dropdown(href='#')
+                                            form.form
+                                                .form__itm.form__add
+                                                    label.form__label
+                                                        span.form__ttl Card color
+                                                        select.form__select--color
+                                                            option(value='green-color') Green (Good Customer)
+                                                            option(value='grey-color') Grey (Customer blocked)
+                                                            option(value='red-color') Red (Angry Customer)
+                                                            option(value='amber-color') Amber (Good Customer)
+                                                            option(value='brown-color') Brown (Customer lying)
+                                                .form__btn.form__btn--center
+                                                    .form__btn-itm
+                                                        a.btn-b.b-close(href='#') Cancel
+                                                    .form__btn-itm
+                                                        button.btn-a.btn-a--small(type='button') Save
+                            div.user-profile-status
+                                .user-profile-status__title Status
+                                .user-profile-status__info
+                                    //.user-profile-status__tags.user-profile-status__tags--not-active Active from 10/20/2020
+                                    .user-profile-status__tags.user-profile-status__tags--active Active User
+                                    //.user-profile-status__text Please note, that customer can’t pass registration on the website
+                            div.user-profile-i
+                                .user-profile-i__title Member ID
+                                .user-profile-i__content 33342425
+                            div.user-profile-i
+                                .user-profile-i__title Plan
+                                .user-profile-i__content Special ($ 300.00/quaterly)
+                                //.user-profile-i__content.not-s Not Specified
+                                //    img.icon.icon--warning(src='img/warning.svg')
+                            div.user-profile-i
+                                .user-profile-i__title Balance
+                                .user-profile-i__content $ 124.56
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Personal Data
+                                    .user-profile-info__title-line
+                                    .dropdown.dropdown-user-edit
+                                        .btn-e.dropdown-active edit
+                                        .dropdown__bottom.dropdown-email-edit-popup
+                                            h2.title-h2 Edit Personal Data
+                                            a.popup__close.b-close.b--close-dropdown(href='#')
+                                            form.form
+                                                table.user__table.user__table--edit.user__table--personal
+                                                    tr
+                                                        td.header-td
+                                                        td.header-td On File
+                                                        td.header-td Enable Override
+                                                        td.header-td Override
+                                                    tr
+                                                        td.body-td Gender
+                                                        td.body-td.toggle-check-info.toggle-active Male
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='female') Female
+                                                                    option(value='male') Male
+                                                    tr
+                                                        td.body-td.body-td__top Language
+                                                        td.body-td.body-td__top.toggle-check-info.toggle-active
+                                                            .user__row
+                                                                .user__col
+                                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
+                                                                .user__col
+                                                                    span English (EN)
+                                                        td.body-td.body-td__top.body-td__top--toogle
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                        td.body-td
+                                                            .language-selection
+                                                                .language-selection__row
+                                                                    label.form__label
+                                                                        select.form__select
+                                                                            option(value='primary') Primary
+                                                                            option(value='secondary') Secondary
+                                                                    label.form__label
+                                                                        select.form__select--leng
+                                                                            option(value='united-kingdom') English
+                                                                            option(value='spain') Español
+                                                                .btn-del
+                                                                    img.icon.icon--trash(src='img/trash.svg')
+                                                            .language-selection
+                                                                .language-selection__row
+                                                                    label.form__label
+                                                                        select.form__select
+                                                                            option(value='primary') Primary
+                                                                            option(value='secondary') Secondary
+                                                                    label.form__label
+                                                                        select.form__select--leng
+                                                                            option(value='united-kingdom') English
+                                                                            option(value='spain') Español
+                                                                .btn-del
+                                                                    img.icon.icon--trash(src='img/trash.svg')
+                                                            button.btn-dd.btn-dd--o(type='button') + ADD 1 more
+                                                .form__btn.form__btn--center
+                                                    .form__btn-itm
+                                                        a.btn-b.b-close(href='#') Cancel
+                                                    .form__btn-itm
+                                                        button.btn-a.btn-a--small(type='button') Save
+                                table.user__table.user__table--profile
+                                    tr
+                                        td Gender
+                                        td Male
+                                    tr
+                                        td DOB
+                                        td 12/09/1954
+                                    tr
+                                        td Language
+                                        td
+                                            .user__row
+                                                .user__col
+                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
+                                                .user__col
+                                                    span English (EN)
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Email
+                                    .user-profile-info__title-line
+                                    .dropdown.dropdown-user-edit
+                                        .btn-e.dropdown-active edit
+                                        .dropdown__bottom.dropdown-email-edit-popup
+                                            h2.title-h2 Manage Emails
+                                            a.popup__close.b-close.b--close-dropdown(href='#')
+                                            form.form
+                                                .form__itm
+                                                    button.btn-dd.btn-c--blue(type='button') + Add 1 more email
+                                                table.user__table.user__table--edit.user__table--email
+                                                    tr
+                                                        td.header-td
+                                                        td.header-td Email
+                                                        td.header-td Valid/Invalid
+                                                        td.header-td Email Marketing
+                                                        td.header-td
+                                                    tr
+                                                        td.body-td 1. Reg.
+                                                        td.body-td ann.smith@gmail.com
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select--valid
+                                                                    option(value='check-circle') Valid
+                                                                    option(value='warning') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                    tr
+                                                        td.body-td 2.
+                                                        td.body-td
+                                                            label.form__label
+                                                                input.form__inp(type='text' value='' placeholder='Email')
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select--valid
+                                                                    option(value='check-circle') Valid
+                                                                    option(value='warning') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+                                                    tr
+                                                        td.body-td 3.
+                                                        td.body-td
+                                                            label.form__label.form__error
+                                                                input.form__inp(type='text' value='' placeholder='Email')
+                                                            span.form__hint Wrong email format
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select--valid
+                                                                    option(value='check-circle') Valid
+                                                                    option(value='warning') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+
+                                                .form__btn.form__btn--center
+                                                    .form__btn-itm
+                                                        a.btn-b.b-close(href='#') Cancel
+                                                    .form__btn-itm
+                                                        button.btn-a.btn-a--small(type='button') Save
+                                ol.user-profile-info__email
+                                    li Reg.: ekonstantinipilsky@gmail.com
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Phone
+                                    .user-profile-info__title-line
+                                    .dropdown.dropdown-user-edit
+                                        .btn-e.dropdown-active edit
+                                        .dropdown__bottom.dropdown-phone-edit-popup
+                                            h2.title-h2 Edit Phone Numbers
+                                            a.popup__close.b-close.b--close-dropdown(href='#')
+                                            form.form
+                                                table.user__table.user__table--edit.user__table--phone-edit
+                                                    tr
+                                                        td.header-td
+                                                        td.header-td Phone Type
+                                                        td.header-td Phone #
+                                                        td.header-td Valid/Invalid
+                                                        td.header-td Call
+                                                        td.header-td SMS
+                                                        td.header-td Valid dates (Optional)
+                                                        td.header-td
+                                                    tr
+                                                        td.body-td Primary
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='landline') Landline
+                                                                    option(value='landline') Landline
+                                                        td.body-td
+                                                            label.form__label
+                                                                input.form__inp(type='tel' value='' placeholder='+1 (623) 453-6547')
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select--valid
+                                                                    option(value='check-circle') Valid
+                                                                    option(value='warning') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .form__row
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl From
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl To
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+                                                    tr
+                                                        td.body-td Secondary
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='landline') Landline
+                                                                    option(value='landline') Landline
+                                                        td.body-td
+                                                            label.form__label
+                                                                input.form__inp(type='tel' value='' placeholder='+1 (623) 453-6547')
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select--valid
+                                                                    option(value='check-circle') Valid
+                                                                    option(value='warning') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .form__row
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl From
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl To
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+                                                    tr
+                                                        td.body-td Temporary
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select
+                                                                    option(value='landline') Landline
+                                                                    option(value='landline') Landline
+                                                        td.body-td
+                                                            label.form__label
+                                                                input.form__inp(type='tel' value='' placeholder='+1 (623) 453-6547')
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select--valid
+                                                                    option(value='check-circle') Valid
+                                                                    option(value='warning') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .form__row
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl From
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl To
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                        td.body-td
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+                                                    tr
+                                                        td.body-td Member File
+                                                        td.body-td
+                                                        td.body-td +1 (324) 452-4566
+                                                        td.body-td
+                                                            label.form__label
+                                                                select.form__select--valid
+                                                                    option(value='check-circle') Valid
+                                                                    option(value='warning') Invalid
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .toggle-box
+                                                                .toggle-check.active-check
+                                                                span Allowed
+                                                        td.body-td
+                                                            .form__row
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl From
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+                                                                .form__col
+                                                                    .date.date--inline
+                                                                        span.date__ttl To
+                                                                        .date__outer
+                                                                            svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')
+                                                                                path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')
+                                                                            input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')
+
+                                                .form__btn.form__btn--center
+                                                    .form__btn-itm
+                                                        a.btn-b.b-close(href='#') Cancel
+                                                    .form__btn-itm
+                                                        button.btn-a.btn-a--small(type='button') Save
+                                table.user__table.user__table--phone
+                                    tr
+                                        td.phone-affiliation Primary
+                                            img.icon.icon--phone-iphone(src='img/phone-iphone.svg')
+                                        td.phone-number +1 (324) 543-5422
+                                    tr
+                                        td.phone-affiliation Secondary
+                                            img.icon.icon--home-black(src='img/home-black.svg')
+                                        td.phone-number +1 (324) 543-5422
+                                            img.icon.icon--warning(src='img/warning.svg')
+                                    tr
+                                        td.phone-affiliation Temporary
+                                        td.phone-number +1 (324) 543-5422
+                                    tr
+                                        td.phone-affiliation Registration
+                                        td.phone-number +1 (324) 543-5422
+                                    tr
+                                        td.phone-affiliation Member File
+                                        td.phone-number +1 (324) 543-5422
+                                            img.icon.icon--warning(src='img/warning.svg')
+
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Address
+                                    .user-profile-info__title-line
+                                    a.btn-e.js-show-popup(href="#addNewAddress") edit
+                                ul.user-profile-info__address
+                                    li 140 Atlantic Avenue 
+                                    li RApartment K1
+                                    li Jenkintown, PA 19133
+                            div.user-profile-info
+                                .user-profile-info__title
+                                    .user-profile-info__title-text Notes
+                                    .user-profile-info__title-line
+                                    a.btn-e.js-show-popup(href="#addNewNotes") edit
+                                .user-profile-info__notes Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            .panel__col.panel__col--right
+                .panel--making-new-order
+                    .making-new-order__header
+                        a(href="#").link-back Back to profile
+                        h2.title-h2 Making New Order
+                        .btn-header-flex
+                            a(href="#").btn-header-flex__link Previously
+                                br
+                                | Ordered
+                            a(href="#").btn-header-flex__link Notify
+                                br
+                                | when in stock
+                            a(href="#").btn-header-flex__link Saved
+                                br
+                                | for later
+                    .making-new-order__content
+                        .making-new-order
+                            .container-tabs
+                                .container-tabs-wrapper.tabs
+                                    ul.tabs__caption
+                                        li.active Items
+                                        li Gifts
+                                        li Recomendations
+                                    div.tabs__content.active
+                                        .tabs-search
+                                            .tabs-search-box
+                                                .tabs-search-box__input
+                                                    label.form__label.form--small
+                                                        select.form__select
+                                                            option(value='All Categories') All Categories
+                                                            option(value='Categories 1') All Categories 1
+                                                            option(value='Categories 2') All Categories 2
+                                                    .search-market
+                                                        .search
+                                                            .search__outer
+                                                                .search__itm.search__field
+                                                                    input.search__inp(type='text' placeholder='Search by Name, SKU')
+                                                        button.btn-dd.btn-c--blue(type='button') SEARCH
+                                                .tabs-search-box__btn Show Filters
+                                            .call-type-list
+                                                .call-type-tags
+                                                    .call-type-tags__title Active ingr.:
+                                                    .call-type-tags__status Paracetamol
+                                                    .call-type-tags__clear
+                                                .call-type-tags
+                                                    .call-type-tags__title Sympthoms:
+                                                    .call-type-tags__status Headache
+                                                    .call-type-tags__clear
+                                    div.tabs__content
+                                        .tabs-search
+                                            .tabs-search-title
+                                                .tabs-search-title__col
+                                                    .title-h3 Filters (1)
+                                                    .btn-calls-filters Clear All
+                                                .tabs-search-title__col
+                                                    .btn-calls-filters Hide filters
+                                            .tabs-search-box
+                                                .tabs-search-box__input
+                                                    label.form__label.form--small
+                                                        select.form__select
+                                                            option(value='All Categories') All Categories
+                                                            option(value='Categories 1') All Categories 1
+                                                            option(value='Categories 2') All Categories 2
+                                                    .search-market
+                                                        .search
+                                                            .search__outer
+                                                                .search__itm.search__field
+                                                                    input.search__inp(type='text' placeholder='Search by Name, SKU')
+                                                        button.btn-dd.btn-c--blue(type='button') SEARCH
+                                                .tabs-search-box__btn Show Filters
+                                            .tabs-search-filter
+                                                label.form__label.form--small
+                                                    select.form__select
+                                                        option(value='Active Ingr.') Active Ingr.
+                                                        option(value='Active Ingr. 1') Active Ingr. 1
+                                                        option(value='Active Ingr. 2') Active Ingr. 2
+                                                label.form__label.form--small
+                                                    select.form__select
+                                                        option(value='Dosage') Dosage
+                                                        option(value='Dosage 1') Dosage 1
+                                                        option(value='Dosage 2') Dosage 2
+                                                label.form__label.form--small
+                                                    select.form__select
+                                                        option(value='Form') Form
+                                                        option(value='Form 1') Form 1
+                                                        option(value='Form 2') Form 2
+                                                label.form__label.form--small
+                                                    select.form__select
+                                                        option(value='Sympthoms') Sympthoms
+                                                        option(value='Sympthoms 1') Sympthoms 1
+                                                        option(value='Sympthoms 2') Sympthoms 2
+                                                label.form__label.form--small
+                                                    select.form__select
+                                                        option(value='Price To') Price To
+                                                        option(value='Price To 1') Price To 1
+                                                        option(value='Price To 2') Price To 2
+                                            .call-type-list
+                                                .call-type-tags
+                                                    .call-type-tags__title Active ingr.:
+                                                    .call-type-tags__status Paracetamol
+                                                    .call-type-tags__clear
+                                                .call-type-tags
+                                                    .call-type-tags__title Sympthoms:
+                                                    .call-type-tags__status Headache
+                                                    .call-type-tags__clear
+
+                                    div.tabs__content
+
+                            .making-order-list
+                                .making-order-info
+                                    .making-order-info__col
+                                        img.making-order-info__img(src='img/product/product-small.jpg')
+                                        .making-order-info__content
+                                            .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                            .making-order-info__content--items
+                                                .making-order-info__box
+                                                    span SKU
+                                                    span 1233
+                                                .making-order-info__box
+                                                    span Packaging
+                                                    span 1 fl oz (30 ml)
+                                                .making-order-info__box
+                                                    span Form
+                                                    span Liquid
+                                            .making-order-info__content--desc Match by: active ingr:
+                                                span paracetamol;
+                                                | sympthoms:
+                                                span headache
+                                    .making-order-info__col.flex-col
+                                        .making-order-info__price $22.99
+                                        .making-order-info__items 23 items left
+                                        .making-order-info__btn
+                                            .counter-box
+                                                .counter-box__minus -
+                                                .counter-box__text 1
+                                                .counter-box__pluse +
+                                            .btn-making-order add
+                                            .btn-info
+                                                img.icon.icon--info(src="img/info.svg")
+                                .making-order-info
+                                    .making-order-info__col
+                                        img.making-order-info__img(src='img/product/product-small.jpg')
+                                        .making-order-info__content
+                                            .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                            .making-order-info__content--items
+                                                .making-order-info__box
+                                                    span SKU
+                                                    span 1233
+                                                .making-order-info__box
+                                                    span Packaging
+                                                    span 1 fl oz (30 ml)
+                                                .making-order-info__box
+                                                    span Form
+                                                    span Liquid
+                                            .making-order-info__content--desc Match by: active ingr:
+                                                span paracetamol;
+                                                | sympthoms:
+                                                span headache
+                                    .making-order-info__col.flex-col
+                                        .making-order-info__price $22.99
+                                        .making-order-info__items 23 items left
+                                        .making-order-info__btn
+                                            .counter-box
+                                                .counter-box__minus -
+                                                .counter-box__text 1
+                                                .counter-box__pluse +
+                                            .btn-making-order add
+                                            .btn-info
+                                                img.icon.icon--info(src="img/info.svg")
+                                .making-order-info.gray
+                                    .making-order-info__col
+                                        img.making-order-info__img(src='img/product/product-small.jpg')
+                                        .making-order-info__content
+                                            .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                            .making-order-info__content--items
+                                                .making-order-info__box
+                                                    span SKU
+                                                    span 1233
+                                                .making-order-info__box
+                                                    span Packaging
+                                                    span 1 fl oz (30 ml)
+                                                .making-order-info__box
+                                                    span Form
+                                                    span Liquid
+                                            .making-order-info__content--desc Match by: active ingr:
+                                                span paracetamol;
+                                                | sympthoms:
+                                                span headache
+                                    .making-order-info__col.flex-col
+                                        .making-order-info__price $22.99
+                                        .making-order-info__items 23 items left
+                                        .making-order-info__btn
+                                            .btn-making-order
+                                               img.icon.icon--bell(src="img/bell.svg")
+                                               span Notification Enabled
+                                            .btn-info
+                                                img.icon.icon--info(src="img/info.svg")
+                                .making-order-info.gray
+                                    .making-order-info__col
+                                        img.making-order-info__img(src='img/product/product-small.jpg')
+                                        .making-order-info__content
+                                            .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                            .making-order-info__content--items
+                                                .making-order-info__box
+                                                    span SKU
+                                                    span 1233
+                                                .making-order-info__box
+                                                    span Packaging
+                                                    span 1 fl oz (30 ml)
+                                                .making-order-info__box
+                                                    span Form
+                                                    span Liquid
+                                            .making-order-info__content--desc Match by: active ingr:
+                                                span paracetamol;
+                                                | sympthoms:
+                                                span headache
+                                    .making-order-info__col.flex-col
+                                        .making-order-info__price $22.99
+                                        .making-order-info__items 23 items left
+                                        .making-order-info__btn
+                                            .btn-making-order.check
+                                                img.icon.icon--bell-check(src="img/bell-check.svg")
+                                                span Notify When in Stock
+                                            .btn-info
+                                                img.icon.icon--info(src="img/info.svg")
+                                .making-order-info.red
+                                    .making-order-info__col
+                                        img.making-order-info__img(src='img/product/product-small.jpg')
+                                        .making-order-info__content
+                                            .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                            .making-order-info__content--items
+                                                .making-order-info__box
+                                                    span SKU
+                                                    span 1233
+                                                .making-order-info__box
+                                                    span Packaging
+                                                    span 1 fl oz (30 ml)
+                                                .making-order-info__box
+                                                    span Form
+                                                    span Liquid
+                                            .making-order-info__content--desc Match by: active ingr:
+                                                span paracetamol;
+                                                | sympthoms:
+                                                span headache
+                                    .making-order-info__col.flex-col
+                                        .making-order-info__price $22.99
+                                        .making-order-info__items 23 items left
+                                        .making-order-info__btn
+                                            .counter-box
+                                                .counter-box__minus -
+                                                .counter-box__text 1
+                                                .counter-box__pluse +
+                                            .btn-making-order add
+                                            .btn-info
+                                                img.icon.icon--info(src="img/info.svg")
+                                .making-order-info.red
+                                    .making-order-info__col
+                                        img.making-order-info__img(src='img/product/product-small.jpg')
+                                        .making-order-info__content
+                                            .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                            .making-order-info__content--items
+                                                .making-order-info__box
+                                                    span SKU
+                                                    span 1233
+                                                .making-order-info__box
+                                                    span Packaging
+                                                    span 1 fl oz (30 ml)
+                                                .making-order-info__box
+                                                    span Form
+                                                    span Liquid
+                                            .making-order-info__content--desc Match by: active ingr:
+                                                span paracetamol;
+                                                | sympthoms:
+                                                span headache
+                                    .making-order-info__col.flex-col
+                                        .making-order-info__price $22.99
+                                        .making-order-info__items 23 items left
+                                        .making-order-info__btn
+                                            .counter-box
+                                                .counter-box__minus -
+                                                .counter-box__text 1
+                                                .counter-box__pluse +
+                                            .btn-making-order add
+                                            .btn-info
+                                                img.icon.icon--info(src="img/info.svg")
+                        .card-box.panel__outer
+                            h2.title-h2 Shopping Cart

@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+    include layout/head
+    body
+        main.main
+            include blocks/header-calls
+            .content
+                include sections/making-new-order-content
+                include blocks/popup-add-task
+                include blocks/popup-add-adress
+                include blocks/popup-edit-adress
+                include blocks/popup-add-notes
+                include blocks/popup-view-task
+                include blocks/popup-finish-call
+            include blocks/footer
+        include layout/scripts

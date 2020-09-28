@@ -85,3 +85,66 @@ img {
     display block
   }
 }
+.tabs-search-box {
+  width 100%
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 20px
+  &__input {
+    width 80%
+    display flex
+    align-items stretch
+    justify-content space-between
+    .form__label {
+      border-right 0
+      border-radius 0
+    }
+  }
+  &__btn {
+    font-size 20px
+    line-height 24px
+    font-weight: 300
+    text-decoration underline
+    color #0F73E7
+    cursor pointer
+  }
+}
+
+.tabs-search-filter {
+  display flex
+  align-items center
+  .form__label {
+    margin-bottom 20px
+  }
+}
+
+.counter-box {
+  display flex
+  align-items stretch
+  margin-left 20px
+  &__minus, &__pluse {
+    display flex
+    align-items center
+    justify-content center
+    cursor pointer
+    background-color #E3F2FF
+    width 40px
+    height 40px
+    color #0F73E7
+    font-size 18px
+    font-weight: 500
+  }
+  &__text {
+    display flex
+    align-items center
+    justify-content center
+    width 40px
+    height 40px
+    color #575757
+    font-size 12px
+    font-weight: 300
+    border-top 1px solid #ccc
+    border-bottom 1px solid #ccc
+  }
+}
