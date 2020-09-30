@@ -83,6 +83,8 @@
     });
 
     $("ul.tabs__caption").on("click", "li:not(.active)", function() {
+        let numberTab = $(this).index();
+
         $(this)
             .addClass("active")
             .siblings()
@@ -92,6 +94,12 @@
             .removeClass("active")
             .eq($(this).index())
             .addClass("active");
+
+        if (numberTab == 1) {
+            $('.orders-tabs').addClass("active-table");
+        } else {
+            $('.orders-tabs').removeClass("active-table");
+        }
     });
 }());
 

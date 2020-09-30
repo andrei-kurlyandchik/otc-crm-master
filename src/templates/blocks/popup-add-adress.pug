@@ -3,7 +3,7 @@
         h2.title-h2 Manage Addresses
         a.popup__close.b-close(href='#')
     .popup__header-btn
-        button.btn-dd.btn-c--blue(type='button') + Add Address
+        button.btn-dd.btn-c--blue.js-show-popup(href="#editAddress") + Add Address
         .toggle-box
             span Show deleted addresses
             .toggle-check.active-check
@@ -50,7 +50,7 @@
                                         li.tooltip__li
                                             a.tooltip__link(href='#') Make invalid
                         .address-edit
-                            .address-edit__btn Edit
+                            .address-edit__btn.js-show-popup(href="#editAddress") Edit
                             .address-edit__btn Delete
                     .address-box__content
                         ul
