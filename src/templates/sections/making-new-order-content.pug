@@ -464,15 +464,291 @@ section.panel.panel--user-info
                         a(href="#").link-back Back to profile
                         h2.title-h2 Making New Order
                         .btn-header-flex
-                            a(href="#").btn-header-flex__link Previously
-                                br
-                                | Ordered
-                            a(href="#").btn-header-flex__link Notify
-                                br
-                                | when in stock
-                            a(href="#").btn-header-flex__link Saved
-                                br
-                                | for later
+                            .dropdown.dropdown-previously-ordered
+                                a.dropdown-active.btn-header-flex__link(href='#') Previously
+                                    br
+                                    | Ordered
+                                .dropdown__bottom
+                                    .making-order-list
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                                .making-order-info__btn
+                                                    .counter-box
+                                                        .counter-box__minus -
+                                                        .counter-box__text 1
+                                                        .counter-box__pluse +
+                                                    .btn-making-order add
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                                .making-order-info__btn
+                                                    .counter-box
+                                                        .counter-box__minus -
+                                                        .counter-box__text 1
+                                                        .counter-box__pluse +
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                                .making-order-info__items 23 items left
+                                                .making-order-info__btn
+                                                    .btn-making-order
+                                                        img.icon.icon--bell(src="img/bell.svg")
+                                                        span Notification Enabled
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                                .making-order-info__items 23 items left
+                                                .making-order-info__btn
+                                                    .btn-making-order.check
+                                                        img.icon.icon--bell-check(src="img/bell-check.svg")
+                                                        span Notify When in Stock
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                            .dropdown.dropdown-notify
+                                a.dropdown-active.btn-header-flex__link(href='#') Notify
+                                    br
+                                    | when in stock
+                                .dropdown__bottom
+                                    .making-order-list
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU: 1233
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                            a.popup__close.b-close(href='#')
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU: 1233
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                            a.popup__close.b-close(href='#')
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU: 1233
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                            a.popup__close.b-close(href='#')
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU: 1233
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                            a.popup__close.b-close(href='#')
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU: 1233
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                            a.popup__close.b-close(href='#')
+                            .dropdown.dropdown-marking-saved
+                                a.dropdown-active.btn-header-flex__link(href='#') Saved
+                                    br
+                                    | for later
+                                .dropdown__bottom
+                                    .making-order-list
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                                .making-order-info__btn
+                                                    .counter-box
+                                                        .counter-box__minus -
+                                                        .counter-box__text 1
+                                                        .counter-box__pluse +
+                                                    .btn-making-order add
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                                .making-order-info__btn
+                                                    .counter-box
+                                                        .counter-box__minus -
+                                                        .counter-box__text 1
+                                                        .counter-box__pluse +
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                                .making-order-info__items 23 items left
+                                                .making-order-info__btn
+                                                    .btn-making-order
+                                                        img.icon.icon--bell(src="img/bell.svg")
+                                                        span Notification Enabled
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
+                                                .making-order-info__items 23 items left
+                                                .making-order-info__btn
+                                                    .btn-making-order.check
+                                                        img.icon.icon--bell-check(src="img/bell-check.svg")
+                                                        span Notify When in Stock
+                                        .making-order-info
+                                            .making-order-info__col
+                                                img.making-order-info__img(src='img/product/product-small.jpg')
+                                                .making-order-info__content
+                                                    .making-order-info__content--title Shop No7 Protect & Perfect Intense Advanced
+                                                    .making-order-info__content--items
+                                                        .making-order-info__box
+                                                            span SKU
+                                                            span 1233
+                                                        .making-order-info__box
+                                                            span Packaging
+                                                            span 1 fl oz (30 ml)
+                                                        .making-order-info__box
+                                                            span Form
+                                                            span Liquid
+                                            .making-order-info__col.flex-col
+                                                .making-order-info__price $22.99
                     .making-new-order__content
                         .making-new-order
                             .container-tabs
@@ -743,5 +1019,72 @@ section.panel.panel--user-info
                                             .btn-making-order add
                                             .btn-info
                                                 img.icon.icon--info(src="img/info.svg")
-                        .card-box.panel__outer
-                            h2.title-h2 Shopping Cart
+                        .card-box
+                            .panel__outer
+                                h2.title-h2 Shopping Cart
+                                .shopping-cart
+                                    a.popup__close.b-close(href='#')
+                                    .shopping-cart__title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                    .shopping-cart__content
+                                        .shopping-cart__content--name SKU 2345
+                                        .counter-box
+                                            .counter-box__minus -
+                                            .counter-box__text 1
+                                            .counter-box__pluse +
+                                        .shopping-cart__content--price $22.99
+                                    .shopping-cart__footer
+                                        a(href="#").shopping-cart__footer--save Save for later
+                                        .shopping-cart__footer--price $22.99
+                                .shopping-cart
+                                    a.popup__close.b-close(href='#')
+                                    .shopping-cart__title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                    .shopping-cart__content
+                                        .shopping-cart__content--name SKU 2345
+                                        .counter-box
+                                            .counter-box__minus -
+                                            .counter-box__text 1
+                                            .counter-box__pluse +
+                                        .shopping-cart__content--price $22.99
+                                    .shopping-cart__footer
+                                        a(href="#").shopping-cart__footer--save Save for later
+                                        .shopping-cart__footer--price $22.99
+                                .shopping-cart
+                                    a.popup__close.b-close(href='#')
+                                    .shopping-cart__title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                    .shopping-cart__content
+                                        .shopping-cart__content--name SKU 2345
+                                        .counter-box
+                                            .counter-box__minus -
+                                            .counter-box__text 1
+                                            .counter-box__pluse +
+                                        .shopping-cart__content--price GIFT
+                                    .shopping-cart__footer
+                                        a(href="#").shopping-cart__footer--save Save for later
+                                        .shopping-cart__footer--price $0.00
+
+                                h2.title-h2.margin-top Shipping Address
+                                .shipping-address
+                                    .shipping-address__title Marian Frazier
+                                    .shipping-address__title 8285C Center Ave.
+                                    .shipping-address__title Latrobe, Pensylvania
+                                    .shipping-address__title 15680
+                                    .shipping-address__title United States
+                                    .shipping-address__title 215-345-4678
+                                    .shipping-address__link
+                                        a(href="#") Edit Address
+                                        a(href="#") Edit Address
+                                .delivery-options
+                                    .delivery-options__title Delivery Options
+                                    label.form__label
+                                        select.form__select
+                                            option(value='Option 1') Option 1
+                                            option(value='Option 2') Option 2
+
+                            .panel__outer
+                                h2.title-h2 Summary
+                                .summary
+                                    .summary-header
+                                        .summary-header__title Total
+                                        .summary-header__price $123.23
+                                    .summary-footer ($123.90 left)
+                                    .summary-btn PROCEED TO CHECKOUT

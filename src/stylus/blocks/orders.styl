@@ -362,8 +362,17 @@
 }
 
 .card-box {
-	padding 25px 30px
 	width 340px
+	.panel__outer {
+		width 100%
+		padding 25px 30px
+	}
+	.title-h2 {
+		margin-bottom 15px
+		&.margin-top {
+			margin-top 27px
+		}
+	}
 }
 
 .making-order-list {
@@ -454,4 +463,145 @@
 		align-items center
 		justify-content flex-end
 	}
+}
+
+.shopping-cart {
+	position: relative
+	padding 15px 0
+	border-bottom 1px solid #CCCCCC
+	.b-close {
+		width 18px
+		height 18px
+		position absolute
+		top 7px
+		right -10px
+	}
+	&__title {
+		font-size 16px
+		font-weight 300
+		color #3A3A3A
+		margin-bottom 15px
+	}
+	&__content {
+		display flex
+		align-items center
+		justify-content space-between
+		margin-bottom 14px
+		&--name {
+			font-size 16px
+			font-weight 300
+			color #3A3A3A
+			text-align left
+		}
+		&--price {
+			font-size 16px
+			font-weight 300
+			color #3A3A3A
+			text-align right
+		}
+	}
+	&__footer {
+		display flex
+		align-items flex-end
+		justify-content space-between
+		&--save {
+			font-size 16px
+			font-weight 300
+			color #0F73E7
+			text-decoration underline
+			text-align left
+		}
+		&--price {
+			font-size 24px
+			font-weight 500
+			color #333333
+			text-align right
+		}
+	}
+}
+
+.shipping-address {
+	&__title {
+		font-size 16px
+		font-weight 300
+		line-height 20px
+		color #333333
+	}
+	&__link {
+		display flex
+		align-items center
+		justify-content space-between
+		margin-top 16px
+		a {
+			font-size 16px
+			font-weight 300
+			color #0F73E7
+			text-decoration underline
+			&:first-child {
+				text-align left
+			}
+			&:last-child {
+				text-align right
+			}
+		}
+	}
+}
+
+.delivery-options {
+	display flex
+	align-items center
+	justify-content space-between
+	margin-top 40px
+	&__title {
+		font-size 16px
+		font-weight 300
+		line-height 20px
+		color #333333
+	}
+}
+
+.summary {
+
+}
+
+.summary-header {
+	display flex
+	align-items flex-end
+	justify-content space-between
+	&__title {
+		font-size 16px
+		font-weight 300
+		line-height 20px
+		color #3A3A3A
+		text-align left
+	}
+	&__price {
+		font-size 24px
+		font-weight 500
+		line-height 32px
+		color #333333
+		text-align right
+	}
+}
+
+.summary-footer {
+	width 100%
+	font-size 24px
+	font-weight 500
+	line-height 32px
+	color #333333
+	text-align right
+	margin-bottom 16px
+}
+
+.summary-btn {
+	text-transform uppercase
+	font-size 18px
+	font-weight 500
+	color #fff
+	padding 15px 0
+	background-color #2979ff
+	border-radius 4px
+	cursor pointer
+	text-align center
 }

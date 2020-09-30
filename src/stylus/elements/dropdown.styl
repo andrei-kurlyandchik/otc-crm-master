@@ -249,3 +249,82 @@
     right 85px
   }
 }
+
+.dropdown-previously-ordered {
+  min-width auto
+  padding 0
+  .dropdown__bottom {
+    width 825px
+    z-index 2
+    top 110px
+    left -400px
+    &:before {
+      left 135px
+    }
+  }
+  .making-order-info {
+    padding 20px 0
+    width 100%
+    &__col {
+      justify-content space-between
+    }
+    &__price {
+      line-height 27px
+    }
+  }
+}
+
+.dropdown-notify {
+  min-width auto
+  padding 0
+  .dropdown__bottom {
+    width 825px
+    z-index 2
+    top 110px
+    left -540px
+    &:before {
+      left 450px
+    }
+  }
+  .making-order-info {
+    padding 20px 60px 20px 0
+    width 100%
+    position relative
+    &__col {
+      justify-content space-between
+    }
+    &__price {
+      line-height 27px
+      padding-top 8px
+    }
+  }
+  .b-close {
+    top 30px
+  }
+}
+
+.dropdown-marking-saved {
+  min-width auto
+  padding 0
+  .dropdown__bottom {
+    width 825px
+    z-index 2
+    top 110px
+    right 0
+    left auto
+    &:before {
+      left auto
+      right 30px
+    }
+  }
+  .making-order-info {
+    padding 20px 0
+    width 100%
+    &__col {
+      justify-content space-between
+    }
+    &__price {
+      line-height 27px
+    }
+  }
+}
