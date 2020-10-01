@@ -24,7 +24,7 @@
                   <div class="header__itm">
                     <div class="header__outer header__buttons">
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Make New Order</span></a></div>
-                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Log Issue</span></a></div>
+                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#logIssue"><span class="btn-c--text">Log Issue</span></a></div>
                       <!--.header__itm-->
                       <!--    a.btn-c.btn-c--blue.js-show-popup(href="#addNewTask")-->
                       <!--        img.icon.icon--plus(src="img/plus.svg")-->
@@ -935,6 +935,149 @@
                   <button class="btn-a btn-a--small" type="button">Save</button>
                 </div>
                 <div class="form__btn-itm"><a class="btn-a b-close js-show-popup" href="#createdTask">Save and create next</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--log-issue" id="logIssue">
+          <div class="popup__top">
+            <h2 class="title-h2">Log Issue</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="form__itm">
+                <label class="form__label form--inline form--medium"><span class="form__ttl">Compliant Category</span>
+                  <select class="form__select">
+                    <option value="">Delivery</option>
+                    <option value="">Delivery 2</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--inline form--medium"><span class="form__ttl">Order #</span>
+                  <input class="form__inp" type="text" value="" placeholder="646753">
+                </label>
+              </div>
+              <div class="form__itm">
+                <table class="user__table table-log-issue">
+                  <tr>
+                    <td class="header-td">
+                      <div class="td-checkbox">
+                        <div class="checkbox">
+                          <label class="checkbox__label">
+                            <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
+                          </label>
+                        </div><span>Product</span>
+                      </div>
+                    </td>
+                    <td class="header-td">To Refund</td>
+                    <td class="header-td">Product</td>
+                  </tr>
+                  <tr>
+                    <td class="body-td">
+                      <div class="td-checkbox td-checkbox__align-top">
+                        <div class="checkbox">
+                          <label class="checkbox__label">
+                            <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
+                          </label>
+                        </div>
+                        <div class="table-info-product">
+                          <div class="table-info-product__title">Shop No7 Protect & Perfect Intense Advanced Eye Cream</div>
+                          <div class="table-info-product__content">
+                            <div class="table-info-product__content--text">SKU: 6255</div>
+                            <div class="table-info-product__content--text">Qty: 3</div>
+                            <div class="table-info-product__content--text">Price: $22.99</div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="body-td">
+                      <div class="counter-box">
+                        <div class="counter-box__minus">-</div>
+                        <div class="counter-box__text">1</div>
+                        <div class="counter-box__pluse">+</div>
+                      </div>
+                    </td>
+                    <td class="body-td">
+                      <label class="form__label">
+                        <select class="form__select">
+                          <option value="">Item Arrived</option>
+                          <option value="">Item Arrived 2</option>
+                        </select>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="body-td">
+                      <div class="td-checkbox td-checkbox__align-top">
+                        <div class="checkbox">
+                          <label class="checkbox__label">
+                            <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
+                          </label>
+                        </div>
+                        <div class="table-info-product">
+                          <div class="table-info-product__title">Shop No7 Protect & Perfect Intense Advanced Eye Cream</div>
+                          <div class="table-info-product__content">
+                            <div class="table-info-product__content--text">SKU: 6255</div>
+                            <div class="table-info-product__content--text">Qty: 3</div>
+                            <div class="table-info-product__content--text">Price: $22.99</div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="body-td">
+                      <div class="counter-box">
+                        <div class="counter-box__minus">-</div>
+                        <div class="counter-box__text">1</div>
+                        <div class="counter-box__pluse">+</div>
+                      </div>
+                    </td>
+                    <td class="body-td">
+                      <label class="form__label">
+                        <select class="form__select">
+                          <option value="">Item Arrived</option>
+                          <option value="">Item Arrived 2</option>
+                        </select>
+                      </label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="form__itm">
+                <label class="form__label"><span class="form__ttl">What needs to be done?</span>
+                  <textarea class="form__textarea" placeholder="Placeholder"></textarea>
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label"><span class="form__ttl">Description</span>
+                  <textarea class="form__textarea" placeholder="Placeholder"></textarea>
+                </label>
+              </div>
+              <div class="form__itm">
+                <div class="box-check-text">
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
+                    </label>
+                  </div><span>Conference Call with HPP Representative</span>
+                </div>
+              </div>
+              <div class="form__itm">
+                <div class="attachment-file">
+                  <div class="attachment-file__title">Attachment(s)</div>
+                  <div class="attachment-file__box">
+                    <input class="inputfile inputfile-box" type="file" name="file-1[]" id="file-1" data-multiple-caption="{count} files selected" multiple>
+                    <label for="file-1">Select files</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a" type="button">Create Issue</button>
+                </div>
+                <!--.form__btn-itm-->
+                <!--    a.btn-a.b-close.js-show-popup(href='#createdTask') Save and create next-->
               </div>
             </form>
           </div>
