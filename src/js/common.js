@@ -101,6 +101,16 @@
             $('.orders-tabs').removeClass("active-table");
         }
     });
+
+    $('.btn-filter-tags').on('click', function (e){
+        e.preventDefault();
+        $('.call-type-list').hide();
+    });
+
+    $('.btn-filter-show').on('click', function (e){
+        e.preventDefault();
+        $('.calls-filters-extended').toggleClass('show');
+    });
 }());
 
 
