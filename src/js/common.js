@@ -102,6 +102,18 @@
         }
     });
 
+    jQuery.fn.extend({
+        toggleText: function (a, b){
+            var isClicked = false;
+            var that = this;
+            this.click(function (){
+                if (isClicked) { that.text(a); isClicked = false; }
+                else { that.text(b); isClicked = true; }
+            });
+            return this;
+        }
+    });
+
     $('.btn-filter-tags').on('click', function (e){
         e.preventDefault();
         $('.call-type-list').hide();
@@ -109,7 +121,15 @@
 
     $('.btn-filter-show').on('click', function (e){
         e.preventDefault();
+        $(this).toggleClass('clicked');
+        if ( $(this).hasClass("clicked") ) {
+            $(this).text("Hide filters");
+        }
+        else {
+            $(this).text("Show filters");
+        }
         $('.calls-filters-extended').toggleClass('show');
+
     });
 
     ;( function( $, window, document, undefined )
