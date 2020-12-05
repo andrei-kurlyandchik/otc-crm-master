@@ -119,6 +119,19 @@
         $('.call-type-list').hide();
     });
 
+    $('.btn-calls-filters-show').on('click', function (e){
+        e.preventDefault();
+        $(this).toggleClass('clicked');
+        if ( $(this).hasClass("clicked") ) {
+            $(this).text("Hide filters");
+        }
+        else {
+            $(this).text("Show filters");
+        }
+        $('.calls-filters-list__orders').toggleClass('show');
+
+    });
+
     $('.btn-filter-show').on('click', function (e){
         e.preventDefault();
         $(this).toggleClass('clicked');

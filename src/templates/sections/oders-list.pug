@@ -8,8 +8,8 @@ section.panel.panel--orders
                         .title-h3 Filters (1)
                         .btn-calls-filters Clear All
                     .calls-filters-title__col
-                        .btn-calls-filters Hide filters
-                .calls-filters-list
+                        .btn-calls-filters.btn-calls-filters-show Show filters
+                .calls-filters-list.calls-filters-list__orders
                     .calls-filters-input
                         label.form__label
                             span.form__ttl First Name
@@ -109,3 +109,18 @@ section.panel.panel--orders
                         td.body-td
                             a(href="#") 543543543535343
                         td.body-td $ 233.90
+                .pagination
+                    .pagination-wrapper
+                        .pagination-title Rows per page
+                        label.form__label.pagination-call-select
+                            select.form__select
+                                option(value='') 10
+                                option(value='') 5
+                                option(value='') 1
+                        .pagination-page
+                            span 1-8
+                            | of
+                            span 8
+                        .pagination-btn
+                            .pagination-btn__prev &#8249;
+                            .pagination-btn__next &#8250;

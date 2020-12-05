@@ -1,0 +1,76 @@
+.pagination {
+	width 100%
+	display flex
+	justify-content flex-end
+	align-items center
+	height 81px
+	border-top 1px solid #ccc
+	padding 0 20px
+}
+
+.pagination-wrapper {
+	display flex
+	align-items center
+}
+
+.pagination-title {
+	font-weight 300
+	font-size 14px
+	line-height 16px
+	margin-right 20px
+	color grey
+}
+
+.pagination-call-select {
+	width 86px
+	border-top none
+	border-left  none
+	border-right none
+	border-bottom 1px solid black
+	border-radius 0
+	margin-right 20px
+
+	.selectric {
+		.button:after {
+			border-top-color black
+		}
+		.label {
+			padding 12px 35px 12px 15px
+		}
+	}
+
+}
+
+.pagination-page {
+	font-weight 300
+	font-size 14px
+	line-height 16px
+	margin-right 20px
+	color grey
+	span:first-child {
+		margin-right 5px
+	}
+	span:last-child {
+		margin-left 5px
+	}
+}
+
+.pagination-btn {
+	display flex
+	align-items center
+}
+
+.pagination-btn__prev {
+	margin-right 20px
+}
+
+.pagination-btn__prev, .pagination-btn__next {
+	cursor pointer
+	color black
+	width 24px
+	height 24px
+	font-size 24px
+	display flex
+	align-items center
+	justify-content center
+}

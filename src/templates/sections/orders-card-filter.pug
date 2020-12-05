@@ -607,4 +607,18 @@ section.panel.panel--user-info
                                 td.body-td
                                     button.btn-dd.btn-c--blue(type='button') + Attach file
 
-
+                        .pagination
+                            .pagination-wrapper
+                                .pagination-title Rows per page
+                                label.form__label.pagination-call-select
+                                    select.form__select
+                                        option(value='') 10
+                                        option(value='') 5
+                                        option(value='') 1
+                                .pagination-page
+                                    span 1-8
+                                    | of
+                                    span 8
+                                .pagination-btn
+                                    .pagination-btn__prev &#8249;
+                                    .pagination-btn__next &#8250;
