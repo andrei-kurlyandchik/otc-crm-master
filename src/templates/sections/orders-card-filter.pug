@@ -1,7 +1,7 @@
 section.panel.panel--user-info
     .container
         .panel__row
-            .panel__col.panel__col--left
+            .panel__col.panel__col--left.panel__col--pad
                 .panel__outer.panel--user.panel--good-amber-customer
                     .panel__item
                         .user-profile
@@ -430,13 +430,7 @@ section.panel.panel--user-info
                                     li 140 Atlantic Avenue 
                                     li RApartment K1
                                     li Jenkintown, PA 19133
-                            div.user-profile-info
-                                .user-profile-info__title
-                                    .user-profile-info__title-text Notes
-                                    .user-profile-info__title-line
-                                    a.btn-e.js-show-popup(href="#addNewNotes") edit
-                                .user-profile-info__notes Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            .panel__col.panel__col--right
+            .panel__col.panel__col--right.panel__col--pad
                 .container-tabs
                     .container-tabs-wrapper.tabs
                         ul.tabs__caption
@@ -576,49 +570,239 @@ section.panel.panel--user-info
                         table
                             tr
                                 td.header-td Order ID
-                                td.header-td Order Type
-                                td.header-td Order Date
-                                td.header-td Order Status
-                                td.header-td Order Total $
-                                td.header-td Note
-                                td.header-td Attachments
-                                td.header-td Carrier
-                                td.header-td Tracking URL
-                                td.header-td Est. Delivery Date
-                                td.header-td
+                                td.header-td Order Info
+                                td.header-td Delivery info
+                                td.header-td Order Total
+                                td.header-td.width-notes-td Notes/Attachments
                             tr
                                 td.body-td
                                     a(href="#") 763455735
-                                td.body-td Inbound
-                                td.body-td 09/23/2020
-                                td.body-td Not Shipped
-                                td.body-td $ 123.09
                                 td.body-td
-                                    a(href="#")
-                                        img.icon.icon--flag(src='img/file-note.svg')
+                                    .content-td Inbound
+                                    .content-td 09/23/2020 23:23
+                                    .content-td Created
                                 td.body-td
-                                    a(href="#").file-link
-                                        img.icon.icon--flag(src='img/file.svg')
-                                        span x 3
-                                td.body-td USPS
+                                    .content-td -
+                                    .content-td -
+                                    .content-td -
                                 td.body-td
-                                    a(href="#") 543543543535343
-                                td.body-td 12/12/2020
+                                    .price $ 123.09
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
+                            tr
                                 td.body-td
-                                    button.btn-dd.btn-c--blue(type='button') + Attach file
+                                    a(href="#") 763455735
+                                td.body-td
+                                    .content-td Inbound
+                                    .content-td 09/23/2020 23:23
+                                    .content-td Address
+                                        br
+                                        | Verification
+                                td.body-td
+                                    .content-td -
+                                    .content-td -
+                                    .content-td -
+                                td.body-td
+                                    .price $ 123.09
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
+                            tr
+                                td.body-td
+                                    a(href="#") 763455735
+                                td.body-td
+                                    .content-td Inbound
+                                    .content-td 09/23/2020 23:23
+                                    .content-td.failed Address
+                                        br
+                                        | Verification
+                                        br
+                                        | Failed
+                                td.body-td
+                                    .content-td -
+                                    .content-td -
+                                    .content-td -
+                                td.body-td
+                                    .price $ 123.09
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
+                            tr
+                                td.body-td
+                                    a(href="#") 763455735
+                                td.body-td
+                                    .content-td Inbound
+                                    .content-td 09/23/2020 23:23
+                                    .content-td Being
+                                        br
+                                        | (re)Packaged
+                                        br
+                                td.body-td
+                                    .content-td -
+                                    .content-td -
+                                    .content-td -
+                                td.body-td
+                                    .price $ 123.09
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
+                            tr
+                                td.body-td
+                                    a(href="#") 763455735
+                                td.body-td
+                                    .content-td Online
+                                    .content-td 09/23/2020 23:23
+                                    .content-td Cancelled
+                                td.body-td
+                                    .content-td -
+                                    .content-td -
+                                    .content-td -
+                                td.body-td
+                                    .price $ 123.09
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
+                            tr
+                                td.body-td
+                                    a(href="#") 763455735
+                                td.body-td
+                                    .content-td Online
+                                    .content-td 09/23/2020 23:23
+                                    .content-td Awaiting Shipping Carrier
+                                td.body-td
+                                    .content-td USPS
+                                    .content-td
+                                        a(href="#") 543543543535343
+                                    .content-td est. date 12/12/2020
+                                td.body-td
+                                    .price $ 123.09
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
+                            tr
+                                td.body-td
+                                    a(href="#") 763455735
+                                td.body-td
+                                    .content-td Inbound
+                                    .content-td 09/23/2020 23:23
+                                    .content-td Shipped
+                                td.body-td
+                                    .content-td USPS
+                                    .content-td
+                                        a(href="#") 543543543535343
+                                    .content-td est. date 12/12/2020
+                                td.body-td
+                                    .price $ 123.09
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
+                            tr
+                                td.body-td
+                                    a(href="#") 763455735
+                                td.body-td
+                                    .content-td Inbound
+                                    .content-td 09/23/2020 23:23
+                                    .content-td Returned to Warehouse
+                                td.body-td
+                                    .content-td USPS
+                                    .content-td
+                                        a(href="#") 543543543535343
+                                    .content-td -
+                                td.body-td
+                                    .price $ 123.09
+                                    .refund
+                                        .refund__content
+                                            .refund__content--title Refund amt.
+                                            .refund__content--price $ 123.09
+                                        .refund__btn &#8250;
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
+                            tr
+                                td.body-td
+                                    a(href="#") 763455735
+                                td.body-td
+                                    .content-td Inbound
+                                    .content-td 09/23/2020 23:23
+                                    .content-td Re-delivery
+                                td.body-td
+                                    .content-td USPS
+                                    .content-td
+                                        a(href="#") 543543543535343
+                                    .content-td est. date 12/12/2020
+                                td.body-td
+                                    .price $ 123.09
+                                td.body-td.width-notes-td.notes-attachments
+                                    .notes-attachments-td
+                                        div.icons
+                                            a(href="#")
+                                                img.icon.icon--flag(src='img/file-note.svg')
+                                            a(href="#").file-link
+                                                img.icon.icon--flag(src='img/file.svg')
+                                                span x 3
+                                        button.btn-dd.btn-c--blue(type='button') + Attach file
 
-                        .pagination
-                            .pagination-wrapper
-                                .pagination-title Rows per page
-                                label.form__label.pagination-call-select
-                                    select.form__select
-                                        option(value='') 10
-                                        option(value='') 5
-                                        option(value='') 1
-                                .pagination-page
-                                    span 1-8
-                                    | of
-                                    span 8
-                                .pagination-btn
-                                    .pagination-btn__prev &#8249;
-                                    .pagination-btn__next &#8250;
+                    .pagination
+                        .pagination-wrapper
+                            .pagination-title Rows per page
+                            label.form__label.pagination-call-select
+                                select.form__select
+                                    option(value='') 10
+                                    option(value='') 5
+                                    option(value='') 1
+                            .pagination-page
+                                span 1-8
+                                | of
+                                span 8
+                            .pagination-btn
+                                .pagination-btn__prev &#8249;
+                                .pagination-btn__next &#8250;

@@ -24,6 +24,7 @@
                   <div class="header__itm">
                     <div class="header__outer header__buttons">
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Make New Order</span></a></div>
+                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#requestNewProduct"><span class="btn-c--text">Request new<br>product</span></a></div>
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#logIssue"><span class="btn-c--text">Log Issue</span></a></div>
                       <!--.header__itm-->
                       <!--    a.btn-c.btn-c--blue.js-show-popup(href="#addNewTask")-->
@@ -59,7 +60,7 @@
         <section class="panel panel--user-info">
           <div class="container">
             <div class="panel__row">
-              <div class="panel__col panel__col--left">
+              <div class="panel__col panel__col--left panel__col--pad">
                 <div class="panel__outer panel--user panel--good-amber-customer">
                   <div class="panel__item">
                     <div class="user-profile">
@@ -633,18 +634,11 @@
                           <li>Jenkintown, PA 19133</li>
                         </ul>
                       </div>
-                      <div class="user-profile-info">
-                        <div class="user-profile-info__title">
-                          <div class="user-profile-info__title-text">Notes</div>
-                          <div class="user-profile-info__title-line"></div><a class="btn-e js-show-popup" href="#addNewNotes">edit</a>
-                        </div>
-                        <div class="user-profile-info__notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel__col panel__col--right">
+              <div class="panel__col panel__col--right panel__col--pad">
                 <div class="container-tabs">
                   <div class="container-tabs-wrapper tabs">
                     <ul class="tabs__caption">
@@ -830,51 +824,235 @@
                     <table>
                       <tr>
                         <td class="header-td">Order ID</td>
-                        <td class="header-td">Order Type</td>
-                        <td class="header-td">Order Date</td>
-                        <td class="header-td">Order Status</td>
-                        <td class="header-td">Order Total $</td>
-                        <td class="header-td">Note</td>
-                        <td class="header-td">Attachments</td>
-                        <td class="header-td">Carrier</td>
-                        <td class="header-td">Tracking URL</td>
-                        <td class="header-td">Est. Delivery Date</td>
-                        <td class="header-td"></td>
+                        <td class="header-td">Order Info</td>
+                        <td class="header-td">Delivery info</td>
+                        <td class="header-td">Order Total</td>
+                        <td class="header-td width-notes-td">Notes/Attachments</td>
                       </tr>
                       <tr>
                         <td class="body-td"><a href="#">763455735</a></td>
-                        <td class="body-td">Inbound</td>
-                        <td class="body-td">09/23/2020</td>
-                        <td class="body-td">Not Shipped</td>
-                        <td class="body-td">$ 123.09</td>
-                        <td class="body-td"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a></td>
-                        <td class="body-td"><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></td>
-                        <td class="body-td">USPS</td>
-                        <td class="body-td"><a href="#">543543543535343</a></td>
-                        <td class="body-td">12/12/2020</td>
                         <td class="body-td">
-                          <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          <div class="content-td">Inbound</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td">Created</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">
+                          <div class="content-td">Inbound</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td">Address<br>Verification</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">
+                          <div class="content-td">Inbound</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td failed">Address<br>Verification<br>Failed</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">
+                          <div class="content-td">Inbound</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td">Being<br>(re)Packaged<br></div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">
+                          <div class="content-td">Online</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td">Cancelled</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                          <div class="content-td">-</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">
+                          <div class="content-td">Online</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td">Awaiting Shipping Carrier</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">USPS</div>
+                          <div class="content-td"><a href="#">543543543535343</a></div>
+                          <div class="content-td">est. date 12/12/2020</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">
+                          <div class="content-td">Inbound</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td">Shipped</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">USPS</div>
+                          <div class="content-td"><a href="#">543543543535343</a></div>
+                          <div class="content-td">est. date 12/12/2020</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">
+                          <div class="content-td">Inbound</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td">Returned to Warehouse</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">USPS</div>
+                          <div class="content-td"><a href="#">543543543535343</a></div>
+                          <div class="content-td">-</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                          <div class="refund">
+                            <div class="refund__content">
+                              <div class="refund__content--title">Refund amt.</div>
+                              <div class="refund__content--price">$ 123.09</div>
+                            </div>
+                            <div class="refund__btn">&#8250;</div>
+                          </div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="body-td"><a href="#">763455735</a></td>
+                        <td class="body-td">
+                          <div class="content-td">Inbound</div>
+                          <div class="content-td">09/23/2020 23:23</div>
+                          <div class="content-td">Re-delivery</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="content-td">USPS</div>
+                          <div class="content-td"><a href="#">543543543535343</a></div>
+                          <div class="content-td">est. date 12/12/2020</div>
+                        </td>
+                        <td class="body-td">
+                          <div class="price">$ 123.09</div>
+                        </td>
+                        <td class="body-td width-notes-td notes-attachments">
+                          <div class="notes-attachments-td">
+                            <div class="icons"><a href="#"><img class="icon icon--flag" src="img/file-note.svg"></a><a class="file-link" href="#"><img class="icon icon--flag" src="img/file.svg"><span>x 3</span></a></div>
+                            <button class="btn-dd btn-c--blue" type="button">+ Attach file</button>
+                          </div>
                         </td>
                       </tr>
                     </table>
-                    <div class="pagination">
-                      <div class="pagination-wrapper">
-                        <div class="pagination-title">Rows per page</div>
-                        <label class="form__label pagination-call-select">
-                          <select class="form__select">
-                            <option value="">10</option>
-                            <option value="">5</option>
-                            <option value="">1</option>
-                          </select>
-                        </label>
-                        <div class="pagination-page"><span>1-8</span>of<span>8</span></div>
-                        <div class="pagination-btn">
-                          <div class="pagination-btn__prev">&#8249;</div>
-                          <div class="pagination-btn__next">&#8250;</div>
-                        </div>
+                  </form>
+                  <div class="pagination">
+                    <div class="pagination-wrapper">
+                      <div class="pagination-title">Rows per page</div>
+                      <label class="form__label pagination-call-select">
+                        <select class="form__select">
+                          <option value="">10</option>
+                          <option value="">5</option>
+                          <option value="">1</option>
+                        </select>
+                      </label>
+                      <div class="pagination-page"><span>1-8</span>of<span>8</span></div>
+                      <div class="pagination-btn">
+                        <div class="pagination-btn__prev">&#8249;</div>
+                        <div class="pagination-btn__next">&#8250;</div>
                       </div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1095,6 +1273,36 @@
                 </div>
                 <!--.form__btn-itm-->
                 <!--    a.btn-a.b-close.js-show-popup(href='#createdTask') Save and create next-->
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--request-new-product" id="requestNewProduct">
+          <div class="popup__top">
+            <h2 class="title-h2">Request a new product</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="form__itm">
+                <label class="form__label"><span class="form__ttl">Product name</span>
+                  <textarea class="form__textarea" placeholder="Nature`s Way Sambucus Black Elderberry Gummies with Vitamin C and Zinc, 60 Gummies"></textarea>
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--inline form--full"><span class="form__ttl">Barcode (optional)</span>
+                  <input class="form__inp" type="text" value="" placeholder="646753">
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--inline form--full"><span class="form__ttl">Link (optional)</span>
+                  <input class="form__inp" type="text" value="" placeholder="https://www.amazon.com/Sambucus-Elderber…">
+                </label>
+              </div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a" type="button">Make Request</button>
+                </div>
               </div>
             </form>
           </div>
