@@ -60,7 +60,7 @@
         <section class="panel panel--user-info">
           <div class="container">
             <div class="panel__row">
-              <div class="panel__col panel__col--left">
+              <div class="panel__col panel__col--left panel__col--pad">
                 <div class="panel__outer panel--user panel--good-customer">
                   <div class="panel__item">
                     <div class="user-profile">
@@ -284,7 +284,7 @@
                                     <td class="header-td"></td>
                                     <td class="header-td">Email</td>
                                     <td class="header-td">Valid/Invalid</td>
-                                    <td class="header-td">Email Marketing</td>
+                                    <td class="header-td">Can we send<br>marketing emails?</td>
                                     <td class="header-td"></td>
                                   </tr>
                                   <tr>
@@ -299,9 +299,10 @@
                                       </label>
                                     </td>
                                     <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
+                                      <button class="btn-allow">Allow</button>
+                                      <!--.toggle-box-->
+                                      <!--    .toggle-check.active-check-->
+                                      <!--    span Allowed-->
                                     </td>
                                     <td class="body-td"></td>
                                   </tr>
@@ -321,9 +322,10 @@
                                       </label>
                                     </td>
                                     <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
+                                      <button class="btn-allow click">Allowed</button>
+                                      <!--.toggle-box-->
+                                      <!--    .toggle-check.active-check-->
+                                      <!--    span Allowed-->
                                     </td>
                                     <td class="body-td">
                                       <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
@@ -345,9 +347,10 @@
                                       </label>
                                     </td>
                                     <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
+                                      <button class="btn-allow click">Allowed</button>
+                                      <!--.toggle-box-->
+                                      <!--    .toggle-check.active-check-->
+                                      <!--    span Allowed-->
                                     </td>
                                     <td class="body-td">
                                       <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
@@ -379,17 +382,16 @@
                               <form class="form">
                                 <table class="user__table user__table--edit user__table--phone-edit">
                                   <tr>
-                                    <td class="header-td"></td>
+                                    <td class="header-td">#</td>
                                     <td class="header-td">Phone Type</td>
                                     <td class="header-td">Phone #</td>
                                     <td class="header-td">Valid/Invalid</td>
-                                    <td class="header-td">Call</td>
-                                    <td class="header-td">SMS</td>
-                                    <td class="header-td">Valid dates (Optional)</td>
+                                    <td class="header-td">Can we make<br>marketing calls ?</td>
+                                    <td class="header-td">Can we send<br>text messages?</td>
                                     <td class="header-td"></td>
                                   </tr>
                                   <tr>
-                                    <td class="body-td">Primary</td>
+                                    <td class="body-td">1</td>
                                     <td class="body-td">
                                       <label class="form__label">
                                         <select class="form__select">
@@ -412,45 +414,36 @@
                                       </label>
                                     </td>
                                     <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
+                                      <button class="btn-allow click">Allowed</button>
                                     </td>
                                     <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
+                                      <button class="btn-allow click">Allowed</button>
                                     </td>
+                                    <!--td.body-td-->
+                                    <!--    .form__row-->
+                                    <!--        .form__col-->
+                                    <!--            .date.date--inline-->
+                                    <!--                span.date__ttl From-->
+                                    <!--                .date__outer-->
+                                    <!--                    svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')-->
+                                    <!--                        path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')-->
+                                    <!--                    input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')-->
+                                    <!--        .form__col-->
+                                    <!--            .date.date--inline-->
+                                    <!--                span.date__ttl To-->
+                                    <!--                .date__outer-->
+                                    <!--                    svg.icon.icon--date(viewBox='0 0 512 512', xmlns='http://www.w3.org/2000/svg')-->
+                                    <!--                        path(d='M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0')-->
+                                    <!--                    input.date__inp(type='text' placeholder='MM/DD/YYYY HH:MM')-->
                                     <td class="body-td">
-                                      <div class="form__row">
-                                        <div class="form__col">
-                                          <div class="date date--inline"><span class="date__ttl">From</span>
-                                            <div class="date__outer">
-                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                                              </svg>
-                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="form__col">
-                                          <div class="date date--inline"><span class="date__ttl">To</span>
-                                            <div class="date__outer">
-                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                                              </svg>
-                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                                            </div>
-                                          </div>
-                                        </div>
+                                      <div class="block-btn-table">
+                                        <div class="btn-check"><img class="icon icon--check-blue" src="img/check-blue.svg"></div>
+                                        <div class="btn-check"><img class="icon icon--close-blue" src="img/close-blue.svg"></div>
                                       </div>
-                                    </td>
-                                    <td class="body-td">
-                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td class="body-td">Secondary</td>
+                                    <td class="body-td">2</td>
                                     <td class="body-td">
                                       <label class="form__label">
                                         <select class="form__select">
@@ -473,45 +466,19 @@
                                       </label>
                                     </td>
                                     <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
+                                      <button class="btn-allow click">Allowed</button>
                                     </td>
                                     <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
+                                      <button class="btn-allow">Allowed</button>
                                     </td>
                                     <td class="body-td">
-                                      <div class="form__row">
-                                        <div class="form__col">
-                                          <div class="date date--inline"><span class="date__ttl">From</span>
-                                            <div class="date__outer">
-                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                                              </svg>
-                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="form__col">
-                                          <div class="date date--inline"><span class="date__ttl">To</span>
-                                            <div class="date__outer">
-                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                                              </svg>
-                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                                            </div>
-                                          </div>
-                                        </div>
+                                      <div class="block-btn-table">
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
                                       </div>
-                                    </td>
-                                    <td class="body-td">
-                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td class="body-td">Temporary</td>
+                                    <td class="body-td">3</td>
                                     <td class="body-td">
                                       <label class="form__label">
                                         <select class="form__select">
@@ -533,88 +500,11 @@
                                         </select>
                                       </label>
                                     </td>
-                                    <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
-                                    </td>
-                                    <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
-                                    </td>
-                                    <td class="body-td">
-                                      <div class="form__row">
-                                        <div class="form__col">
-                                          <div class="date date--inline"><span class="date__ttl">From</span>
-                                            <div class="date__outer">
-                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                                              </svg>
-                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="form__col">
-                                          <div class="date date--inline"><span class="date__ttl">To</span>
-                                            <div class="date__outer">
-                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                                              </svg>
-                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td class="body-td">
-                                      <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td class="body-td">Member File</td>
                                     <td class="body-td"></td>
-                                    <td class="body-td">+1 (324) 452-4566</td>
+                                    <td class="body-td"></td>
                                     <td class="body-td">
-                                      <label class="form__label">
-                                        <select class="form__select--valid">
-                                          <option value="check-circle">Valid</option>
-                                          <option value="warning">Invalid</option>
-                                        </select>
-                                      </label>
-                                    </td>
-                                    <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
-                                    </td>
-                                    <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div><span>Allowed</span>
-                                      </div>
-                                    </td>
-                                    <td class="body-td">
-                                      <div class="form__row">
-                                        <div class="form__col">
-                                          <div class="date date--inline"><span class="date__ttl">From</span>
-                                            <div class="date__outer">
-                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                                              </svg>
-                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="form__col">
-                                          <div class="date date--inline"><span class="date__ttl">To</span>
-                                            <div class="date__outer">
-                                              <svg class="icon icon--date" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 64h-21.332V21.332C426.668 9.559 417.109 0 405.332 0H384c-11.777 0-21.332 9.559-21.332 21.332V64H149.332V21.332C149.332 9.559 139.777 0 128 0h-21.332C94.891 0 85.332 9.559 85.332 21.332V64H64C28.715 64 0 92.715 0 128v320c0 35.285 28.715 64 64 64h384c35.285 0 64-28.715 64-64V128c0-35.285-28.715-64-64-64zm21.332 384c0 11.754-9.578 21.332-21.332 21.332H64c-11.754 0-21.332-9.578-21.332-21.332V214.187h426.664zm0 0"></path>
-                                              </svg>
-                                              <input class="date__inp" type="text" placeholder="MM/DD/YYYY HH:MM">
-                                            </div>
-                                          </div>
-                                        </div>
+                                      <div class="block-btn-table">
+                                        <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
                                       </div>
                                     </td>
                                   </tr>

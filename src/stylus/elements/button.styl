@@ -181,3 +181,36 @@
   border-radius 2px
   cursor pointer
 }
+
+.btn-allow {
+  font-size 14px
+  font-weight 400
+  line-height 16px
+  color #0F73E7
+  text-transform uppercase
+  padding 18px 15px
+  min-width 115px
+  border 1px solid #0F73E7
+  border-radius 2px
+  background-color white
+  &.click {
+    color white
+    background-color #0F73E7
+  }
+}
+
+.block-btn-table {
+  display flex
+  align-items center
+  justify-content flex-end
+  .btn-check {
+    margin-left 20px
+    &:first-child {
+      margin-left 0
+    }
+  }
+}
+
+.btn-check {
+  cursor pointer
+}
