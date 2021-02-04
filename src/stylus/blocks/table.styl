@@ -3,7 +3,7 @@
     padding 7px 30px 8px 0
   }
 }
-.table-members-list, .table-calls-list, .table-orders{
+.table-members-list, .table-calls-list, .table-orders {
   width: 100%;
   margin-bottom: 25px;
   border-radius 20px
@@ -187,6 +187,34 @@
   }
 }
 
+.table-notes {
+  table {
+    width 100%
+    tr {
+      border-top 1px solid #CCCCCC
+      &:first-child {
+        border none
+      }
+    }
+    td:first-child {
+      width 50%
+    }
+    td:last-child {
+      width 30%
+    }
+  }
+  .header-td {
+    font-weight 500
+    color #3A3A3A
+    padding 16px 8px
+  }
+  .body-td {
+    vertical-align: top;
+    font-weight 400
+    color #3A3A3A
+    padding 16px 8px
+  }
+}
 .col-3 {
   width 33%
 }

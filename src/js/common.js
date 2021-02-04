@@ -103,7 +103,7 @@
             .eq($(this).index())
             .addClass("active");
 
-        if (numberTab == 1) {
+        if (numberTab == 2) {
             $('.orders-tabs').addClass("active-table");
         } else {
             $('.orders-tabs').removeClass("active-table");
