@@ -68,6 +68,14 @@
             return (currItem.value.length ? '<span class="' + currItem.value +  '"></span>' : '') + currItem.text;
         }
     });
+    $('.form__select--phone').selectric({
+        optionsItemBuilder: function(itemData) {
+            return itemData.value.length ? '<span class="phone-select"><img class="icon icon--phone-select" src="img/' + itemData.value +  '.svg"></span>' + itemData.text : itemData.text;
+        },
+        labelBuilder: function(currItem) {
+            return (currItem.value.length ? '<span class="phone-select"><img class="icon icon--phone-select" src="img/' + currItem.value +  '.svg"></span>' : '') + currItem.text;
+        }
+    });
 
     $('.form__select--tag').selectric();
 
