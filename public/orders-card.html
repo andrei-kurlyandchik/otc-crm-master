@@ -134,21 +134,13 @@
                               <form class="form">
                                 <table class="user__table user__table--edit user__table--personal">
                                   <tr>
-                                    <td class="header-td"></td>
-                                    <td class="header-td">On File</td>
-                                    <td class="header-td">Enable Override</td>
-                                    <td class="header-td">Override</td>
-                                  </tr>
-                                  <tr>
                                     <td class="body-td">Gender</td>
-                                    <td class="body-td toggle-check-info toggle-active">Male</td>
+                                    <!--td.body-td.toggle-check-info.toggle-active Male-->
+                                    <!--td.body-td-->
+                                    <!--    .toggle-box-->
+                                    <!--        .toggle-check.active-check-->
                                     <td class="body-td">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div>
-                                      </div>
-                                    </td>
-                                    <td class="body-td">
-                                      <label class="form__label">
+                                      <label class="form__label form--small">
                                         <select class="form__select">
                                           <option value="female">Female</option>
                                           <option value="male">Male</option>
@@ -158,17 +150,6 @@
                                   </tr>
                                   <tr>
                                     <td class="body-td body-td__top">Language</td>
-                                    <td class="body-td body-td__top toggle-check-info toggle-active">
-                                      <div class="user__row">
-                                        <div class="user__col"><img class="icon icon--flag" src="img/flags/united-states-of-america.svg"></div>
-                                        <div class="user__col"><span>English (EN)</span></div>
-                                      </div>
-                                    </td>
-                                    <td class="body-td body-td__top body-td__top--toogle">
-                                      <div class="toggle-box">
-                                        <div class="toggle-check active-check"></div>
-                                      </div>
-                                    </td>
                                     <td class="body-td">
                                       <div class="language-selection">
                                         <div class="language-selection__row">
@@ -180,7 +161,7 @@
                                           </label>
                                           <label class="form__label">
                                             <select class="form__select--leng">
-                                              <option value="united-kingdom">English</option>
+                                              <option value="united-states-of-america">English</option>
                                               <option value="spain">Español</option>
                                             </select>
                                           </label>
@@ -197,7 +178,7 @@
                                           </label>
                                           <label class="form__label">
                                             <select class="form__select--leng">
-                                              <option value="united-kingdom">English</option>
+                                              <option value="united-states-of-america">English</option>
                                               <option value="spain">Español</option>
                                             </select>
                                           </label>
@@ -782,7 +763,189 @@
                         </div>
                       </div>
                     </div>
-                    <div class="tabs__content"></div>
+                    <div class="tabs__content">
+                      <div class="tabs-issues">
+                        <h2 class="title-h2">Issues<span>12543</span></h2>
+                        <div class="btn-wrapper btn-wrapper__end">
+                          <label class="form__label form--medium"><span class="form__ttl">Show orders for</span>
+                            <select class="form__select">
+                              <option value="Last 6 months">Last 6 months</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="issues-card">
+                          <div class="issues-card-header">
+                            <div class="issues-card-title">Issue #</div><a class="issues-card-id" href="#">123243</a>
+                          </div>
+                          <div class="issues-card-tags">
+                            <div class="tags-history tags-history__no-border--green">Resolved</div>
+                            <div class="tags-history tags-history__no-border--yellow">Medium</div>
+                          </div>
+                          <div class="issues-card-wrapper">
+                            <div class="issues-card-col">
+                              <div class="issues-card-col__small">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Created on</div>
+                                  <div class="issues-card-col__dis">12/09/2020 12:09</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Created by</div>
+                                  <div class="issues-card-col__dis">Not Shipped</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Resolve by</div>
+                                  <div class="issues-card-col__dis">12/09/2020</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Compliant category</div>
+                                  <div class="issues-card-col__dis">Category</div>
+                                </div>
+                              </div>
+                              <div class="issues-card-col__small">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Order #</div>
+                                  <div class="issues-card-col__dis"><a href="#">27364572635</a></div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Tracking #</div>
+                                  <div class="issues-card-col__dis"><a href="#">9405511699000054639273</a></div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Resolve by</div>
+                                  <div class="issues-card-col__dis">Resolved</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Compliant category</div>
+                                  <div class="issues-card-col__dis">Medium</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="issues-card-col">
+                              <div class="issues-card-col__big">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">What needs to be done</div>
+                                  <div class="issues-card-col__dis">Still waiting for her package. There is nothing around her location that could stop USPS from getting to her</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="issues-card">
+                          <div class="issues-card-header">
+                            <div class="issues-card-title">Issue #</div><a class="issues-card-id" href="#">123243</a>
+                          </div>
+                          <div class="issues-card-tags">
+                            <div class="tags-history tags-history__no-border--green">Resolved</div>
+                            <div class="tags-history tags-history__no-border--yellow">Medium</div>
+                          </div>
+                          <div class="issues-card-wrapper">
+                            <div class="issues-card-col">
+                              <div class="issues-card-col__small">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Created on</div>
+                                  <div class="issues-card-col__dis">12/09/2020 12:09</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Created by</div>
+                                  <div class="issues-card-col__dis">Not Shipped</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Resolve by</div>
+                                  <div class="issues-card-col__dis">12/09/2020</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Compliant category</div>
+                                  <div class="issues-card-col__dis">Category</div>
+                                </div>
+                              </div>
+                              <div class="issues-card-col__small">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Order #</div>
+                                  <div class="issues-card-col__dis"><a href="#">27364572635</a></div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Tracking #</div>
+                                  <div class="issues-card-col__dis"><a href="#">9405511699000054639273</a></div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Resolve by</div>
+                                  <div class="issues-card-col__dis">Resolved</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Compliant category</div>
+                                  <div class="issues-card-col__dis">Medium</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="issues-card-col">
+                              <div class="issues-card-col__big">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">What needs to be done</div>
+                                  <div class="issues-card-col__dis">Still waiting for her package. There is nothing around her location that could stop USPS from getting to her</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="issues-card">
+                          <div class="issues-card-header">
+                            <div class="issues-card-title">Issue #</div><a class="issues-card-id" href="#">123243</a>
+                          </div>
+                          <div class="issues-card-tags">
+                            <div class="tags-history tags-history__no-border--green">Resolved</div>
+                            <div class="tags-history tags-history__no-border--yellow">Medium</div>
+                          </div>
+                          <div class="issues-card-wrapper">
+                            <div class="issues-card-col">
+                              <div class="issues-card-col__small">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Created on</div>
+                                  <div class="issues-card-col__dis">12/09/2020 12:09</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Created by</div>
+                                  <div class="issues-card-col__dis">Not Shipped</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Resolve by</div>
+                                  <div class="issues-card-col__dis">12/09/2020</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Compliant category</div>
+                                  <div class="issues-card-col__dis">Category</div>
+                                </div>
+                              </div>
+                              <div class="issues-card-col__small">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Order #</div>
+                                  <div class="issues-card-col__dis"><a href="#">27364572635</a></div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Tracking #</div>
+                                  <div class="issues-card-col__dis"><a href="#">9405511699000054639273</a></div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Resolve by</div>
+                                  <div class="issues-card-col__dis">Resolved</div>
+                                </div>
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">Compliant category</div>
+                                  <div class="issues-card-col__dis">Medium</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="issues-card-col">
+                              <div class="issues-card-col__big">
+                                <div class="issues-card-row">
+                                  <div class="issues-card-col__title">What needs to be done</div>
+                                  <div class="issues-card-col__dis">Still waiting for her package. There is nothing around her location that could stop USPS from getting to her</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="table-orders orders-tabs active-table">

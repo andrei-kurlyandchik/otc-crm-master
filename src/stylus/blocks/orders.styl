@@ -216,17 +216,35 @@
 }
 
 .tabs-notes {
+	.title-h2 {
+		margin-bottom 25px
+	}
 	.title-h2 span {
 		font-size 16px
 		line-height 18px
 		font-weight 400
 		color #3A3A3A
 		margin-left 10px
-		margin-bottom 25px
 	}
 
 	.btn-wrapper {
 		margin-bottom 16px
+	}
+}
+
+.tabs-issues {
+	.title-h2 {
+		margin-bottom 25px
+	}
+	.title-h2 span {
+		font-size 16px
+		line-height 18px
+		font-weight 400
+		color #3A3A3A
+		margin-left 10px
+	}
+	.btn-wrapper {
+		margin-bottom 35px
 	}
 }
 
@@ -625,5 +643,98 @@
 	display none
 	&.active-table {
 		display block
+	}
+}
+
+.issues-card {
+	width 100%
+	border-top 1px solid #CCCCCC
+	padding 15px 0
+	position relative
+}
+
+.issues-card-header	{
+	display flex
+	align-items center
+}
+
+.issues-card-title {
+	font-size 20px
+	line-height 24px
+	font-weight 500
+	color #333333
+}
+
+.issues-card-id {
+	font-size 20px
+	line-height 24px
+	font-weight 500
+	color: #0f73e7;
+	text-decoration: underline;
+	margin-left 15px
+}
+
+.issues-card-tags {
+	position: absolute;
+	right: 0;
+	top: 15px;
+	display: flex;
+}
+
+.issues-card-wrapper {
+	display flex
+	justify-content space-between
+	margin-top 20px
+}
+
+.issues-card-col {
+	flex 1
+	display flex
+}
+
+.issues-card-col__small {
+	flex 1
+}
+
+.issues-card-col__big {
+	padding-left 15px
+	.issues-card-col__title {
+		width 225px
+	}
+}
+
+.issues-card-row {
+	display flex
+	margin-bottom 10px
+
+}
+
+.issues-card-col__title {
+	font-size 14px
+	line-height 16px
+	font-weight 500
+	color: #3A3A3A;
+	width 140px
+}
+
+.issues-card-col__dis {
+	font-size 14px
+	line-height 16px
+	font-weight 400
+	color: #3A3A3A;
+	a {
+		color: #0f73e7;
+		text-decoration: underline;
+	}
+}
+
+@media screen and (max-width: 1880px) {
+	.issues-card-wrapper {
+		flex-flow column
+	}
+
+	.issues-card-col__big {
+		padding-left 0
+		margin-top 20px
 	}
 }

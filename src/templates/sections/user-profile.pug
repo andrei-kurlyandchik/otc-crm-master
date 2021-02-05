@@ -1,6 +1,6 @@
 section.panel.panel--user-info
     .container
-        .panel__row
+        .panel__row.margin-null
             .panel__col.panel__col--left.panel__col--pad
                 .panel__outer.panel--user.panel--good-customer
                     .panel__item
@@ -90,32 +90,18 @@ section.panel.panel--user-info
                                             form.form
                                                 table.user__table.user__table--edit.user__table--personal
                                                     tr
-                                                        td.header-td
-                                                        td.header-td On File
-                                                        td.header-td Enable Override
-                                                        td.header-td Override
-                                                    tr
                                                         td.body-td Gender
-                                                        td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td
+                                                        //    .toggle-box
+                                                        //        .toggle-check.active-check
                                                         td.body-td
-                                                            .toggle-box
-                                                                .toggle-check.active-check
-                                                        td.body-td
-                                                            label.form__label
+                                                            label.form__label.form--small
                                                                 select.form__select
                                                                     option(value='female') Female
                                                                     option(value='male') Male
                                                     tr
                                                         td.body-td.body-td__top Language
-                                                        td.body-td.body-td__top.toggle-check-info.toggle-active
-                                                            .user__row
-                                                                .user__col
-                                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
-                                                                .user__col
-                                                                    span English (EN)
-                                                        td.body-td.body-td__top.body-td__top--toogle
-                                                            .toggle-box
-                                                                .toggle-check.active-check
                                                         td.body-td
                                                             .language-selection
                                                                 .language-selection__row
@@ -447,69 +433,55 @@ section.panel.panel--user-info
                                     .user-profile-info__title-line
                                     .dropdown.dropdown-user-edit
                                         .btn-e.dropdown-active edit
-                                        .dropdown__bottom.dropdown-email-edit-popup
-                                            h2.title-h2 Edit Personal Data
-                                            a.popup__close.b-close.b--close-dropdown(href='#')
-                                            form.form
-                                                table.user__table.user__table--edit.user__table--personal
-                                                    tr
-                                                        td.header-td
-                                                        td.header-td On File
-                                                        td.header-td Enable Override
-                                                        td.header-td Override
-                                                    tr
-                                                        td.body-td Gender
-                                                        td.body-td.toggle-check-info.toggle-active Male
-                                                        td.body-td
-                                                            .toggle-box
-                                                                .toggle-check.active-check
-                                                        td.body-td
-                                                            label.form__label
-                                                                select.form__select
-                                                                    option(value='female') Female
-                                                                    option(value='male') Male
-                                                    tr
-                                                        td.body-td.body-td__top Language
-                                                        td.body-td.body-td__top.toggle-check-info.toggle-active
-                                                            .user__row
-                                                                .user__col
-                                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
-                                                                .user__col
-                                                                    span English (EN)
-                                                        td.body-td.body-td__top.body-td__top--toogle
-                                                            .toggle-box
-                                                                .toggle-check.active-check
-                                                        td.body-td
-                                                            .language-selection
-                                                                .language-selection__row
-                                                                    label.form__label
-                                                                        select.form__select
-                                                                            option(value='primary') Primary
-                                                                            option(value='secondary') Secondary
-                                                                    label.form__label
-                                                                        select.form__select--leng
-                                                                            option(value='united-states-of-america') English
-                                                                            option(value='spain') Español
-                                                                .btn-del
-                                                                    img.icon.icon--trash(src='img/trash.svg')
-                                                            .language-selection
-                                                                .language-selection__row
-                                                                    label.form__label
-                                                                        select.form__select
-                                                                            option(value='primary') Primary
-                                                                            option(value='secondary') Secondary
-                                                                    label.form__label
-                                                                        select.form__select--leng
-                                                                            option(value='united-states-of-america') English
-                                                                            option(value='spain') Español
-                                                                .btn-del
-                                                                    img.icon.icon--trash(src='img/trash.svg')
-                                                            button.btn-dd.btn-dd--o(type='button') + ADD 1 more
-                                                .form__btn.form__btn--center
-                                                    .form__btn-itm
-                                                        a.btn-b.b-close(href='#') Cancel
-                                                    .form__btn-itm
-                                                        button.btn-a.btn-a--small(type='button') Save
+                                    .dropdown__bottom.dropdown-email-edit-popup
+                                        h2.title-h2 Edit Personal Data
+                                        a.popup__close.b-close.b--close-dropdown(href='#')
+                                        form.form
+                                            table.user__table.user__table--edit.user__table--personal
+                                                tr
+                                                    td.body-td Gender
+                                                    //td.body-td.toggle-check-info.toggle-active Male
+                                                    //td.body-td
+                                                    //    .toggle-box
+                                                    //        .toggle-check.active-check
+                                                    td.body-td
+                                                        label.form__label.form--small
+                                                            select.form__select
+                                                                option(value='female') Female
+                                                                option(value='male') Male
+                                                tr
+                                                    td.body-td.body-td__top Language
+                                                    td.body-td
+                                                        .language-selection
+                                                            .language-selection__row
+                                                                label.form__label
+                                                                    select.form__select
+                                                                        option(value='primary') Primary
+                                                                        option(value='secondary') Secondary
+                                                                label.form__label
+                                                                    select.form__select--leng
+                                                                        option(value='united-states-of-america') English
+                                                                        option(value='spain') Español
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+                                                        .language-selection
+                                                            .language-selection__row
+                                                                label.form__label
+                                                                    select.form__select
+                                                                        option(value='primary') Primary
+                                                                        option(value='secondary') Secondary
+                                                                label.form__label
+                                                                    select.form__select--leng
+                                                                        option(value='united-states-of-america') English
+                                                                        option(value='spain') Español
+                                                            .btn-del
+                                                                img.icon.icon--trash(src='img/trash.svg')
+                                                        button.btn-dd.btn-dd--o(type='button') + ADD 1 more
+                                            .form__btn.form__btn--center
+                                                .form__btn-itm
+                                                    a.btn-b.b-close(href='#') Cancel
+                                                .form__btn-itm
+                                                    button.btn-a.btn-a--small(type='button') Save
                                 table.user__table.user__table--profile
                                     tr
                                         td Gender
@@ -815,32 +787,18 @@ section.panel.panel--user-info
                                             form.form
                                                 table.user__table.user__table--edit.user__table--personal
                                                     tr
-                                                        td.header-td
-                                                        td.header-td On File
-                                                        td.header-td Enable Override
-                                                        td.header-td Override
-                                                    tr
                                                         td.body-td Gender
-                                                        td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td
+                                                        //    .toggle-box
+                                                        //        .toggle-check.active-check
                                                         td.body-td
-                                                            .toggle-box
-                                                                .toggle-check.active-check
-                                                        td.body-td
-                                                            label.form__label
+                                                            label.form__label.form--small
                                                                 select.form__select
                                                                     option(value='female') Female
                                                                     option(value='male') Male
                                                     tr
                                                         td.body-td.body-td__top Language
-                                                        td.body-td.body-td__top.toggle-check-info.toggle-active
-                                                            .user__row
-                                                                .user__col
-                                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
-                                                                .user__col
-                                                                    span English (EN)
-                                                        td.body-td.body-td__top.body-td__top--toogle
-                                                            .toggle-box
-                                                                .toggle-check.active-check
                                                         td.body-td
                                                             .language-selection
                                                                 .language-selection__row
@@ -1177,32 +1135,18 @@ section.panel.panel--user-info
                                             form.form
                                                 table.user__table.user__table--edit.user__table--personal
                                                     tr
-                                                        td.header-td
-                                                        td.header-td On File
-                                                        td.header-td Enable Override
-                                                        td.header-td Override
-                                                    tr
                                                         td.body-td Gender
-                                                        td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td
+                                                        //    .toggle-box
+                                                        //        .toggle-check.active-check
                                                         td.body-td
-                                                            .toggle-box
-                                                                .toggle-check.active-check
-                                                        td.body-td
-                                                            label.form__label
+                                                            label.form__label.form--small
                                                                 select.form__select
                                                                     option(value='female') Female
                                                                     option(value='male') Male
                                                     tr
                                                         td.body-td.body-td__top Language
-                                                        td.body-td.body-td__top.toggle-check-info.toggle-active
-                                                            .user__row
-                                                                .user__col
-                                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
-                                                                .user__col
-                                                                    span English (EN)
-                                                        td.body-td.body-td__top.body-td__top--toogle
-                                                            .toggle-box
-                                                                .toggle-check.active-check
                                                         td.body-td
                                                             .language-selection
                                                                 .language-selection__row
@@ -1539,32 +1483,18 @@ section.panel.panel--user-info
                                             form.form
                                                 table.user__table.user__table--edit.user__table--personal
                                                     tr
-                                                        td.header-td
-                                                        td.header-td On File
-                                                        td.header-td Enable Override
-                                                        td.header-td Override
-                                                    tr
                                                         td.body-td Gender
-                                                        td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td
+                                                        //    .toggle-box
+                                                        //        .toggle-check.active-check
                                                         td.body-td
-                                                            .toggle-box
-                                                                .toggle-check.active-check
-                                                        td.body-td
-                                                            label.form__label
+                                                            label.form__label.form--small
                                                                 select.form__select
                                                                     option(value='female') Female
                                                                     option(value='male') Male
                                                     tr
                                                         td.body-td.body-td__top Language
-                                                        td.body-td.body-td__top.toggle-check-info.toggle-active
-                                                            .user__row
-                                                                .user__col
-                                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
-                                                                .user__col
-                                                                    span English (EN)
-                                                        td.body-td.body-td__top.body-td__top--toogle
-                                                            .toggle-box
-                                                                .toggle-check.active-check
                                                         td.body-td
                                                             .language-selection
                                                                 .language-selection__row

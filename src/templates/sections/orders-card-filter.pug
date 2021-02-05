@@ -68,32 +68,18 @@ section.panel.panel--user-info
                                             form.form
                                                 table.user__table.user__table--edit.user__table--personal
                                                     tr
-                                                        td.header-td
-                                                        td.header-td On File
-                                                        td.header-td Enable Override
-                                                        td.header-td Override
-                                                    tr
                                                         td.body-td Gender
-                                                        td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td.toggle-check-info.toggle-active Male
+                                                        //td.body-td
+                                                        //    .toggle-box
+                                                        //        .toggle-check.active-check
                                                         td.body-td
-                                                            .toggle-box
-                                                                .toggle-check.active-check
-                                                        td.body-td
-                                                            label.form__label
+                                                            label.form__label.form--small
                                                                 select.form__select
                                                                     option(value='female') Female
                                                                     option(value='male') Male
                                                     tr
                                                         td.body-td.body-td__top Language
-                                                        td.body-td.body-td__top.toggle-check-info.toggle-active
-                                                            .user__row
-                                                                .user__col
-                                                                    img.icon.icon--flag(src='img/flags/united-states-of-america.svg')
-                                                                .user__col
-                                                                    span English (EN)
-                                                        td.body-td.body-td__top.body-td__top--toogle
-                                                            .toggle-box
-                                                                .toggle-check.active-check
                                                         td.body-td
                                                             .language-selection
                                                                 .language-selection__row
@@ -103,7 +89,7 @@ section.panel.panel--user-info
                                                                             option(value='secondary') Secondary
                                                                     label.form__label
                                                                         select.form__select--leng
-                                                                            option(value='united-kingdom') English
+                                                                            option(value='united-states-of-america') English
                                                                             option(value='spain') Español
                                                                 .btn-del
                                                                     img.icon.icon--trash(src='img/trash.svg')
@@ -115,7 +101,7 @@ section.panel.panel--user-info
                                                                             option(value='secondary') Secondary
                                                                     label.form__label
                                                                         select.form__select--leng
-                                                                            option(value='united-kingdom') English
+                                                                            option(value='united-states-of-america') English
                                                                             option(value='spain') Español
                                                                 .btn-del
                                                                     img.icon.icon--trash(src='img/trash.svg')
@@ -559,6 +545,153 @@ section.panel.panel--user-info
 
 
                         div.tabs__content
+                            .tabs-issues
+                                h2.title-h2 Issues
+                                    span 12543
+                                .btn-wrapper.btn-wrapper__end
+                                    label.form__label.form--medium
+                                        span.form__ttl Show orders for
+                                        select.form__select
+                                            option(value='Last 6 months') Last 6 months
+                                .issues-card
+                                    .issues-card-header
+                                        .issues-card-title Issue #
+                                        a.issues-card-id(href="#") 123243
+                                    .issues-card-tags
+                                        .tags-history.tags-history__no-border--green Resolved
+                                        .tags-history.tags-history__no-border--yellow Medium
+                                    .issues-card-wrapper
+                                        .issues-card-col
+                                            .issues-card-col__small
+                                                .issues-card-row
+                                                    .issues-card-col__title Created on
+                                                    .issues-card-col__dis 12/09/2020 12:09
+                                                .issues-card-row
+                                                    .issues-card-col__title Created by
+                                                    .issues-card-col__dis Not Shipped
+                                                .issues-card-row
+                                                    .issues-card-col__title Resolve by
+                                                    .issues-card-col__dis 12/09/2020
+                                                .issues-card-row
+                                                    .issues-card-col__title Compliant category
+                                                    .issues-card-col__dis Category
+                                            .issues-card-col__small
+                                                .issues-card-row
+                                                    .issues-card-col__title Order #
+                                                    .issues-card-col__dis
+                                                        a(href='#') 27364572635
+                                                .issues-card-row
+                                                    .issues-card-col__title Tracking #
+                                                    .issues-card-col__dis
+                                                        a(href='#') 9405511699000054639273
+                                                .issues-card-row
+                                                    .issues-card-col__title Resolve by
+                                                    .issues-card-col__dis Resolved
+                                                .issues-card-row
+                                                    .issues-card-col__title Compliant category
+                                                    .issues-card-col__dis Medium
+
+                                        .issues-card-col
+                                            .issues-card-col__big
+                                                .issues-card-row
+                                                    .issues-card-col__title What needs to be done
+                                                    .issues-card-col__dis Still waiting for her package. There is nothing around her location that could stop USPS from getting to her
+
+
+
+
+                                .issues-card
+                                    .issues-card-header
+                                        .issues-card-title Issue #
+                                        a.issues-card-id(href="#") 123243
+                                    .issues-card-tags
+                                        .tags-history.tags-history__no-border--green Resolved
+                                        .tags-history.tags-history__no-border--yellow Medium
+                                    .issues-card-wrapper
+                                        .issues-card-col
+                                            .issues-card-col__small
+                                                .issues-card-row
+                                                    .issues-card-col__title Created on
+                                                    .issues-card-col__dis 12/09/2020 12:09
+                                                .issues-card-row
+                                                    .issues-card-col__title Created by
+                                                    .issues-card-col__dis Not Shipped
+                                                .issues-card-row
+                                                    .issues-card-col__title Resolve by
+                                                    .issues-card-col__dis 12/09/2020
+                                                .issues-card-row
+                                                    .issues-card-col__title Compliant category
+                                                    .issues-card-col__dis Category
+                                            .issues-card-col__small
+                                                .issues-card-row
+                                                    .issues-card-col__title Order #
+                                                    .issues-card-col__dis
+                                                        a(href='#') 27364572635
+                                                .issues-card-row
+                                                    .issues-card-col__title Tracking #
+                                                    .issues-card-col__dis
+                                                        a(href='#') 9405511699000054639273
+                                                .issues-card-row
+                                                    .issues-card-col__title Resolve by
+                                                    .issues-card-col__dis Resolved
+                                                .issues-card-row
+                                                    .issues-card-col__title Compliant category
+                                                    .issues-card-col__dis Medium
+
+                                        .issues-card-col
+                                            .issues-card-col__big
+                                                .issues-card-row
+                                                    .issues-card-col__title What needs to be done
+                                                    .issues-card-col__dis Still waiting for her package. There is nothing around her location that could stop USPS from getting to her
+                                .issues-card
+                                    .issues-card-header
+                                        .issues-card-title Issue #
+                                        a.issues-card-id(href="#") 123243
+                                    .issues-card-tags
+                                        .tags-history.tags-history__no-border--green Resolved
+                                        .tags-history.tags-history__no-border--yellow Medium
+                                    .issues-card-wrapper
+                                        .issues-card-col
+                                            .issues-card-col__small
+                                                .issues-card-row
+                                                    .issues-card-col__title Created on
+                                                    .issues-card-col__dis 12/09/2020 12:09
+                                                .issues-card-row
+                                                    .issues-card-col__title Created by
+                                                    .issues-card-col__dis Not Shipped
+                                                .issues-card-row
+                                                    .issues-card-col__title Resolve by
+                                                    .issues-card-col__dis 12/09/2020
+                                                .issues-card-row
+                                                    .issues-card-col__title Compliant category
+                                                    .issues-card-col__dis Category
+                                            .issues-card-col__small
+                                                .issues-card-row
+                                                    .issues-card-col__title Order #
+                                                    .issues-card-col__dis
+                                                        a(href='#') 27364572635
+                                                .issues-card-row
+                                                    .issues-card-col__title Tracking #
+                                                    .issues-card-col__dis
+                                                        a(href='#') 9405511699000054639273
+                                                .issues-card-row
+                                                    .issues-card-col__title Resolve by
+                                                    .issues-card-col__dis Resolved
+                                                .issues-card-row
+                                                    .issues-card-col__title Compliant category
+                                                    .issues-card-col__dis Medium
+
+                                        .issues-card-col
+                                            .issues-card-col__big
+                                                .issues-card-row
+                                                    .issues-card-col__title What needs to be done
+                                                    .issues-card-col__dis Still waiting for her package. There is nothing around her location that could stop USPS from getting to her
+
+
+
+
+
+
 
                 .table-orders.orders-tabs.active-table
                     form.form.form-orders
