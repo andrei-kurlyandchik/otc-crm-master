@@ -1,0 +1,132 @@
+.popup.popup--log-issue#issue
+    .popup__top
+        h2.title-h2 Edit Issue 73647
+        a.popup__close.b-close(href='#')
+    .popup__bottom
+        .issue-info-popup
+            .issue-info-popup__row
+                .issue-info-popup__title Order #
+                .issue-info-popup__dis
+                    a(href="#") 27364572635
+            .issue-info-popup__row
+                .issue-info-popup__title Tracking #
+                .issue-info-popup__dis
+                    a(href="#") 9405511699000054639273
+            .issue-info-popup__row
+                .issue-info-popup__title Address
+                .issue-info-popup__dis MARIA THOMAS 1600 GARERRET RD APT B 344 UPPER DARBY, PA, 12324 United States, 36453465724
+            .issue-info-popup__row
+                .issue-info-popup__title To be Resolved By
+                .issue-info-popup__dis 12/09/2020
+        form.form
+            .form__itm
+                label.form__label
+                    span.form__ttl What needs to be done?
+                    textarea.form__textarea(placeholder='Placeholder')
+                .form__textarea_characters 213 characters left
+            .form__itm
+                label.form__label.form--inline.form--medium
+                    span.form__ttl Status
+                    select.form__select
+                        option(value='') In Progress
+                        option(value='') In Progress
+            .form__itm
+                label.form__label.form--inline.form--medium
+                    span.form__ttl Priority
+                    select.form__select
+                        option(value='') Medium
+                        option(value='') Medium
+            .form__itm
+                label.form__label.form--inline.form--medium
+                    span.form__ttl Compliant Category
+                    select.form__select
+                        option(value='') Delivery -Lost in the carriers delivery network
+                        option(value='') Delivery -Lost in the carriers delivery network
+
+            .form__itm
+                label.form__label.form--inline.form--medium
+                    span.form__ttl Order #
+                    input.form__inp(type='text' value='' placeholder='646753')
+            .form__itm
+                table.user__table.table-log-issue
+                    tr
+                        td.header-td
+                            .td-checkbox
+                                .checkbox
+                                    label.checkbox__label
+                                        input.checkbox__inp(type='checkbox')
+                                        span.checkbox__btn
+                                span Product
+                        td.header-td To Refund
+                        td.header-td Product
+                    tr
+                        td.body-td
+                            .td-checkbox.td-checkbox__align-top
+                                .checkbox
+                                    label.checkbox__label
+                                        input.checkbox__inp(type='checkbox')
+                                        span.checkbox__btn
+                                .table-info-product
+                                    .table-info-product__title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                    .table-info-product__content
+                                        .table-info-product__content--text SKU: 6255
+                                        .table-info-product__content--text Qty: 3
+                                        .table-info-product__content--text Price: $22.99
+                        td.body-td
+                            .counter-box
+                                .counter-box__minus -
+                                .counter-box__text 1
+                                .counter-box__pluse +
+                        td.body-td
+                            label.form__label
+                                select.form__select
+                                    option(value='') Item Arrived
+                                    option(value='') Item Arrived 2
+                    tr
+                        td.body-td
+                            .td-checkbox.td-checkbox__align-top
+                                .checkbox
+                                    label.checkbox__label
+                                        input.checkbox__inp(type='checkbox')
+                                        span.checkbox__btn
+                                .table-info-product
+                                    .table-info-product__title Shop No7 Protect & Perfect Intense Advanced Eye Cream
+                                    .table-info-product__content
+                                        .table-info-product__content--text SKU: 6255
+                                        .table-info-product__content--text Qty: 3
+                                        .table-info-product__content--text Price: $22.99
+                        td.body-td
+                            .counter-box
+                                .counter-box__minus -
+                                .counter-box__text 1
+                                .counter-box__pluse +
+                        td.body-td
+                            label.form__label
+                                select.form__select
+                                    option(value='') Item Arrived
+                                    option(value='') Item Arrived 2
+
+            .form__itm
+                label.form__label
+                    span.form__ttl Description
+                    textarea.form__textarea(placeholder='Placeholder')
+            .form__itm
+                .box-check-text
+                    .checkbox
+                        label.checkbox__label
+                            input.checkbox__inp(type='checkbox')
+                            span.checkbox__btn
+                    span Conference Call with HPP Representative
+            .form__itm
+                .attachment-file
+                    .attachment-file__title Attachment(s)
+                    .attachment-file__box
+                        input.inputfile.inputfile-box(type="file" name="file-1[]" id="file-1" data-multiple-caption="{count} files selected" multiple)
+                        label(for="file-1") Select files
+            .form__btn.form__btn--center
+                .form__btn-itm
+                    a.btn-b.b-close(href='#') Cancel
+                .form__btn-itm
+                    button.btn-a(type='button') Create Issue
+                //.form__btn-itm
+                //    a.btn-a.b-close.js-show-popup(href='#createdTask') Save and create next
