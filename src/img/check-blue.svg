@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/Material/Delete-outline Copy 3</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.059428 0 0 0 0 0.449879 0 0 0 0 0.905134 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-2" points="9 16.2 4.8 12 3.4 13.4 9 19 21 7 19.6 5.6"></polygon>
+    </defs>
+    <g id="READY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-User_profile-edit-phone-numbers" transform="translate(-1033.000000, -688.000000)">
+            <g id="icon/Material/Delete-outline-Copy-3" transform="translate(1030.000000, 683.000000)" filter="url(#filter-1)">
+                <g>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="-↳Color" fill="#000000" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

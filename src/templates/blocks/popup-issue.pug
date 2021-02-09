@@ -37,16 +37,26 @@
                         option(value='') Medium
                         option(value='') Medium
             .form__itm
-                label.form__label.form--inline.form--medium
+                label.form__label.form--inline.form-category
                     span.form__ttl Compliant Category
                     select.form__select
                         option(value='') Delivery -Lost in the carriers delivery network
-                        option(value='') Delivery -Lost in the carriers delivery network
+                        optgroup(label="Delivery")
+                            option(value='') Lost/stolen after carrier delivery
+                            option(value='') Lost in the carriers delivery network
+                            option(value='') Damaged package/ item
+                            option(value='') Action Required
+                        optgroup(label="Fullfillment")
+                            option(value='') Items Missing from the package
+                        optgroup(label="Other")
+                            option(value='') Products available
+                            option(value='') Products expectations (unsubstained)
+                            option(value='') Printed Catalogue
+                            option(value='') Customer Service
+                            option(value='') Returns Process (unsubstained)
+                            option(value='') Refunds Process (unsubstained)
+                            option(value='') Other
 
-            .form__itm
-                label.form__label.form--inline.form--medium
-                    span.form__ttl Order #
-                    input.form__inp(type='text' value='' placeholder='646753')
             .form__itm
                 table.user__table.table-log-issue
                     tr
@@ -58,7 +68,7 @@
                                         span.checkbox__btn
                                 span Product
                         td.header-td To Refund
-                        td.header-td Product
+                        td.header-td Reason
                     tr
                         td.body-td
                             .td-checkbox.td-checkbox__align-top
@@ -106,23 +116,54 @@
                                     option(value='') Item Arrived
                                     option(value='') Item Arrived 2
 
-            .form__itm
-                label.form__label
-                    span.form__ttl Description
-                    textarea.form__textarea(placeholder='Placeholder')
-            .form__itm
-                .box-check-text
-                    .checkbox
-                        label.checkbox__label
-                            input.checkbox__inp(type='checkbox')
-                            span.checkbox__btn
-                    span Conference Call with HPP Representative
+            .wrappet-box
+                .form__itm
+                    .title-h3 Description
+                    label.form__label
+                        span.form__ttl Description
+                        textarea.form__textarea(placeholder='Placeholder')
+                .btn-wrapper.btn-wrapper__end
+                    button.btn-dd.btn-c--blue(type='button') Add description
+                table.user__table.user__table--edit.user__table--email
+                    tr
+                        td.header-td Description
+                        td.header-td Added by
+                    tr
+                        td.body-td The package is at USPS point, member requestes redelivery to the original address.
+                        td.body-td Mae Hernandez,
+                            br
+                            | 09/23/2020 09:45
+            .wrappet-box
+                .form__itm
+                    .title-h3 Description of Action taken
+                    label.form__label
+                        span.form__ttl Description
+                        textarea.form__textarea(placeholder='Placeholder')
+                .btn-wrapper.btn-wrapper__end
+                    button.btn-dd.btn-c--blue(type='button') Add description
+                table.user__table.user__table--edit.user__table--email
+                    tr
+                        td.header-td Description
+                        td.header-td Added by
+                    tr
+                        td.body-td The package is at USPS point, member requestes redelivery to the original address.
+                        td.body-td Mae Hernandez,
+                            br
+                            | 09/23/2020 09:45
+
             .form__itm
                 .attachment-file
                     .attachment-file__title Attachment(s)
                     .attachment-file__box
                         input.inputfile.inputfile-box(type="file" name="file-1[]" id="file-1" data-multiple-caption="{count} files selected" multiple)
                         label(for="file-1") Select files
+            .form__itm
+                .box-check-text
+                    .checkbox
+                        label.checkbox__label
+                            input.checkbox__inp(type='checkbox')
+                            span.checkbox__btn
+                    span Member Informed
             .form__btn.form__btn--center
                 .form__btn-itm
                     a.btn-b.b-close(href='#') Cancel

@@ -1664,16 +1664,28 @@
                 </label>
               </div>
               <div class="form__itm">
-                <label class="form__label form--inline form--medium"><span class="form__ttl">Compliant Category</span>
+                <label class="form__label form--inline form-category"><span class="form__ttl">Compliant Category</span>
                   <select class="form__select">
                     <option value="">Delivery -Lost in the carriers delivery network</option>
-                    <option value="">Delivery -Lost in the carriers delivery network</option>
+                    <optgroup label="Delivery">
+                      <option value="">Lost/stolen after carrier delivery</option>
+                      <option value="">Lost in the carriers delivery network</option>
+                      <option value="">Damaged package/ item</option>
+                      <option value="">Action Required</option>
+                    </optgroup>
+                    <optgroup label="Fullfillment">
+                      <option value="">Items Missing from the package</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                      <option value="">Products available</option>
+                      <option value="">Products expectations (unsubstained)</option>
+                      <option value="">Printed Catalogue</option>
+                      <option value="">Customer Service</option>
+                      <option value="">Returns Process (unsubstained)</option>
+                      <option value="">Refunds Process (unsubstained)</option>
+                      <option value="">Other</option>
+                    </optgroup>
                   </select>
-                </label>
-              </div>
-              <div class="form__itm">
-                <label class="form__label form--inline form--medium"><span class="form__ttl">Order #</span>
-                  <input class="form__inp" type="text" value="" placeholder="646753">
                 </label>
               </div>
               <div class="form__itm">
@@ -1689,7 +1701,7 @@
                       </div>
                     </td>
                     <td class="header-td">To Refund</td>
-                    <td class="header-td">Product</td>
+                    <td class="header-td">Reason</td>
                   </tr>
                   <tr>
                     <td class="body-td">
@@ -1761,19 +1773,47 @@
                   </tr>
                 </table>
               </div>
-              <div class="form__itm">
-                <label class="form__label"><span class="form__ttl">Description</span>
-                  <textarea class="form__textarea" placeholder="Placeholder"></textarea>
-                </label>
-              </div>
-              <div class="form__itm">
-                <div class="box-check-text">
-                  <div class="checkbox">
-                    <label class="checkbox__label">
-                      <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
-                    </label>
-                  </div><span>Conference Call with HPP Representative</span>
+              <div class="wrappet-box">
+                <div class="form__itm">
+                  <div class="title-h3">Description</div>
+                  <label class="form__label"><span class="form__ttl">Description</span>
+                    <textarea class="form__textarea" placeholder="Placeholder"></textarea>
+                  </label>
                 </div>
+                <div class="btn-wrapper btn-wrapper__end">
+                  <button class="btn-dd btn-c--blue" type="button">Add description</button>
+                </div>
+                <table class="user__table user__table--edit user__table--email">
+                  <tr>
+                    <td class="header-td">Description</td>
+                    <td class="header-td">Added by</td>
+                  </tr>
+                  <tr>
+                    <td class="body-td">The package is at USPS point, member requestes redelivery to the original address.</td>
+                    <td class="body-td">Mae Hernandez,<br>09/23/2020 09:45</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="wrappet-box">
+                <div class="form__itm">
+                  <div class="title-h3">Description of Action taken</div>
+                  <label class="form__label"><span class="form__ttl">Description</span>
+                    <textarea class="form__textarea" placeholder="Placeholder"></textarea>
+                  </label>
+                </div>
+                <div class="btn-wrapper btn-wrapper__end">
+                  <button class="btn-dd btn-c--blue" type="button">Add description</button>
+                </div>
+                <table class="user__table user__table--edit user__table--email">
+                  <tr>
+                    <td class="header-td">Description</td>
+                    <td class="header-td">Added by</td>
+                  </tr>
+                  <tr>
+                    <td class="body-td">The package is at USPS point, member requestes redelivery to the original address.</td>
+                    <td class="body-td">Mae Hernandez,<br>09/23/2020 09:45</td>
+                  </tr>
+                </table>
               </div>
               <div class="form__itm">
                 <div class="attachment-file">
@@ -1782,6 +1822,15 @@
                     <input class="inputfile inputfile-box" type="file" name="file-1[]" id="file-1" data-multiple-caption="{count} files selected" multiple>
                     <label for="file-1">Select files</label>
                   </div>
+                </div>
+              </div>
+              <div class="form__itm">
+                <div class="box-check-text">
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
+                    </label>
+                  </div><span>Member Informed</span>
                 </div>
               </div>
               <div class="form__btn form__btn--center">

@@ -11,6 +11,33 @@
     overflow-y auto
     max-height 95%
     margin-top 1.5%
+    .btn-wrapper {
+      margin-bottom 30px
+    }
+    .user__table--edit {
+      tr:first-child {
+        border-top none
+      }
+    }
+    .wrappet-box {
+      padding-top: 25px;
+      position relative
+      &:before {
+        content: '';
+        width: 110%;
+        height: 1px;
+        background-color: #cecece;
+        top: 0;
+        left: -35px;
+        position: absolute;
+      }
+    }
+    .form-category {
+      width 750px
+      .selectric-items ul {
+        border-bottom 1px solid #cecece;
+      }
+    }
   }
   &.popup--new-notes {
     width 1140px
