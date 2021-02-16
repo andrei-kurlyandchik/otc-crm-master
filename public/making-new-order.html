@@ -23,7 +23,7 @@
                   </div>
                   <div class="header__itm">
                     <div class="header__outer header__buttons">
-                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#"><span class="btn-c--text">Make New Order</span></a></div>
+                      <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#outboundCall"><span class="btn-c--text">Make New Order</span></a></div>
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#requestNewProduct"><span class="btn-c--text">Request new<br>product</span></a></div>
                       <div class="header__itm"><a class="btn-c btn-c--blue js-show-popup" href="#logIssue"><span class="btn-c--text">Log Issue</span></a></div>
                       <!--.header__itm-->
@@ -1660,6 +1660,47 @@
                 <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
                 <div class="form__btn-itm">
                   <button class="btn-a btn-a--small btn-a--red" type="button">Finish call</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--request-new-product" id="requestNewProduct">
+          <div class="popup__top">
+            <h2 class="title-h2">Request a new product</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="form__itm">
+                <label class="form__label"><span class="form__ttl">Product name</span>
+                  <textarea class="form__textarea" placeholder="Nature`s Way Sambucus Black Elderberry Gummies with Vitamin C and Zinc, 60 Gummies"></textarea>
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--inline form--full"><span class="form__ttl">Link (optional)</span>
+                  <input class="form__inp" type="text" value="" placeholder="https://www.amazon.com/Sambucus-Elderber…">
+                </label>
+              </div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a" type="button">Make Request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--outbound-call" id="outboundCall">
+          <div class="popup__top">
+            <h2 class="title-h2">7 products back in stock</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <div class="title-p">7 products from your list are available now. Would you like to review them now?</div>
+            <form class="form">
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close btn-b--medium" href="#">Later</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a" type="button">Yes</button>
                 </div>
               </div>
             </form>

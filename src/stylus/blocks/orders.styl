@@ -275,7 +275,7 @@
 }
 
 .history-calendar {
-	width 840px
+	width 100%
 }
 
 .history-calendar-data {
@@ -299,8 +299,7 @@
 
 .history-calendar-card {
 	position relative
-	width 100%
-	padding 0 0 50px 44px
+	padding 0 15px 50px 44px
 	&:before {
 		content ''
 		position absolute
@@ -337,7 +336,8 @@
 	}
 	&__content {
 		text-align left
-		width 550px
+		//width 550px
+		flex 1
 		&--title {
 			font-size 16px
 			line-height 27px
@@ -350,7 +350,8 @@
 	}
 	&__data {
 		text-align right
-		width 200px
+		//width 200px
+		flex 0.5
 	}
 	.tags-history {
 		display inline-flex
