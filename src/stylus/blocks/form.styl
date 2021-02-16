@@ -270,6 +270,45 @@
       bottom: 0;
     }
   }
+  &--radio {
+    .checkbox__btn {
+      display block
+      width: 24px;
+      height: 24px;
+      position relative
+      border 2px solid blueColor
+      margin-right 10px
+      border-radius 50%
+      &:after {
+        content ''
+        top 50%
+        left 50%
+        transform: translate(-50%, -50%);
+        border-radius 50%
+        width: 13px;
+        height: 13px;
+        border none
+        display: none;
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        bottom: 0;
+        background blueColor
+      }
+    }
+    .checkbox__inp {
+      position absolute
+      opacity 0
+      &:checked {
+        ~.checkbox__btn {
+          background inherit
+          &:after {
+            display block
+          }
+        }
+      }
+    }
+  }
 }
 
 .date {

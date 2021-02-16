@@ -361,19 +361,29 @@ section.panel.panel--user-info
                             .tabs-notes
                                 h2.title-h2 Notes
                                     span 12
-                                .btn-wrapper.btn-wrapper__end
+                                //.btn-wrapper__end
+                                .btn-wrapper
                                     button.btn-dd.btn-c--blue(type='button') + add note
                                 .table-notes
                                     table
                                         tr
                                             td.header-td Note Text
+                                            td.header-td Show note when identify user
                                             td.header-td Created on
                                             td.header-td Created by
-                                        tr
-                                            td(colspan="3").body-td
+                                        tr.none
+                                            td.body-td
                                                 .form-table
                                                     label.form__label.form--inline.form--medium
                                                         input.form__inp(type='text' value='' placeholder='Note text')
+                                            td.body-td
+                                                .checkbox.checkbox--radio
+                                                    label.checkbox__label
+                                                        input.checkbox__inp(type='radio')
+                                                        span.checkbox__btn
+
+                                            td(colspan="2").body-td
+                                                .form-table
                                                     .form__btn
                                                         .form__btn-itm
                                                             button.btn-a.btn-a--small(type='button') Save
@@ -381,26 +391,56 @@ section.panel.panel--user-info
                                                             button.btn-b.btn-b--small(type='button') Cancel
                                         tr
                                             td.body-td This customer usually calls to clalify delivery
+                                            td.body-td
+                                                .checkbox.checkbox--radio
+                                                    label.checkbox__label
+                                                        input.checkbox__inp(type='radio')
+                                                        span.checkbox__btn
                                             td.body-td 09/26/2020
                                             td.body-td James Brown
                                         tr
                                             td.body-td This customer usually calls to clalify delivery
+                                            td.body-td
+                                                .checkbox.checkbox--radio
+                                                    label.checkbox__label
+                                                        input.checkbox__inp(type='radio')
+                                                        span.checkbox__btn
                                             td.body-td 09/26/2020
                                             td.body-td James Brown
                                         tr
                                             td.body-td This customer usually calls to clalify delivery
+                                            td.body-td
+                                                .checkbox.checkbox--radio
+                                                    label.checkbox__label
+                                                        input.checkbox__inp(type='radio')
+                                                        span.checkbox__btn
                                             td.body-td 09/26/2020
                                             td.body-td James Brown
                                         tr
                                             td.body-td This customer usually calls to clalify delivery
+                                            td.body-td
+                                                .checkbox.checkbox--radio
+                                                    label.checkbox__label
+                                                        input.checkbox__inp(type='radio')
+                                                        span.checkbox__btn
                                             td.body-td 09/26/2020
                                             td.body-td James Brown
                                         tr
                                             td.body-td This customer usually calls to clalify delivery
+                                            td.body-td
+                                                .checkbox.checkbox--radio
+                                                    label.checkbox__label
+                                                        input.checkbox__inp(type='radio')
+                                                        span.checkbox__btn
                                             td.body-td 09/26/2020
                                             td.body-td James Brown
                                         tr
                                             td.body-td This customer usually calls to clalify delivery
+                                            td.body-td
+                                                .checkbox.checkbox--radio
+                                                    label.checkbox__label
+                                                        input.checkbox__inp(type='radio')
+                                                        span.checkbox__btn
                                             td.body-td 09/26/2020
                                             td.body-td James Brown
                                 .pagination
