@@ -36,6 +36,18 @@
         });
     })
 
+    $('.js-show-popup-prev').on('click', function (e){
+        e.preventDefault();
+        let href = $(this).attr('href');
+        let currentPopup = $('body').find(href);
+        currentPopup.bPopup({
+            scrollBar: false,
+            onOpen: function() {
+                $(this).css('display', 'flex');
+            }
+        });
+    })
+
     setTimeout(function (){
         $('#passwordChanged').bPopup();
     }, 1000)

@@ -10,10 +10,16 @@
                     select.form__select
                         option(value='') Delivery
                         option(value='') Delivery 2
-            .form__itm
+            .form__itm.form__itm--flex
                 label.form__label.form--inline.form--medium
                     span.form__ttl Order #
                     input.form__inp(type='text' value='' placeholder='Input text')
+                .box-check-text
+                    .checkbox
+                        label.checkbox__label
+                            input.checkbox__inp(type='checkbox')
+                            span.checkbox__btn
+                    span Show products in order
             .form__itm
                 table.user__table.table-log-issue
                     tr

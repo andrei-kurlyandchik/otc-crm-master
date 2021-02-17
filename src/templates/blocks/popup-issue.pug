@@ -7,7 +7,7 @@
             .issue-info-popup__row
                 .issue-info-popup__title Order #
                 .issue-info-popup__dis
-                    a(href="#") 27364572635
+                    a.js-show-popup(href="#") 27364572635
             .issue-info-popup__row
                 .issue-info-popup__title Tracking #
                 .issue-info-popup__dis
@@ -18,12 +18,20 @@
             .issue-info-popup__row
                 .issue-info-popup__title To be Resolved By
                 .issue-info-popup__dis 12/09/2020
+            .issue-info-popup__row
+                .issue-info-popup__title
+                .issue-info-popup__dis
+                    .tags-history.tags--red.tags-history__no-border--red
+                        img.icon.icon--warning-red(src='img/warning-red.svg')
+                        | Conference call with member representative
         form.form
             .form__itm
                 label.form__label
                     span.form__ttl What needs to be done?
                     textarea.form__textarea(placeholder='Placeholder')
-                .form__textarea_characters 213 characters left
+                .form__textarea_characters
+                    span 160 symbols max
+                    span 45/160
             .form__itm
                 label.form__label.form--inline.form--medium
                     span.form__ttl Status

@@ -859,7 +859,7 @@
                               <div class="issues-card-col__small">
                                 <div class="issues-card-row">
                                   <div class="issues-card-col__title">Order #</div>
-                                  <div class="issues-card-col__dis"><a href="#">27364572635</a></div>
+                                  <div class="issues-card-col__dis"><a class="js-show-popup-prev" href="#preview">27364572635</a></div>
                                 </div>
                                 <div class="issues-card-row">
                                   <div class="issues-card-col__title">Tracking #</div>
@@ -916,7 +916,7 @@
                               <div class="issues-card-col__small">
                                 <div class="issues-card-row">
                                   <div class="issues-card-col__title">Order #</div>
-                                  <div class="issues-card-col__dis"><a href="#">27364572635</a></div>
+                                  <div class="issues-card-col__dis"><a class="js-show-popup-prev" href="#preview">27364572635</a></div>
                                 </div>
                                 <div class="issues-card-row">
                                   <div class="issues-card-col__title">Tracking #</div>
@@ -973,7 +973,7 @@
                               <div class="issues-card-col__small">
                                 <div class="issues-card-row">
                                   <div class="issues-card-col__title">Order #</div>
-                                  <div class="issues-card-col__dis"><a href="#">27364572635</a></div>
+                                  <div class="issues-card-col__dis"><a class="js-show-popup-prev" href="#preview">27364572635</a></div>
                                 </div>
                                 <div class="issues-card-row">
                                   <div class="issues-card-col__title">Tracking #</div>
@@ -1332,10 +1332,17 @@
                   </select>
                 </label>
               </div>
-              <div class="form__itm">
+              <div class="form__itm form__itm--flex">
                 <label class="form__label form--inline form--medium"><span class="form__ttl">Order #</span>
                   <input class="form__inp" type="text" value="" placeholder="Input text">
                 </label>
+                <div class="box-check-text">
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
+                    </label>
+                  </div><span>Show products in order</span>
+                </div>
               </div>
               <div class="form__itm">
                 <table class="user__table table-log-issue">
@@ -1680,7 +1687,7 @@
             <div class="issue-info-popup">
               <div class="issue-info-popup__row">
                 <div class="issue-info-popup__title">Order #</div>
-                <div class="issue-info-popup__dis"><a href="#">27364572635</a></div>
+                <div class="issue-info-popup__dis"><a class="js-show-popup" href="#">27364572635</a></div>
               </div>
               <div class="issue-info-popup__row">
                 <div class="issue-info-popup__title">Tracking #</div>
@@ -1694,13 +1701,19 @@
                 <div class="issue-info-popup__title">To be Resolved By</div>
                 <div class="issue-info-popup__dis">12/09/2020</div>
               </div>
+              <div class="issue-info-popup__row">
+                <div class="issue-info-popup__title"></div>
+                <div class="issue-info-popup__dis">
+                  <div class="tags-history tags--red tags-history__no-border--red"><img class="icon icon--warning-red" src="img/warning-red.svg">Conference call with member representative</div>
+                </div>
+              </div>
             </div>
             <form class="form">
               <div class="form__itm">
                 <label class="form__label"><span class="form__ttl">What needs to be done?</span>
                   <textarea class="form__textarea" placeholder="Placeholder"></textarea>
                 </label>
-                <div class="form__textarea_characters">213 characters left</div>
+                <div class="form__textarea_characters"><span>160 symbols max</span><span>45/160</span></div>
               </div>
               <div class="form__itm">
                 <label class="form__label form--inline form--medium"><span class="form__ttl">Status</span>
@@ -1898,6 +1911,14 @@
               </div>
             </form>
           </div>
+        </div>
+        <div class="popup popup--preview" id="preview"><a class="popup__close b-close" href="#"></a>
+          <div class="preview-wrapper">
+            <div class="preview-wrapper--image"><img src="img/slider/slider-big.png" alt="logo"></div>
+          </div>
+          <div class="preview-wrapper-arrow preview-wrapper-arrow__left"><i class="arrow"></i></div>
+          <div class="preview-wrapper-arrow preview-wrapper-arrow__right"><i class="arrow"></i></div>
+          <div class="btn-dd btn-c--blue">Back to issue</div>
         </div>
       </div>
       <footer class="footer">

@@ -9,6 +9,7 @@
   &.popup--log-issue {
     width 1120px
     overflow-y auto
+    overflow-x hidden
     max-height 95%
     margin-top 1.5%
     .btn-wrapper {
@@ -119,6 +120,77 @@
     margin-bottom 20px
     .toggle-check {
       margin-left 12px
+    }
+  }
+}
+
+.popup--preview {
+  width 1170px
+  overflow hidden
+  max-height 95%
+  .popup__close {
+    position absolute
+    top 30px
+    right 30px
+  }
+  .btn-dd {
+    position absolute
+    bottom 28px
+    left: 50%;
+    transform translateX(-50%)
+    cursor pointer
+  }
+}
+
+.preview-wrapper {
+  width: 824px
+  margin 0 auto
+  display: flex;
+}
+
+.preview-wrapper--image {
+  width 100%
+  display flex
+  align-items center
+  justify-content center
+  img {
+    max-height 100%
+  }
+}
+
+.preview-wrapper-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width 100px
+  height 100px
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  cursor pointer
+  display flex
+  align-items center
+  justify-content center
+  .arrow {
+    border: solid #979797;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width 24px
+    height 24px
+  }
+  &__left {
+    left 30px
+    .arrow {
+      transform: rotate(135deg);
+      margin-left: 12px;
+    }
+  }
+  &__right {
+    right 30px
+    .arrow {
+      transform: rotate(-45deg);
+      margin-right: 12px;
     }
   }
 }
