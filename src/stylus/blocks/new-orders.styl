@@ -1,0 +1,58 @@
+.tabs-catalogs {
+	width 100%
+	display flex
+	align-items: stretch
+	flex-wrap wrap
+	border-top 1px solid #CCCCCC
+}
+.catalogs-box {
+	width 33%
+	border-right 1px solid #CCCCCC
+	border-bottom 1px solid #CCCCCC
+	padding 20px
+	&:nth-child(3n) {
+		border-right none
+	}
+}
+.catalogs-box__img {
+	width 100%
+	img {
+		width 100%
+	}
+	margin-bottom 16px
+}
+.catalogs-box__title {
+	font-size 16px
+	line-height 20px
+	font-weight: 600
+	color #333333
+	margin-bottom 4px
+}
+.catalogs-box__content {
+	display flex
+	align-items flex-start
+	font-size 16px
+	line-height 19px
+	font-weight: 300
+	color #3A3A3A
+	margin-bottom 16px
+	&--item1 {
+		min-width 50px
+		padding-right 10px
+	}
+}
+.catalogs-box__filter {
+	display flex
+	align-items center
+	.counter-box {
+		margin-left 0
+	}
+	.counter-box__minus, .counter-box__text, .counter-box__pluse {
+		width 28px
+		height 28px
+	}
+	.btn-making-order {
+		font-size 12px
+		height 28px
+	}
+}

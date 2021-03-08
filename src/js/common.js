@@ -48,6 +48,18 @@
         });
     })
 
+    $('.js-show-popup__summary').on('click', function (e){
+        e.preventDefault();
+        let href = $(this).attr('href');
+        let currentPopup = $('body').find(href);
+        currentPopup.bPopup({
+            scrollBar: false,
+            positionStyle: 'fixed',
+            follow: [false, false],
+            position: [false, false]
+        });
+    })
+
     setTimeout(function (){
         $('#passwordChanged').bPopup();
     }, 1000)
@@ -152,6 +164,19 @@
 
     });
 
+    $('.btn-show-making').on('click', function (e){
+        e.preventDefault();
+        $(this).toggleClass('clicked');
+        if ( $(this).hasClass("clicked") ) {
+            $(this).text("Hide Info");
+        }
+        else {
+            $(this).text("more Info");
+        }
+        $('.making-order-info__box--show').toggleClass('show');
+
+    });
+
     $('.btn-filter-show').on('click', function (e){
         e.preventDefault();
         $(this).toggleClass('clicked');
@@ -161,7 +186,7 @@
         else {
             $(this).text("Show filters");
         }
-        $('.calls-filters-extended').toggleClass('show');
+        $(this).closest('.making-product-info').hasClass('.calls-filters-extended').toggleClass('show');
 
     });
 
