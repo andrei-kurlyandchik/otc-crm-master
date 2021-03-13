@@ -420,16 +420,28 @@
 			margin-top 27px
 		}
 	}
+	.title-p {
+		padding 0 17px 17px
+		margin-bottom 0
+		border-bottom 1px solid #ccc
+	}
 }
 
 .card-box__big {
 	display block
-	//position relative
 	position fixed
 	top 0
 	right 15px
 	height: 100%
 	padding-top: 120px
+	&.not-product {
+		.panel__outer {
+			height auto
+		}
+		.summary-panel {
+			position relative
+		}
+	}
 }
 
 .making-order-list {
@@ -582,6 +594,14 @@
 		text-transform uppercase
 		cursor pointer
 	}
+}
+
+.making-order-start {
+	padding 23px
+	font-size 14px
+	font-weight 400
+	line-height 19px
+	color #3A3A3A
 }
 
 .making-order-info__content--tag {
@@ -825,6 +845,7 @@
 	width 100%
 	padding 25px 20px
 	display none
+	border-top: 1px solid #ccc;
 }
 
 .summary-small--title {
@@ -993,6 +1014,29 @@
    	.tags--red {
 		height 33px
 		margin-bottom 0
+	}
+}
+
+.tabs-search-title {
+	display flex
+	justify-content space-between
+	margin-bottom 25px
+	&__col {
+		display flex
+		align-items flex-end
+	}
+	.title-h3 {
+		font-size 20px
+		font-weight 500
+		padding 0
+	}
+	.btn-calls-filters {
+		font-size 20px
+		font-weight 300
+		margin-left 25px
+		text-decoration underline
+		color #0F73E7
+		cursor pointer
 	}
 }
 
