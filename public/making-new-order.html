@@ -2684,8 +2684,7 @@
                       <div class="panel__outer">
                         <h2 class="title-h2">Shopping Cart<span>10</span></h2>
                         <div class="shopping-cart-wrapper">
-                          <div class="shopping-cart">
-                            <div class="btn-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                          <div class="shopping-cart"><a class="btn-del js-show-popup" href="#backInStock"><img class="icon icon--trash" src="img/trash.svg"></a>
                             <div class="btn-fav"><img class="icon icon--trash" src="img/favorite.svg"></div>
                             <div class="shopping-cart__title">Shop No7 Protect & Perfect Intense Advanced Eye Cream</div>
                             <div class="shopping-cart__content">
@@ -4052,6 +4051,22 @@
               </div>
               <div class="form__btn form__btn--center">
                 <div class="form__btn-itm"><a class="btn-a b-close" href="#">Close</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--back-in-stock" id="backInStock">
+          <div class="popup__top">
+            <h2 class="title-h2">7 products back in stock</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="title-p">7 products from your list are available now. Would you like to review them now?</div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Later</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a" type="button">Yes</button>
+                </div>
               </div>
             </form>
           </div>
