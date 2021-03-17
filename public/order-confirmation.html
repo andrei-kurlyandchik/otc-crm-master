@@ -2466,24 +2466,71 @@
                 <div class="address-block">
                   <div class="address-block-wrapper"><img class="address-block-check" src="img/check-empty.svg" alt="">
                     <div class="address-block-content"><span>Marian Frazier</span><span>8285C Center Ave.</span><span>Latrobe, Pensylvania 15680</span></div>
-                  </div><a class="address-block-edit js-show-popup" href="#selectAddress">Edit</a>
+                  </div><a class="address-block-edit js-show-popup" href="#editAddres">Edit</a>
                 </div>
                 <div class="address-block">
                   <div class="address-block-wrapper"><img class="address-block-check" src="img/check-empty.svg" alt="">
                     <div class="address-block-content"><span>Marian Frazier</span><span>8285C Center Ave.</span><span>Latrobe, Pensylvania 15680</span></div>
-                  </div><a class="address-block-edit js-show-popup" href="#selectAddress">Edit</a>
+                  </div><a class="address-block-edit js-show-popup" href="#editAddres">Edit</a>
                 </div>
                 <div class="address-block">
                   <div class="address-block-wrapper"><img class="address-block-check" src="img/check-empty.svg" alt="">
                     <div class="address-block-content"><span>Marian Frazier</span><span>8285C Center Ave.</span><span>Latrobe, Pensylvania 15680</span></div>
-                  </div><a class="address-block-edit js-show-popup" href="#selectAddress">Edit</a>
+                  </div><a class="address-block-edit js-show-popup" href="#editAddres">Edit</a>
                   <div class="address-block-information">Do not deliver on this address</div>
                 </div>
                 <div class="address-block address-block__check">
                   <div class="address-block-wrapper"><img class="address-block-check" src="img/check-circle-blue.svg" alt="">
                     <div class="address-block-content"><span>Marian Frazier</span><span>8285C Center Ave.</span><span>Latrobe, Pensylvania 15680</span></div>
-                  </div><a class="address-block-edit js-show-popup" href="#selectAddress">Edit</a>
+                  </div><a class="address-block-edit js-show-popup" href="#editAddres">Edit</a>
                 </div>
+              </div>
+              <div class="form__btn form__btn--center">
+                <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+                <div class="form__btn-itm">
+                  <button class="btn-a btn-a--small" type="button">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup popup--new-task" id="editAddres">
+          <div class="popup__top">
+            <h2 class="title-h2">Edit Address</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <form class="form">
+              <div class="form__itm">
+                <label class="form__label form--full"><span class="form__ttl">Address 1</span>
+                  <input class="form__inp" type="text" value="" placeholder="First Ave.">
+                </label>
+                <div class="form__textarea_characters"><span>primary address information and secondary address information (e.g., floor, suite or mail stop number)</span></div>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--full"><span class="form__ttl">Address 2</span>
+                  <input class="form__inp" type="text" value="" placeholder="273">
+                </label>
+                <div class="form__textarea_characters"><span>building/dorm</span></div>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--small"><span class="form__ttl">ZIP Code</span>
+                  <input class="form__inp" type="text" value="" placeholder="12312">
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--medium"><span class="form__ttl">City</span>
+                  <input class="form__inp" type="text" value="" placeholder="USPS">
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--medium"><span class="form__ttl">State</span>
+                  <input class="form__inp" type="text" value="" placeholder="Pennsylvania">
+                </label>
+              </div>
+              <div class="form__itm">
+                <label class="form__label form--full"><span class="form__ttl">Note (Optional)</span>
+                  <input class="form__inp" type="text" value="" placeholder="Do not deliver on this address">
+                </label>
               </div>
               <div class="form__btn form__btn--center">
                 <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>

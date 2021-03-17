@@ -1,0 +1,40 @@
+.popup.popup--new-task#editAddres
+    .popup__top
+        h2.title-h2 Edit Address
+        a.popup__close.b-close(href='#')
+    .popup__bottom
+        form.form
+            .form__itm
+                label.form__label.form--full
+                    span.form__ttl Address 1
+                    input.form__inp(type='text' value='' placeholder='First Ave.')
+                .form__textarea_characters
+                    span primary address information and secondary address information (e.g., floor, suite or mail stop number)
+            .form__itm
+                label.form__label.form--full
+                    span.form__ttl Address 2
+                    input.form__inp(type='text' value='' placeholder='273')
+                .form__textarea_characters
+                    span building/dorm
+            .form__itm
+                label.form__label.form--small
+                    span.form__ttl ZIP Code
+                    input.form__inp(type='text' value='' placeholder='12312')
+            .form__itm
+                label.form__label.form--medium
+                    span.form__ttl City
+                    input.form__inp(type='text' value='' placeholder='USPS')
+            .form__itm
+                label.form__label.form--medium
+                    span.form__ttl State
+                    input.form__inp(type='text' value='' placeholder='Pennsylvania')
+            .form__itm
+                label.form__label.form--full
+                    span.form__ttl Note (Optional)
+                    input.form__inp(type='text' value='' placeholder='Do not deliver on this address')
+
+            .form__btn.form__btn--center
+                .form__btn-itm
+                    a.btn-b.b-close(href='#') Cancel
+                .form__btn-itm
+                    button.btn-a.btn-a--small(type='button') Save
