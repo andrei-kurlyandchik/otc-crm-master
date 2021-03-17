@@ -3,7 +3,18 @@
 	flex-wrap wrap
 	border-bottom 1px solid #979797
 	padding-bottom 20px
-	margin-bottom 20px  }
+	margin-bottom 20px
+	.address-block {
+		width 49%
+		margin-bottom 20px
+		&:nth-child(odd) {
+			margin-right 1%
+		}
+		&:nth-child(even) {
+			margin-left 1%
+		}
+	}
+}
 
 .address-box {
 	width 49%
@@ -94,5 +105,53 @@
 		text-decoration underline
 		cursor pointer
 		margin-right 20px
+	}
+}
+
+.address-block {
+	width 100%
+	border-radius 20px
+	border 1px solid #CCCCCC
+	position: relative
+	&__check {
+		border none
+		background-color #D1E7FF
+	}
+	.address-block-wrapper {
+		width 100%
+		padding 20px 80px 20px 20px
+		display flex
+		align-items flex-start
+	}
+	.address-block-check {
+		margin-right 10px
+	}
+	.address-block-content {
+		span {
+			display block
+			font-size 16px
+			font-weight 300
+			line-height 27px
+			color #333333
+		}
+	}
+	.address-block-edit {
+		position absolute
+		font-size 16px
+		font-weight 300
+		line-height 19px
+		color #0F73E7
+		text-decoration underline
+		cursor pointer
+		top 20px
+		right 20px
+	}
+	.address-block-information {
+		font-size 16px
+		font-weight 300
+		line-height 27px
+		color #333333
+		border-top 1px solid #CCCCCC
+		padding 10px 55px
 	}
 }
