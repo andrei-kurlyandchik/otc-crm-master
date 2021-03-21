@@ -1,0 +1,78 @@
+.popup.popup--add-card#addCard
+    .popup__top
+        h2.title-h2 Payment options
+        a.popup__close.b-close(href='#')
+    .popup__bottom
+        .customer-pays
+            .customer-pays__title Customer pays
+            .customer-pays__price $12.50
+        .add-card
+            .add-card-list
+                .add-card-list-wrapper
+                    .add-card-plus
+                        img.add-card-plus__plus(src='img/plus-black.svg' alt='')
+                        .add-card-plus__text ADD NEW CARD
+                    .add-card-check
+                        .add-card-check-wrapper
+                            .add-card-check-icon
+                            .add-card-check-content
+                                span **** 3846
+                                span 12/23
+                                span MASTERCARD
+                        .add-card-check-del
+                            img.icon.icon--trash(src='img/trash.svg')
+                    .add-card-check
+                        .add-card-check-wrapper
+                            .add-card-check-icon
+                            .add-card-check-content
+                                span **** 3846
+                                span 12/23
+                                span VISA
+                        .add-card-check-del
+                            img.icon.icon--trash(src='img/trash.svg')
+                    .add-card-check
+                        .add-card-check-wrapper
+                            .add-card-check-icon
+                            .add-card-check-content
+                                span **** 3846
+                                span 12/23
+                                span MASTERCARD
+                        .add-card-check-del
+                            img.icon.icon--trash(src='img/trash.svg')
+            .add-card-new
+                .add-card-new__title New Card
+                form.form.form--add-card
+                    .form__itm
+                        label.form__label.form
+                            span.form__ttl Card number
+                            input.form__inp(type='text' value='' placeholder='1234 8723 8734 8723')
+                    .form__itm
+                        label.form__label.form
+                            span.form__ttl Client name
+                            input.form__inp(type='text' value='' placeholder='ALISA BROWN')
+                    .form__itm.form__itm--flex
+                        label.form__label.form--date
+                            span.form__ttl Valid to
+                            input.form__inp(type='text' value='' placeholder='MM/YY')
+                        .box-check-text
+                            .checkbox
+                                label.checkbox__label
+                                    input.checkbox__inp(type='checkbox')
+                                    span.checkbox__btn
+                            span Remember this card
+                    .form__itm.form--cvv
+                        label.form__label.form
+                            span.form__ttl CVV/CVC
+                            input.form__inp(type='text' value='' placeholder='132')
+                        .form__textarea_characters
+                            span 3 digits on back side of the card
+
+            .add-card-block.hidden
+                .add-card-block__title New Card
+                .add-card-block__content
+                    span **** **** **** 2837
+                    span ALISA BROWN
+                    span.valid-card Valid to 12/23
+    .form__btn.form__btn--center
+        .form__btn-itm
+            button.btn-a.btn-a--small(type='button') Save

@@ -1192,8 +1192,7 @@
                     <div class="order-confirmation-price">
                       <div class="order-confirmation-price__title">Total</div>
                       <div class="order-confirmation-price__number">$22.90</div>
-                    </div>
-                    <div class="btn-making-order">Confirm and checkout</div>
+                    </div><a class="btn-making-order js-show-popup" href="#addCard">Confirm and checkout</a>
                   </div>
                 </div>
               </div>
@@ -2552,6 +2551,89 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="popup popup--add-card" id="addCard">
+          <div class="popup__top">
+            <h2 class="title-h2">Payment options</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <div class="customer-pays">
+              <div class="customer-pays__title">Customer pays</div>
+              <div class="customer-pays__price">$12.50</div>
+            </div>
+            <div class="add-card">
+              <div class="add-card-list">
+                <div class="add-card-list-wrapper">
+                  <div class="add-card-plus"><img class="add-card-plus__plus" src="img/plus-black.svg" alt="">
+                    <div class="add-card-plus__text">ADD NEW CARD</div>
+                  </div>
+                  <div class="add-card-check">
+                    <div class="add-card-check-wrapper">
+                      <div class="add-card-check-icon"></div>
+                      <div class="add-card-check-content"><span>**** 3846</span><span>12/23</span><span>MASTERCARD</span></div>
+                    </div>
+                    <div class="add-card-check-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                  </div>
+                  <div class="add-card-check">
+                    <div class="add-card-check-wrapper">
+                      <div class="add-card-check-icon"></div>
+                      <div class="add-card-check-content"><span>**** 3846</span><span>12/23</span><span>VISA</span></div>
+                    </div>
+                    <div class="add-card-check-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                  </div>
+                  <div class="add-card-check">
+                    <div class="add-card-check-wrapper">
+                      <div class="add-card-check-icon"></div>
+                      <div class="add-card-check-content"><span>**** 3846</span><span>12/23</span><span>MASTERCARD</span></div>
+                    </div>
+                    <div class="add-card-check-del"><img class="icon icon--trash" src="img/trash.svg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="add-card-new">
+                <div class="add-card-new__title">New Card</div>
+                <form class="form form--add-card">
+                  <div class="form__itm">
+                    <label class="form__label form"><span class="form__ttl">Card number</span>
+                      <input class="form__inp" type="text" value="" placeholder="1234 8723 8734 8723">
+                    </label>
+                  </div>
+                  <div class="form__itm">
+                    <label class="form__label form"><span class="form__ttl">Client name</span>
+                      <input class="form__inp" type="text" value="" placeholder="ALISA BROWN">
+                    </label>
+                  </div>
+                  <div class="form__itm form__itm--flex">
+                    <label class="form__label form--date"><span class="form__ttl">Valid to</span>
+                      <input class="form__inp" type="text" value="" placeholder="MM/YY">
+                    </label>
+                    <div class="box-check-text">
+                      <div class="checkbox">
+                        <label class="checkbox__label">
+                          <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
+                        </label>
+                      </div><span>Remember this card</span>
+                    </div>
+                  </div>
+                  <div class="form__itm form--cvv">
+                    <label class="form__label form"><span class="form__ttl">CVV/CVC</span>
+                      <input class="form__inp" type="text" value="" placeholder="132">
+                    </label>
+                    <div class="form__textarea_characters"><span>3 digits on back side of the card</span></div>
+                  </div>
+                </form>
+              </div>
+              <div class="add-card-block hidden">
+                <div class="add-card-block__title">New Card</div>
+                <div class="add-card-block__content"><span>**** **** **** 2837</span><span>ALISA BROWN</span><span class="valid-card">Valid to 12/23</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="form__btn form__btn--center">
+            <div class="form__btn-itm">
+              <button class="btn-a btn-a--small" type="button">Save</button>
+            </div>
           </div>
         </div>
       </div>

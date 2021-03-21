@@ -190,6 +190,20 @@
 
     });
 
+    $('.add-card-check').on('click', function (e){
+        e.preventDefault();
+        $(this).toggleClass('add-card-check__check');
+        $('.add-card-block').removeClass("hidden");
+        $('.add-card-new').addClass("hidden");
+    });
+
+    $('.add-card-plus').on('click', function (e){
+        e.preventDefault();
+        $('.add-card-block').addClass("hidden");
+        $('.add-card-new').removeClass("hidden");
+        $('.add-card-check').removeClass("add-card-check__check");
+    });
+
     ;( function( $, window, document, undefined )
     {
         $( '.inputfile' ).each( function()

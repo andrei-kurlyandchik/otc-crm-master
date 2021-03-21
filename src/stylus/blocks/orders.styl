@@ -1230,6 +1230,156 @@
 	}
 }
 
+.add-card {
+	margin-bottom 26px
+	border-bottom: 1px solid #979797;
+	padding 20px 0 26px 0
+}
+
+.add-card-list {
+	width 100%
+	overflow-x: auto;
+}
+
+.add-card-list-wrapper {
+	display: inline-flex;
+	align-items stretch
+	flex-wrap nowrap
+	margin-bottom 26px
+}
+
+.add-card-plus {
+	border-radius: 20px;
+	background-color: #d1e7ff;
+	text-align: center;
+	padding: 20px 10px;
+	cursor: pointer;
+	width 190px
+	margin-right 20px
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.add-card-plus__plus {
+	margin-bottom 10px
+}
+
+.add-card-plus__text {
+	font-size 16px
+	font-weight 300
+	line-height 17px
+	color #3A3A3A
+}
+
+.add-card-check {
+	width 192px
+	border-radius 20px
+	border 1px solid #CCCCCC
+	position: relative
+	margin-right 20px
+	&__check {
+		border-color #D1E7FF
+		background-color #D1E7FF
+		.add-card-check-icon {
+			background-image url("../img/check-circle-blue.svg")
+		}
+	}
+}
+
+.add-card-check-wrapper {
+	width 100%
+	padding 20px
+	display flex
+	align-items flex-start
+	cursor pointer
+}
+	
+.add-card-check-icon {
+	width 25px
+	height 25px
+	background-size cover
+	background-repeat no-repeat
+	background-image url("../img/check-empty.svg")
+	margin-right 10px
+}
+
+.add-card-check-content {
+	display: flex;
+	flex-flow: column;
+	span {
+		font-size 16px
+		font-weight 300
+		line-height 27px
+		color #3A3A3A
+	}
+}
+
+.add-card-check-del {
+	position absolute
+	top: 22px;
+	right: 13px;
+	cursor pointer
+}
+
+.add-card-new {
+	width 680px
+	height 370px
+	background-image url("../img/add-card-bg.svg")
+	background-size cover
+	background-repeat no-repeat
+	margin: 0 auto
+	position relative
+	padding 30px
+	&.hidden {
+		display none
+	}
+}
+
+.add-card-new__title {
+	font-size 24px
+	font-weight 500
+	line-height 26px
+	color #333333
+	margin-bottom 25px
+}
+
+.add-card-block {
+	width 680px
+	height 370px
+	background-image url("../img/add-card-bg.svg")
+	background-size cover
+	background-repeat no-repeat
+	margin: 0 auto
+	position relative
+	padding 30px
+	&.hidden {
+		display none
+	}
+}
+
+.add-card-block__title {
+	font-size 24px
+	font-weight 500
+	line-height 26px
+	color #333333
+	margin-bottom 70px
+}
+
+.add-card-block__content {
+	span {
+		font-size 16px
+		font-weight 300
+		line-height 19px
+		color #3A3A3A
+		margin-bottom 25px
+		display block
+	}
+	.valid-card {
+		margin-top 60px
+	}
+}
+
 @media screen and (max-width: 1880px) {
 	.issues-card-wrapper {
 		flex-flow column
