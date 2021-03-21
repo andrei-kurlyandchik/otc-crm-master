@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+    include layout/head
+    body
+        main.main
+            include blocks/header-calls
+            .content
+                include sections/order-confirmation-content-add-address
+                include blocks/popup-add-task
+                include blocks/popup-add-adress
+                include blocks/popup-edit-adress
+                include blocks/popup-add-notes
+                include blocks/popup-view-task
+                include blocks/popup-finish-call
+                include blocks/popup-request-new-product
+                include blocks/popup-outbound-call
+                include blocks/popup-complementary-prods
+                include blocks/popup-shop-cart
+                include blocks/popup-preview
+                include blocks/popup-analogs
+                include blocks/popup-back-in-stock
+                include blocks/popup-select-address
+                include blocks/popup-edit-address
+            include blocks/footer
+        include layout/scripts
