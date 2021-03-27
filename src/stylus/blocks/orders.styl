@@ -382,6 +382,7 @@
 	align-items flex-start
 	justify-content space-between
 	margin 0 -15px 20px
+	position relative
 }
 
 .making-new-order {
@@ -429,11 +430,10 @@
 
 .card-box__big {
 	display block
-	position fixed
+	position absolute
 	top 0
-	right 15px
+	right 0
 	height: 100%
-	padding-top: 120px
 	&.not-product {
 		.panel__outer {
 			height auto
@@ -442,6 +442,14 @@
 			position relative
 		}
 	}
+}
+
+.card-box-fixed {
+	position fixed
+	height 100%
+	top 0
+	width: 340px;
+	padding-top: 120px
 }
 
 .making-order-list {
@@ -1262,7 +1270,8 @@
 }
 
 .add-card-plus__plus {
-	margin-bottom 10px
+	width 28px
+	margin 0 auto 10px
 }
 
 .add-card-plus__text {
@@ -1377,6 +1386,12 @@
 	}
 	.valid-card {
 		margin-top 60px
+	}
+}
+
+.save-card-btn, .pay-card-btn {
+	&.hidden {
+		display none
 	}
 }
 

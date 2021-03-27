@@ -68,11 +68,16 @@
                             span 3 digits on back side of the card
 
             .add-card-block.hidden
-                .add-card-block__title New Card
+                .add-card-block__title MASTERCARD
                 .add-card-block__content
                     span **** **** **** 2837
                     span ALISA BROWN
                     span.valid-card Valid to 12/23
-    .form__btn.form__btn--center
+    .form__btn.form__btn--center.pay-card-btn
         .form__btn-itm
-            button.btn-a.btn-a--small(type='button') Save
+            button.btn-a.btn-a--small(type='button') Pay
+    .form__btn.form__btn--center.save-card-btn.hidden
+        .form__btn-itm
+            a.btn-b.b-close(href='#') Cancel
+        .form__btn-itm
+            button.btn-a.btn-a--small(type='button') Pay

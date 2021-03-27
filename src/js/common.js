@@ -36,6 +36,15 @@
         });
     })
 
+    $('.js-show-popup-card').on('click', function (e){
+        e.preventDefault();
+        let href = $(this).attr('href');
+        let currentPopup = $('body').find(href);
+        currentPopup.bPopup({
+            scrollBar: true,
+        });
+    })
+
     $('.js-show-popup-prev').on('click', function (e){
         e.preventDefault();
         let href = $(this).attr('href');
@@ -194,13 +203,17 @@
         e.preventDefault();
         $(this).toggleClass('add-card-check__check');
         $('.add-card-block').removeClass("hidden");
+        $('.save-card-btn').removeClass("hidden");
         $('.add-card-new').addClass("hidden");
+        $('.pay-card-btn').addClass("hidden");
     });
 
     $('.add-card-plus').on('click', function (e){
         e.preventDefault();
         $('.add-card-block').addClass("hidden");
+        $('.save-card-btn').addClass("hidden");
         $('.add-card-new').removeClass("hidden");
+        $('.pay-card-btn').removeClass("hidden");
         $('.add-card-check').removeClass("add-card-check__check");
     });
 
