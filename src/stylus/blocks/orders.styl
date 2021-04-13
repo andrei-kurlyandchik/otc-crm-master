@@ -88,14 +88,18 @@
 }
 
 .order-summer-tabs {
-	width 72%
+	width 100%
+	.issues-card {
+		&:first-child {
+			padding-top 0
+			border-top none
+		}
+	}
 }
 
 .order-summer-order-total {
 	width: 28%;
-	margin-top: 51px;
-	border-top: 1px solid #ccc;
-	padding: 23px 20px 0 20px;
+	padding-left 30px
 	&__title {
 		font-size 24px
 		font-weight 500
@@ -143,6 +147,15 @@
 			padding 0 20px 10px 0
 		}
 	}
+}
+
+.tabs-items-wrapper {
+	width 100%
+	display flex
+}
+
+.tabs-items {
+	width 72%
 }
 
 .items-order {
@@ -1426,7 +1439,7 @@
 	}
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
 	.items-order__btn--xs {
 		display none
 	}
@@ -1434,12 +1447,12 @@
 		display block
 		margin-bottom: 15px;
 	}
-	.order-summer-tabs {
+	.tabs-items {
 		width 70%
 	}
 	.order-summer-order-total {
 		width 30%
-		padding-left 0
+		padding-left: 10px;
 	}
 	.order-summer-info__table {
 		display block
