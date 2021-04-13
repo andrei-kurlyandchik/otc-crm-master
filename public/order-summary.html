@@ -540,11 +540,13 @@
                 </div>
               </div>
               <div class="panel__col panel__col--right">
-                <div class="orders-summary-header"><a class="link" href="#">Orders / Order# 7263467</a><a class="btn-link" href="#">Open member profile</a></div>
+                <div class="orders-summary-header">
+                  <!--a.link(href="#") Orders / Order# 7263467--><a class="link" href="#">< Go back</a><a class="btn-link" href="#">Open member profile</a>
+                </div>
                 <div class="order-summer-content">
                   <div class="order-summer-info">
                     <div class="order-summer-info__header">
-                      <h2 class="title-h2">Order Summary</h2>
+                      <h2 class="title-h2">Order #7254716325785</h2>
                       <div class="btn-block"><a class="btn-dd btn-c--blue" href="#">Return/ Refund All</a><a class="btn-dd btn-c--blue" href="#">Resend Order Confirmation</a></div>
                     </div>
                     <div class="order-summer-info__table">
@@ -552,12 +554,12 @@
                         <div class="table-label-box__title">Order Information</div>
                         <table>
                           <tr>
-                            <td>Order #</td>
-                            <td>48756876</td>
+                            <td>Status:</td>
+                            <td>Shipped</td>
                           </tr>
                           <tr>
-                            <td>Status:</td>
-                            <td>Not Shipped</td>
+                            <td>Created at:</td>
+                            <td>05/11/2020 09:08 EDT</td>
                           </tr>
                           <tr>
                             <td>Order Type:</td>
@@ -567,10 +569,6 @@
                             <td>Performer:</td>
                             <td>Marta (marta.h@orcstores.com)</td>
                           </tr>
-                          <tr>
-                            <td>Created at:</td>
-                            <td>05/11/2020 09:08 EDT</td>
-                          </tr>
                         </table>
                       </div>
                       <div class="table-label-box col-3">
@@ -578,11 +576,19 @@
                         <table>
                           <tr>
                             <td>Shipping Address:</td>
-                            <td><span>Marian Frazier</span><span>8285C Center Ave.</span><span>Latrobe, Pensylvania</span><span>15680</span><span>United States</span><span>215-345-4678</span></td>
+                            <td><span>Marian Frazier</span><span>8285C Center Ave.</span><span>Latrobe, Pensylvania 15680</span></td>
+                          </tr>
+                          <tr>
+                            <td>Shipping label note for postman:</td>
+                            <td>Leave parcel near the door</td>
                           </tr>
                           <tr>
                             <td>Delivery option:</td>
                             <td>USPS</td>
+                          </tr>
+                          <tr>
+                            <td>Shipped On:</td>
+                            <td>11/09/2019</td>
                           </tr>
                         </table>
                       </div>
@@ -590,37 +596,27 @@
                         <div class="table-label-box__title">Tracking Information</div>
                         <table>
                           <tr>
-                            <td>Sent on:</td>
-                            <td>11/09/2019</td>
-                          </tr>
-                          <tr>
-                            <td>Tracking number:</td>
-                            <td>93233626</td>
-                          </tr>
-                          <tr>
-                            <td>Delivered on:</td>
+                            <td>Est.Delivery Date:</td>
                             <td>12/23/202</td>
                           </tr>
                           <tr>
                             <td>Tracking Link:</td>
-                            <td>7236527365423456</td>
+                            <td><a href="#">7236527365423456</a></td>
                           </tr>
                         </table>
                       </div>
                     </div>
-                    <div class="block-flex-start">
-                      <div class="order-summer-info__notes">
-                        <div class="order-summer-info__notes--title">Order Note</div>
-                        <div class="order-summer-info__notes--content">The flax plant, an ancient crop, yields the fibre from which linen is woven, as well as seeds (linseed or flaxseed) and oil. The oil, also called linseed oil, has many industrial uses – it is an important ingredient in paints, varnishes and linoleum for example.</div>
-                      </div>
-                      <div class="order-summer-info__attachments">
-                        <div class="order-summer-info__attachments--title">Attachments</div>
-                        <div class="order-summer-info__attachments--product-list-img">
-                          <div class="order-summer-info__attachments--product-img"><img src="img/product/product-small.jpg"></div>
-                          <div class="order-summer-info__attachments--product-img"><img src="img/product/product-small.jpg"></div>
-                        </div>
-                      </div>
-                    </div>
+                    <!--.block-flex-start-->
+                    <!--    .order-summer-info__notes-->
+                    <!--        .order-summer-info__notes--title Order Note-->
+                    <!--        .order-summer-info__notes--content The flax plant, an ancient crop, yields the fibre from which linen is woven, as well as seeds (linseed or flaxseed) and oil. The oil, also called linseed oil, has many industrial uses – it is an important ingredient in paints, varnishes and linoleum for example.-->
+                    <!--    .order-summer-info__attachments-->
+                    <!--        .order-summer-info__attachments--title Attachments-->
+                    <!--        .order-summer-info__attachments--product-list-img-->
+                    <!--            .order-summer-info__attachments--product-img-->
+                    <!--                img(src='img/product/product-small.jpg')-->
+                    <!--            .order-summer-info__attachments--product-img-->
+                    <!--                img(src='img/product/product-small.jpg')-->
                   </div>
                   <div class="order-summer-tabs-order-total">
                     <div class="order-summer-tabs tabs">
@@ -652,6 +648,9 @@
                         <div class="tabs-items">
                           <div class="items-order">
                             <div class="items-order__title">Delivered 12/23/2020</div>
+                            <div class="items-order__btn items-order__btn--sm">
+                              <div class="btn-dd btn-c--blue">Return</div>
+                            </div>
                             <div class="items-order__content">
                               <div class="items-order__img"><img src="img/product/product-small.jpg"></div>
                               <div class="items-order__info">
@@ -663,7 +662,7 @@
                                 </div>
                               </div>
                               <div class="items-order__price">$22.99</div>
-                              <div class="items-order__btn">
+                              <div class="items-order__btn items-order__btn--xs">
                                 <div class="btn-dd btn-c--blue">Return</div>
                               </div>
                             </div>
@@ -678,11 +677,14 @@
                                 </div>
                               </div>
                               <div class="items-order__price">$22.99</div>
-                              <div class="items-order__btn"></div>
+                              <div class="items-order__btn items-order__btn--xs"></div>
                             </div>
                           </div>
                           <div class="items-order">
                             <div class="items-order__title">Return started</div>
+                            <div class="items-order__btn items-order__btn--sm">
+                              <div class="btn-dd btn-c--blue">Send packing Slip</div>
+                            </div>
                             <div class="items-order__content">
                               <div class="items-order__img"><img src="img/product/product-small.jpg"></div>
                               <div class="items-order__info">
@@ -694,13 +696,17 @@
                                 </div>
                               </div>
                               <div class="items-order__price">$22.99</div>
-                              <div class="items-order__btn">
-                                <div class="btn-dd btn-c--blue">Add return tracking</div>
+                              <div class="items-order__btn items-order__btn--xs">
+                                <div class="btn-dd btn-c--blue">Send packing Slip</div>
                               </div>
                             </div>
                           </div>
                           <div class="items-order">
                             <div class="items-order__title">Return complete</div>
+                            <div class="items-order__btn items-order__btn--sm">
+                              <div class="items-order__btn--refund"><span>Refunded</span></div>
+                              <div class="btn-dd btn-c--blue">Add return tracking</div>
+                            </div>
                             <div class="items-order__content">
                               <div class="items-order__img"><img src="img/product/product-small.jpg"></div>
                               <div class="items-order__info">
@@ -712,9 +718,8 @@
                                 </div>
                               </div>
                               <div class="items-order__price">$22.99</div>
-                              <div class="items-order__btn">
-                                <div class="items-order__btn--refund"><span>Refund for this item</span><span>$ 171.98</span></div>
-                                <div class="btn-dd btn-c--blue">Add return tracking</div>
+                              <div class="items-order__btn items-order__btn--xs">
+                                <div class="items-order__btn--refund"><span>Refunded</span><span>$ 171.98</span></div>
                               </div>
                             </div>
                           </div>
@@ -736,6 +741,14 @@
                           <tr>
                             <td>Total Price:</td>
                             <td>$299.00</td>
+                          </tr>
+                          <tr>
+                            <td class="pad">Covered by OTC benefit:</td>
+                            <td>$199.00</td>
+                          </tr>
+                          <tr>
+                            <td class="pad">Paid by customer:</td>
+                            <td>$100.00</td>
                           </tr>
                           <tr>
                             <td>Refund amount:</td>

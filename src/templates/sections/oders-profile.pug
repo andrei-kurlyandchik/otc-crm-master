@@ -351,12 +351,13 @@ section.panel.panel--user-info
                                     li Jenkintown, PA 19133
             .panel__col.panel__col--right
                 .orders-summary-header
-                    a.link(href="#") Orders / Order# 7263467
+                    //a.link(href="#") Orders / Order# 7263467
+                    a.link(href="#") < Go back
                     a.btn-link(href="#") Open member profile
                 .order-summer-content
                     .order-summer-info
                         .order-summer-info__header
-                            h2.title-h2 Order Summary
+                            h2.title-h2 Order #7254716325785
                             .btn-block
                                 a.btn-dd.btn-c--blue(href="#") Return/ Refund All
                                 a.btn-dd.btn-c--blue(href="#") Resend Order Confirmation
@@ -365,20 +366,17 @@ section.panel.panel--user-info
                                 .table-label-box__title Order Information
                                 table
                                     tr
-                                        td Order #
-                                        td 48756876
-                                    tr
                                         td Status:
-                                        td Not Shipped
+                                        td Shipped
+                                    tr
+                                        td Created at:
+                                        td 05/11/2020 09:08 EDT
                                     tr
                                         td Order Type:
                                         td Inbound
                                     tr
                                         td Performer:
                                         td Marta (marta.h@orcstores.com)
-                                    tr
-                                        td Created at:
-                                        td 05/11/2020 09:08 EDT
                             .table-label-box.col-3
                                 .table-label-box__title Shipping Information
                                 table
@@ -387,39 +385,37 @@ section.panel.panel--user-info
                                         td
                                             span Marian Frazier
                                             span 8285C Center Ave.
-                                            span Latrobe, Pensylvania
-                                            span 15680
-                                            span United States
-                                            span 215-345-4678
+                                            span Latrobe, Pensylvania 15680
+                                    tr
+                                        td Shipping label note for postman:
+                                        td Leave parcel near the door
                                     tr
                                         td Delivery option:
                                         td USPS
+                                    tr
+                                        td Shipped On:
+                                        td 11/09/2019
                             .table-label-box.col-3
                                 .table-label-box__title Tracking Information
                                 table
                                     tr
-                                        td Sent on:
-                                        td 11/09/2019
-                                    tr
-                                        td Tracking number:
-                                        td 93233626
-                                    tr
-                                        td Delivered on:
+                                        td Est.Delivery Date:
                                         td 12/23/202
                                     tr
                                         td Tracking Link:
-                                        td 7236527365423456
-                        .block-flex-start
-                            .order-summer-info__notes
-                                .order-summer-info__notes--title Order Note
-                                .order-summer-info__notes--content The flax plant, an ancient crop, yields the fibre from which linen is woven, as well as seeds (linseed or flaxseed) and oil. The oil, also called linseed oil, has many industrial uses – it is an important ingredient in paints, varnishes and linoleum for example.
-                            .order-summer-info__attachments
-                                .order-summer-info__attachments--title Attachments
-                                .order-summer-info__attachments--product-list-img
-                                    .order-summer-info__attachments--product-img
-                                        img(src='img/product/product-small.jpg')
-                                    .order-summer-info__attachments--product-img
-                                        img(src='img/product/product-small.jpg')
+                                        td
+                                            a(href="#") 7236527365423456
+                        //.block-flex-start
+                        //    .order-summer-info__notes
+                        //        .order-summer-info__notes--title Order Note
+                        //        .order-summer-info__notes--content The flax plant, an ancient crop, yields the fibre from which linen is woven, as well as seeds (linseed or flaxseed) and oil. The oil, also called linseed oil, has many industrial uses – it is an important ingredient in paints, varnishes and linoleum for example.
+                        //    .order-summer-info__attachments
+                        //        .order-summer-info__attachments--title Attachments
+                        //        .order-summer-info__attachments--product-list-img
+                        //            .order-summer-info__attachments--product-img
+                        //                img(src='img/product/product-small.jpg')
+                        //            .order-summer-info__attachments--product-img
+                        //                img(src='img/product/product-small.jpg')
                     .order-summer-tabs-order-total
                         .order-summer-tabs.tabs
                             ul.tabs__caption
@@ -446,6 +442,8 @@ section.panel.panel--user-info
                                 .tabs-items
                                     .items-order
                                         .items-order__title Delivered 12/23/2020
+                                        .items-order__btn.items-order__btn--sm
+                                            .btn-dd.btn-c--blue Return
                                         .items-order__content
                                             .items-order__img
                                                 img(src='img/product/product-small.jpg')
@@ -456,7 +454,7 @@ section.panel.panel--user-info
                                                     .items-order__info--list-content Qty: 3
                                                     .items-order__info--list-content Price: $22.99
                                             .items-order__price $22.99
-                                            .items-order__btn
+                                            .items-order__btn.items-order__btn--xs
                                                 .btn-dd.btn-c--blue Return
                                         .items-order__content
                                             .items-order__img
@@ -468,9 +466,11 @@ section.panel.panel--user-info
                                                     .items-order__info--list-content Qty: 3
                                                     .items-order__info--list-content Price: $22.99
                                             .items-order__price $22.99
-                                            .items-order__btn
+                                            .items-order__btn.items-order__btn--xs
                                     .items-order
                                         .items-order__title Return started
+                                        .items-order__btn.items-order__btn--sm
+                                            .btn-dd.btn-c--blue Send packing Slip
                                         .items-order__content
                                             .items-order__img
                                                 img(src='img/product/product-small.jpg')
@@ -481,10 +481,14 @@ section.panel.panel--user-info
                                                     .items-order__info--list-content Qty: 3
                                                     .items-order__info--list-content Price: $22.99
                                             .items-order__price $22.99
-                                            .items-order__btn
-                                                .btn-dd.btn-c--blue Add return tracking
+                                            .items-order__btn.items-order__btn--xs
+                                                .btn-dd.btn-c--blue Send packing Slip
                                     .items-order
                                         .items-order__title Return complete
+                                        .items-order__btn.items-order__btn--sm
+                                            .items-order__btn--refund
+                                                span Refunded
+                                            .btn-dd.btn-c--blue Add return tracking
                                         .items-order__content
                                             .items-order__img
                                                 img(src='img/product/product-small.jpg')
@@ -495,11 +499,10 @@ section.panel.panel--user-info
                                                     .items-order__info--list-content Qty: 3
                                                     .items-order__info--list-content Price: $22.99
                                             .items-order__price $22.99
-                                            .items-order__btn
+                                            .items-order__btn.items-order__btn--xs
                                                 .items-order__btn--refund
-                                                    span Refund for this item
+                                                    span Refunded
                                                     span $ 171.98
-                                                .btn-dd.btn-c--blue Add return tracking
 
 
 
@@ -516,6 +519,12 @@ section.panel.panel--user-info
                                     tr
                                         td Total Price:
                                         td $299.00
+                                    tr
+                                        td.pad Covered by OTC benefit:
+                                        td $199.00
+                                    tr
+                                        td.pad Paid by customer:
+                                        td $100.00
                                     tr
                                         td Refund amount:
                                         td $171.98

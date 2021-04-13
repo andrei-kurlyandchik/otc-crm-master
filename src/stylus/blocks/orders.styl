@@ -84,17 +84,18 @@
 .order-summer-tabs-order-total {
 	display flex
 	justify-content flex-start
-	padding 0 20px 20px
+	padding 0 0 20px 0
 }
 
 .order-summer-tabs {
 	width 72%
-	margin-right 20px
 }
 
 .order-summer-order-total {
-	width 25%
-	margin-top 65px
+	width: 28%;
+	margin-top: 51px;
+	border-top: 1px solid #ccc;
+	padding: 23px 20px 0 20px;
 	&__title {
 		font-size 24px
 		font-weight 500
@@ -114,6 +115,9 @@
 				text-align right
 				padding 0 0 10px 0
 			}
+		}
+		.pad {
+			padding 0 10px 10px 20px
 		}
 	}
 }
@@ -143,6 +147,7 @@
 
 .items-order {
 	border-top: 1px solid #ccc;
+	padding-top 15px
 	&:first-child {
 		border none
 	}
@@ -207,6 +212,9 @@
 			font-weight 500
 			color #136C00
 			margin-bottom 12px
+		}
+		&--sm {
+			display none
 		}
 	}
 }
@@ -1415,5 +1423,34 @@
 	}
 	.making-new-order {
 		padding-right 0
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.items-order__btn--xs {
+		display none
+	}
+	.items-order__btn--sm {
+		display block
+		margin-bottom: 15px;
+	}
+	.order-summer-tabs {
+		width 70%
+	}
+	.order-summer-order-total {
+		width 30%
+		padding-left 0
+	}
+	.order-summer-info__table {
+		display block
+		.table-label-box.col-3 {
+			width 100%
+			margin-bottom 30px
+		}
+	}
+	.table-label-box {
+		td:first-child {
+			width 200px
+		}
 	}
 }
