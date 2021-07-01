@@ -1,0 +1,43 @@
+.popup.popup--notify#notify
+    .popup__top
+        h2.title-h2 How can we notify you
+        a.popup__close.b-close(href='#')
+    .popup__bottom
+        .popup-notify-wrapper.tabs
+            .popup-notify-tab-btn
+                .popup-notify-tab-btn__title We will notify you by
+                ul.popup-notify-tab-btn__tab.tabs__caption
+                    li.active Email
+                    li Phone
+
+            div.tabs__content.popup-notify-tab-content.email.active
+                form.form
+                    label.form__label
+                        span.form__ttl Email Address
+                        select.form__select
+                            option(value='Select or type email') Select or type email
+                            option(value='Select or type email2') Select or type email2
+            div.tabs__content.popup-notify-tab-content.phone
+                form.form
+                    label.form__label.phone-sel
+                        span.form__ttl Phone type
+                        select.form__select--phone
+                            option(value='phone-iphone') Mobile
+                            option(value='home-black') Landline
+                    label.form__label.form--medium
+                        span.form__ttl Phone #
+                        select.form__select
+                            option(value='Select or type phone') Select or type phone
+                            option(value='+1 (324) 543-5422') +1 (324) 543-5422
+                            option(value='+1 (623) 453-6547') +1 (623) 453-6547
+                .box-check-text
+                    .checkbox
+                        label.checkbox__label
+                            input.checkbox__inp(type='checkbox')
+                            span.checkbox__btn
+                    span Add this phone to member card
+        .form__btn.form__btn--center
+            .form__btn-itm
+                a.btn-b.b-close(href='#') Cancel
+            .form__btn-itm
+                button.btn-a(type='button') Enable notification

@@ -812,9 +812,7 @@
                                   </div>
                                 </div>
                                 <div class="making-order-info__row">
-                                  <div class="making-order-info__btn"><a class="btn-link" href="#">more Info</a><a class="btn-link" href="#">Analogs</a><a class="btn-link js-show-popup" href="#complementaryProds">Complementary prods</a>
-                                    <div class="btn-making-order"><img class="icon icon--bell" src="img/bell.svg"><span>Notification Enabled</span></div>
-                                  </div>
+                                  <div class="making-order-info__btn"><a class="btn-link" href="#">more Info</a><a class="btn-link" href="#">Analogs</a><a class="btn-link js-show-popup" href="#complementaryProds">Complementary prods</a><a class="btn-making-order js-show-popup" href="#notify"><img class="icon icon--bell" src="img/bell.svg"><span>Notification Enabled</span></a></div>
                                 </div>
                               </div>
                               <div class="making-order-info">
@@ -920,9 +918,7 @@
                                   </div>
                                 </div>
                                 <div class="making-order-info__row">
-                                  <div class="making-order-info__btn"><a class="btn-link" href="#">more Info</a><a class="btn-link" href="#">Analogs</a><a class="btn-link js-show-popup" href="#complementaryProds">Complementary prods</a>
-                                    <div class="btn-making-order"><img class="icon icon--bell" src="img/bell.svg"><span>Notification Enabled</span></div>
-                                  </div>
+                                  <div class="making-order-info__btn"><a class="btn-link" href="#">more Info</a><a class="btn-link" href="#">Analogs</a><a class="btn-link js-show-popup" href="#complementaryProds">Complementary prods</a><a class="btn-making-order js-show-popup" href="#notify"><img class="icon icon--bell" src="img/bell.svg"><span>Notification Enabled</span></a></div>
                                 </div>
                               </div>
                               <div class="making-order-info red">
@@ -1359,9 +1355,7 @@
                                   </div>
                                 </div>
                                 <div class="making-order-info__row">
-                                  <div class="making-order-info__btn"><a class="btn-link" href="#">more Info</a><a class="btn-link" href="#">Analogs</a><a class="btn-link js-show-popup" href="#complementaryProds">Complementary prods</a>
-                                    <div class="btn-making-order"><img class="icon icon--bell" src="img/bell.svg"><span>Notification Enabled</span></div>
-                                  </div>
+                                  <div class="making-order-info__btn"><a class="btn-link" href="#">more Info</a><a class="btn-link" href="#">Analogs</a><a class="btn-link js-show-popup" href="#complementaryProds">Complementary prods</a><a class="btn-making-order js-show-popup" href="#notify"><img class="icon icon--bell" src="img/bell.svg"><span>Notification Enabled</span></a></div>
                                 </div>
                               </div>
                               <div class="making-order-info">
@@ -3603,6 +3597,62 @@
                 <div class="form__btn-itm"><a class="btn-a b-close" href="#">Close</a></div>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="popup popup--notify" id="notify">
+          <div class="popup__top">
+            <h2 class="title-h2">How can we notify you</h2><a class="popup__close b-close" href="#"></a>
+          </div>
+          <div class="popup__bottom">
+            <div class="popup-notify-wrapper tabs">
+              <div class="popup-notify-tab-btn">
+                <div class="popup-notify-tab-btn__title">We will notify you by</div>
+                <ul class="popup-notify-tab-btn__tab tabs__caption">
+                  <li class="active">Email</li>
+                  <li>Phone</li>
+                </ul>
+              </div>
+              <div class="tabs__content popup-notify-tab-content email active">
+                <form class="form">
+                  <label class="form__label"><span class="form__ttl">Email Address</span>
+                    <select class="form__select">
+                      <option value="Select or type email">Select or type email</option>
+                      <option value="Select or type email2">Select or type email2</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+              <div class="tabs__content popup-notify-tab-content phone">
+                <form class="form">
+                  <label class="form__label phone-sel"><span class="form__ttl">Phone type</span>
+                    <select class="form__select--phone">
+                      <option value="phone-iphone">Mobile</option>
+                      <option value="home-black">Landline</option>
+                    </select>
+                  </label>
+                  <label class="form__label form--medium"><span class="form__ttl">Phone #</span>
+                    <select class="form__select">
+                      <option value="Select or type phone">Select or type phone</option>
+                      <option value="+1 (324) 543-5422">+1 (324) 543-5422</option>
+                      <option value="+1 (623) 453-6547">+1 (623) 453-6547</option>
+                    </select>
+                  </label>
+                </form>
+                <div class="box-check-text">
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__inp" type="checkbox"><span class="checkbox__btn"></span>
+                    </label>
+                  </div><span>Add this phone to member card</span>
+                </div>
+              </div>
+            </div>
+            <div class="form__btn form__btn--center">
+              <div class="form__btn-itm"><a class="btn-b b-close" href="#">Cancel</a></div>
+              <div class="form__btn-itm">
+                <button class="btn-a" type="button">Enable notification</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
