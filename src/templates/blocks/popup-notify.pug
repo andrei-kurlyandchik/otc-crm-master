@@ -14,20 +14,27 @@
                 form.form
                     label.form__label
                         span.form__ttl Email Address
+                        input.form__inp.input-add-email(type='text' value='' placeholder='Select or type email')
                         select.form__select
-                            option(value='Select or type email') Select or type email
+                            option(value='Select or type email') Select or type email1
                             option(value='Select or type email2') Select or type email2
+                .box-check-text
+                    .checkbox
+                        label.checkbox__label
+                            input.checkbox__inp(type='checkbox')
+                            span.checkbox__btn
+                    span Add this email to member card
             div.tabs__content.popup-notify-tab-content.phone
                 form.form
                     label.form__label.phone-sel
-                        span.form__ttl Phone type
+                        span.form__ttl Notice type
                         select.form__select--phone
-                            option(value='phone-iphone') Mobile
-                            option(value='home-black') Landline
+                            option(value='phone-iphone') SMS
+                            option(value='home-black') Call
                     label.form__label.form--medium
                         span.form__ttl Phone #
+                        input.form__inp.input-add-email(type='text' value='' placeholder='Select or type phone')
                         select.form__select
-                            option(value='Select or type phone') Select or type phone
                             option(value='+1 (324) 543-5422') +1 (324) 543-5422
                             option(value='+1 (623) 453-6547') +1 (623) 453-6547
                 .box-check-text
@@ -35,7 +42,7 @@
                         label.checkbox__label
                             input.checkbox__inp(type='checkbox')
                             span.checkbox__btn
-                    span Add this phone to member card
+                    span Add this phone to customer card
         .form__btn.form__btn--center
             .form__btn-itm
                 a.btn-b.b-close(href='#') Cancel
